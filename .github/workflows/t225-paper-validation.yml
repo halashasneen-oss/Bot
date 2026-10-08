@@ -9,6 +9,8 @@ on:
       - 'config-fixed-t225-paper.yaml'
       - 'scripts/run_fixed_t225_20min.py'
       - 'requirements*.txt'
+      - 'config-experiment-four-checkpoints-cap070-paper.yaml'
+      - 'scripts/run_four_checkpoints_cap070_60min.py'
       - '.github/workflows/t225-paper-validation.yml'
       - '.github/workflows/t225-until-19-paper.yml'
 permissions:
@@ -57,4 +59,26 @@ jobs:
         with:
           name: t225-paper-until-19
           path: runs/t225-until-19/
+          if-no-files-found: warn
+  experiment-four-checkpoints:
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Validate experimental configuration
+        run: python -c "from pairbot.mandatory_v3 import load_config; c=load_config('config-experiment-four-checkpoints-cap070-paper.yaml'); assert c['candidate_entry_times_before_close_sec']==[75,60,45,30] and c['experimental_max_entry_price']==0.70 and c['live'] is False"
+      - name: Run 60-minute live-data PAPER simulation
+        env:
+          PYTHONPATH: .
+        run: python -u scripts/run_four_checkpoints_cap070_60min.py
+      - name: Upload PAPER results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: four-checkpoints-cap070-paper
+          path: runs/four-checkpoints-cap070-60min/
           if-no-files-found: warn
