@@ -26,17 +26,17 @@ jobs:
           assert c['experimental_max_entry_price']==0.70 and c['live'] is False
           a=Account(0,50,5,5)
           for i in range(4):
-              a.position={'quote':{'shares':5},'side':'Up','cost':5,'row':{}}
+              a.position={'quote':{'shares':5,'cost':5},'side':'Up','row':{}}}
               a.settle('Down', 0)
               assert a.loss_streak==i+1
               assert a.entry_block(0) is None
-          a.position={'quote':{'shares':5},'side':'Up','cost':5,'row':{}}
+          a.position={'quote':{'shares':5,'cost':5},'side':'Up','row':{}}}
           a.settle('Down',0)
           assert a.loss_streak==5 and a.entry_block(0)=='five_consecutive_losses'
           b=Account(0,50,5,5)
-          b.position={'quote':{'shares':5},'side':'Up','cost':5,'row':{}}
+          b.position={'quote':{'shares':5,'cost':5},'side':'Up','row':{}}}
           b.settle('Down',0)
-          b.position={'quote':{'shares':10},'side':'Up','cost':5,'row':{}}
+          b.position={'quote':{'shares':10,'cost':5},'side':'Up','row':{}}}
           b.settle('Up',0)
           assert b.loss_streak==0
           f=RecoveringFeedFailures()
