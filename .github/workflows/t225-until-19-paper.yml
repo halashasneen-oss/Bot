@@ -1,0 +1,42 @@
+name: BTC T225 PAPER until 19 Amman
+on:
+  push:
+    branches: [recovery-t225]
+    paths: ['.github/workflows/t225-until-19-paper.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  paper-session:
+    runs-on: ubuntu-latest
+    timeout-minutes: 125
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - name: PAPER simulation until 19:00 Asia/Amman on 2026-10-08
+        env:
+          PYTHONPATH: .
+        run: |
+          python -u - <<'PY'
+          import asyncio, datetime as dt, time
+          from zoneinfo import ZoneInfo
+          from pairbot.mandatory_v3 import session, next_full_window_start, DEFAULT_SETTLEMENT_GRACE_SEC
+          end = dt.datetime(2026, 10, 8, 19, 0, tzinfo=ZoneInfo("Asia/Amman")).timestamp()
+          start = next_full_window_start(time.time())
+          if start >= end:
+              raise SystemExit("Deadline passed: no session run")
+          print(f"PAPER start={start} deadline={end} stake=5 bankroll=50 live=false", flush=True)
+          asyncio.run(session("config-fixed-t225-paper.yaml", "runs/t225-until-19",
+                              stop_at=end, entry_start_at=start,
+                              settlement_grace_sec=DEFAULT_SETTLEMENT_GRACE_SEC))
+          PY
+      - name: Upload PAPER results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: t225-paper-until-19
+          path: runs/t225-until-19/
+          if-no-files-found: warn
