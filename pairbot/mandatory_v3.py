@@ -124,7 +124,7 @@ def load_config(path):
             continue
         key, value = line.split(':', 1)
         key, value = key.strip(), value.strip()
-        if key in values or key not in (*FROZEN_V3, 'fixed_time_delta_direction', 'experimental_max_entry_price'):
+        if key in values or key not in (*FROZEN_V3, 'fixed_time_delta_direction', 'experimental_max_entry_price', 'experimental_stop_after_consecutive_losses', 'experimental_reconnect_websocket'):
             raise ValueError('Unknown or duplicate v2 config field')
         values[key] = json.loads(value)
     if values.get('fixed_time_delta_direction') is True:
@@ -134,6 +134,9 @@ def load_config(path):
         if values.get('experimental_max_entry_price') == 0.70:
             expected.update(candidate_entry_times_before_close_sec=[75, 60, 45, 30],
                             experimental_max_entry_price=0.70)
+            if values.get('experimental_stop_after_consecutive_losses') == 5 and values.get('experimental_reconnect_websocket') is True:
+                expected.update(experimental_stop_after_consecutive_losses=5,
+                                experimental_reconnect_websocket=True)
     else:
         expected = dict(FROZEN_V3)
     if values != expected:
@@ -467,8 +470,22 @@ def record_execution_result(failures, reason):
         failures.fail('execution')
 
 
+class RecoveringFeedFailures(Failures):
+    """Reconnect WS instead of halting after transient feed failures.
+
+    A disconnected feed never supplies eligible prices; existing stale-data
+    and causal opening guards still reject entries until fresh ticks return.
+    API and execution failure safeguards remain unchanged.
+    """
+    def fail(self, channel):
+        if channel == 'websocket':
+            self.counts[channel] += 1
+            return
+        super().fail(channel)
+
+
 class Account:
-    def __init__(self, now, starting_capital=100.0, stake_usd=5.0):
+    def __init__(self, now, starting_capital=100.0, stake_usd=5.0, loss_streak_limit=None):
         self.starting_capital = number(starting_capital)
         self.stake_usd = number(stake_usd)
         if self.starting_capital <= 0 or self.stake_usd <= 0:
@@ -480,17 +497,22 @@ class Account:
         self.hard_halt = False
         self.traded = set()
         self.trades = []
+        self.loss_streak = 0
+        self.loss_streak_limit = loss_streak_limit
 
     def entry_block(self, now):
         if utc_day(now) != self.day:
             self.day, self.daily_pnl = utc_day(now), 0.0
         if self.hard_halt:
             return 'hard_stop_balance_30'
-        if self.daily_pnl - self.stake_usd < -10 - 1e-9:
+        if self.loss_streak_limit is not None:
+            if self.loss_streak >= self.loss_streak_limit:
+                return 'five_consecutive_losses'
+        elif self.daily_pnl - self.stake_usd < -10 - 1e-9:
             return 'daily_loss_limit'
         if self.position:
             return 'open_position_limit'
-        if self.cash <= 30:
+        if self.cash <= 30 and self.loss_streak_limit is None:
             self.hard_halt = True
             return 'hard_stop_balance_30'
         if self.cash < self.stake_usd:
@@ -518,7 +540,8 @@ class Account:
         pnl = payout - position['quote']['cost']
         self.cash += payout
         self.daily_pnl += pnl
-        self.hard_halt = self.hard_halt or self.cash <= 30
+        self.hard_halt = self.hard_halt or (self.cash <= 30 and self.loss_streak_limit is None)
+        self.loss_streak = self.loss_streak + 1 if pnl < -1e-9 else 0
         position.update(settled=True, winner=winner, pnl=pnl, settled_at=now)
         position['row'].update(outcome=winner, pnl=pnl, balance_after=self.cash)
         self.position = None
@@ -552,8 +575,9 @@ async def session(config_path, output, stop_at=None, entry_start_at=None,
     config_bytes = Path(config_path).read_bytes()
     (output / 'config.yaml').write_bytes(config_bytes)
 
-    account = Account(started, config['starting_capital_usd'], config['stake_usd'])
-    failures = Failures()
+    account = Account(started, config['starting_capital_usd'], config['stake_usd'],
+                      config.get('experimental_stop_after_consecutive_losses'))
+    failures = RecoveringFeedFailures() if config.get('experimental_reconnect_websocket') else Failures()
     rows = []
     journal = Journal(output / 'journal.jsonl', dict(
         mode='PAPER_MANDATORY_V3_FINAL', config=dict(config),
@@ -666,7 +690,8 @@ async def session(config_path, output, stop_at=None, entry_start_at=None,
                           realized_pnl=sum(x.get('pnl', 0) for x in account.trades),
                           pending_positions=int(account.position is not None),
                           daily_pnl=account.daily_pnl, daily_utc=account.day,
-                          hard_halt=account.hard_halt, failure_halt=failures.halted,
+                          hard_halt=account.hard_halt, loss_streak=account.loss_streak,
+                          failure_halt=failures.halted,
                           failures=failures.counts.copy(), halt_reason=halt_reason,
                           source=SOURCE, weights=dict(WEIGHTS), config=dict(config),
                           synthetic_microstake=False, below_live_minimum_trades=below_min,
@@ -855,7 +880,8 @@ async def session(config_path, output, stop_at=None, entry_start_at=None,
                         'missing_causal_matched_opening',
                         'ambiguous_reference_revision',
                         'daily_loss_limit', 'hard_stop_balance_30',
-                        'balance_below_stake', 'three_consecutive_failures')
+                        'balance_below_stake', 'three_consecutive_failures',
+                        'five_consecutive_losses')
                     or failures.halted or account.hard_halt)
                 if final_candidate or terminal:
                     finalize_window(window, row, reason)
