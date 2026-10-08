@@ -124,13 +124,16 @@ def load_config(path):
             continue
         key, value = line.split(':', 1)
         key, value = key.strip(), value.strip()
-        if key in values or key not in (*FROZEN_V3, 'fixed_time_delta_direction'):
+        if key in values or key not in (*FROZEN_V3, 'fixed_time_delta_direction', 'experimental_max_entry_price'):
             raise ValueError('Unknown or duplicate v2 config field')
         values[key] = json.loads(value)
     if values.get('fixed_time_delta_direction') is True:
         expected = dict(FROZEN_V3)
         expected.update(candidate_entry_times_before_close_sec=[75], starting_capital_usd=50,
                         fixed_time_delta_direction=True)
+        if values.get('experimental_max_entry_price') == 0.70:
+            expected.update(candidate_entry_times_before_close_sec=[75, 60, 45, 30],
+                            experimental_max_entry_price=0.70)
     else:
         expected = dict(FROZEN_V3)
     if values != expected:
@@ -751,7 +754,7 @@ async def session(config_path, output, stop_at=None, entry_start_at=None,
                     side_fixed = 'Up' if delta > 0 else 'Down'
                     score = dict(side=side_fixed, total_score=0, confidence=0,
                                  core_score=0, core_strength=0, signal_agreement=0,
-                                 price_cap=1.0, direction_score=0, recent_score=0,
+                                 price_cap=config.get('experimental_max_entry_price', 1.0), direction_score=0, recent_score=0,
                                  persistence_score=0, order_book_score=0, pricing_score=0)
                 else:
                     score = score_decision(
