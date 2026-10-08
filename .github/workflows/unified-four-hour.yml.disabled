@@ -1,0 +1,38 @@
+name: Unified BTC 5m four-hour PAPER simulation
+on:
+  push:
+    branches: [paper-unified-5m-20261005]
+    paths: [.github/workflows/unified-four-hour.yml, pairbot/unified_paper.py]
+permissions:
+  contents: read
+concurrency:
+  group: unified-single-frozen-paper-session
+  cancel-in-progress: false
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 280
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install own pinned dependencies
+        run: |
+          python -m pip install --only-binary=:all: -r requirements-dev.txt
+      - name: Verify all tests before live paper session
+        run: python -m pytest -q
+      - name: Four hours of public live BTC five-minute PAPER simulation
+        run: python -u -m pairbot.unified_paper
+      - name: Preserve full evidence even on failure
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: unified-four-hour-paper-${{ github.run_id }}
+          path: |
+            runs/unified-four-hour/
+            docs/unified/policy.json
+            docs/unified/README_AR.md
+            docs/unified/PROVENANCE.md
+          retention-days: 90
+          if-no-files-found: error

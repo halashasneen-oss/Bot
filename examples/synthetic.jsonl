@@ -1,0 +1,8 @@
+{"type": "header", "ts": 0, "schema": 1, "config": {"bankroll": 50.0, "order_size": 5.0, "max_inventory_usd": 15.0, "loss_stop_usd": 2.5, "min_pair_edge": 0.02, "maker_fee_bps": 0.0, "merge_cost_usd": 0.0, "merge_delay_seconds": 3.0, "order_latency_seconds": 0.5, "cancel_latency_seconds": 0.5, "quote_lifetime_seconds": 10.0, "max_unpaired_seconds": 20.0, "stale_seconds": 5.0, "stop_before_close_seconds": 20.0, "kill_move": 0.03, "kill_window_seconds": 60.0, "kill_spread": 0.1, "queue_multiplier": 1.5, "duration_minutes": 60.0}, "source": "SYNTHETIC_TEST_NOT_MARKET_DATA"}
+{"type": "market", "ts": 1800000000.0, "market": {"slug": "btc-updown-5m-1800000000", "condition_id": "c", "up": "u", "down": "d", "start": 1800000000.0, "end": 1800000300.0, "tick": 0.01, "minimum": 5}}
+{"type": "frame", "ts": 1800000000.0, "message": {"event_type": "book", "market": "c", "asset_id": "u", "timestamp": 1800000000000.0, "bids": [{"price": "0.48", "size": "10"}], "asks": [{"price": "0.52", "size": "10"}]}}
+{"type": "frame", "ts": 1800000000.0, "message": {"event_type": "book", "market": "c", "asset_id": "d", "timestamp": 1800000000000.0, "bids": [{"price": "0.48", "size": "10"}], "asks": [{"price": "0.52", "size": "10"}]}}
+{"type": "frame", "ts": 1800000001.0, "message": {"event_type": "last_trade_price", "market": "c", "asset_id": "u", "timestamp": 1800000001000.0, "price": "0.48", "size": "20", "side": "SELL"}}
+{"type": "frame", "ts": 1800000002.0, "message": {"event_type": "last_trade_price", "market": "c", "asset_id": "d", "timestamp": 1800000002000.0, "price": "0.48", "size": "20", "side": "SELL"}}
+{"type": "stop", "ts": 1800000003.0}
+{"type": "tick", "ts": 1800000006.0}

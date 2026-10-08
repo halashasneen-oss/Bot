@@ -1,0 +1,597 @@
+{
+  "scope": "EXPLORATORY_VISIBLE_BOOK_ONLY",
+  "input_sha256": "6b469f34889ff01317cbf04df3a248f2e7a07f696e9b03b27f71e36713b9de2d",
+  "freeze_commit": "3e19920f6043fea1af2ab0f834e704bfd8a9206f",
+  "policy_sha256": "52c54270486ec75ac7fcfa30952aa370a5d44415498b18d146cb158f0fdc99e6",
+  "threshold_sets_tried": 1,
+  "quality": {
+    "full_seconds": 600.0038676261902,
+    "clean_seconds": 0,
+    "clean_fraction": 0.0,
+    "excluded_fraction": 1.0,
+    "bin_counts_by_reason_overlapping": {
+      "clock_bound_unverified": 601,
+      "book_not_initialized_or_not_fresh": 121,
+      "subscription_proxy_guard": 168,
+      "initial_snapshots_incomplete": 53,
+      "book_age_over_limit": 7,
+      "late_frame": 36,
+      "gap_event_guard": 63
+    },
+    "clean_bins": []
+  },
+  "cohorts": [
+    {
+      "cohort": "full",
+      "totals": {
+        "taker_pair": {
+          "observed_seconds": 566.575612783432,
+          "book_evaluable_seconds": 463.9504373073578,
+          "quote_opportunity_seconds": 0.005048036575317383,
+          "depth_and_edge_seconds": 0.005048036575317383,
+          "coherent_depth_and_edge_seconds": 0.0,
+          "frames": 247484,
+          "events_started": 1
+        },
+        "mint_sell": {
+          "observed_seconds": 566.575612783432,
+          "book_evaluable_seconds": 463.9504373073578,
+          "quote_opportunity_seconds": 0.005048036575317383,
+          "depth_and_edge_seconds": 0.005048036575317383,
+          "coherent_depth_and_edge_seconds": 0.0,
+          "frames": 247484,
+          "events_started": 1
+        }
+      },
+      "per_market_minute": {
+        "btc-updown-5m-1791132600:minute_2": {
+          "taker_pair": {
+            "observed_seconds": 19.83383083343506,
+            "book_evaluable_seconds": 11.668058156967163,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 7874,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 19.83383083343506,
+            "book_evaluable_seconds": 11.668058156967163,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 7874,
+            "events_started": 0
+          }
+        },
+        "btc-updown-5m-1791132600:minute_3": {
+          "taker_pair": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 60.0,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 27788,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 60.0,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 27788,
+            "events_started": 0
+          }
+        },
+        "btc-updown-5m-1791132600:minute_4": {
+          "taker_pair": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 18.894237756729126,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 7676,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 18.894237756729126,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 7676,
+            "events_started": 0
+          }
+        },
+        "btc-updown-5m-1791132900:minute_0": {
+          "taker_pair": {
+            "observed_seconds": 52.95012307167053,
+            "book_evaluable_seconds": 45.388420820236206,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 25627,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 52.95012307167053,
+            "book_evaluable_seconds": 45.388420820236206,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 25627,
+            "events_started": 0
+          }
+        },
+        "btc-updown-5m-1791132900:minute_1": {
+          "taker_pair": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 60.0,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 35554,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 60.0,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 35554,
+            "events_started": 0
+          }
+        },
+        "btc-updown-5m-1791132900:minute_2": {
+          "taker_pair": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 60.0,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 30325,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 60.0,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 30325,
+            "events_started": 0
+          }
+        },
+        "btc-updown-5m-1791132900:minute_3": {
+          "taker_pair": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 60.0,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 47869,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 60.0,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 47869,
+            "events_started": 0
+          }
+        },
+        "btc-updown-5m-1791132900:minute_4": {
+          "taker_pair": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 55.30147314071655,
+            "quote_opportunity_seconds": 0.005048036575317383,
+            "depth_and_edge_seconds": 0.005048036575317383,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 36922,
+            "events_started": 1
+          },
+          "mint_sell": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 55.30147314071655,
+            "quote_opportunity_seconds": 0.005048036575317383,
+            "depth_and_edge_seconds": 0.005048036575317383,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 36922,
+            "events_started": 1
+          }
+        },
+        "btc-updown-5m-1791133200:minute_0": {
+          "taker_pair": {
+            "observed_seconds": 52.59812068939209,
+            "book_evaluable_seconds": 40.36053991317749,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 13948,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 52.59812068939209,
+            "book_evaluable_seconds": 40.36053991317749,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 13948,
+            "events_started": 0
+          }
+        },
+        "btc-updown-5m-1791133200:minute_1": {
+          "taker_pair": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 42.59434914588928,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 12402,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 60.0,
+            "book_evaluable_seconds": 42.59434914588928,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 12402,
+            "events_started": 0
+          }
+        },
+        "btc-updown-5m-1791133200:minute_2": {
+          "taker_pair": {
+            "observed_seconds": 21.193538188934326,
+            "book_evaluable_seconds": 9.743358373641968,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 1499,
+            "events_started": 0
+          },
+          "mint_sell": {
+            "observed_seconds": 21.193538188934326,
+            "book_evaluable_seconds": 9.743358373641968,
+            "quote_opportunity_seconds": 0.0,
+            "depth_and_edge_seconds": 0.0,
+            "coherent_depth_and_edge_seconds": 0.0,
+            "frames": 1499,
+            "events_started": 0
+          }
+        }
+      },
+      "events": [
+        {
+          "kind": "taker_pair",
+          "market": "0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b",
+          "slug": "btc-updown-5m-1791132900",
+          "market_start": 1791132900,
+          "top_prices": [
+            0.84,
+            0.08
+          ],
+          "top_depths": [
+            30.98,
+            20.44
+          ],
+          "requested_quantity": 5,
+          "taker_fees_at_top": 0.0728,
+          "quote_edge_after_taker_fees": 0.06544000000000008,
+          "quote_qualifies": true,
+          "individual_books_coherent": false,
+          "reported_touch_matches_reconstruction": false,
+          "source_reported_top_quotes": {
+            "82586593890687754633237333372834647660379958302457586866651506680087789960123": {
+              "bid": 0.16,
+              "ask": 0.26
+            },
+            "105299730752146633808078367996502593583858974321907374549771182370742998260331": {
+              "bid": 0.74,
+              "ask": 0.84
+            }
+          },
+          "top_depth_minimum": 20.44,
+          "walked_legs": [
+            {
+              "value": 4.2,
+              "fees": 0.04704,
+              "levels": [
+                {
+                  "price": 0.84,
+                  "quantity": 5,
+                  "fee": 0.04704
+                }
+              ]
+            },
+            {
+              "value": 0.4,
+              "fees": 0.02576,
+              "levels": [
+                {
+                  "price": 0.08,
+                  "quantity": 5,
+                  "fee": 0.02576
+                }
+              ]
+            }
+          ],
+          "walked_net_before_operation_cost": 0.3271999999999995,
+          "walked_depth_and_edge_qualifies": true,
+          "receipt_lag": 0.32308316230773926,
+          "oldest_book_exchange_ts": 1791133167.008,
+          "operation_cost": null,
+          "net_after_all_costs": null,
+          "fee_provenance": "Gamma feeSchedule: 0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b",
+          "cohort": "full",
+          "start": 1791133167.331083,
+          "end": 1791133167.336131,
+          "minimum_top_depth": 12.58,
+          "minimum_quote_edge": 0.023200000000000037,
+          "minimum_walked_net_before_operation_cost": 0.11600000000000019,
+          "maximum_walked_net_before_operation_cost": 0.3271999999999995,
+          "max_receipt_lag_seconds": 0.32314515113830566,
+          "maximum_book_age_seconds": 0.32813119888305664,
+          "all_intervals_depth_and_edge": true,
+          "all_intervals_book_coherent_and_touch_matches": false,
+          "duration_seconds": 0.005048036575317383,
+          "required_duration_seconds": 0.8231451511383057,
+          "survives_recorded_latency": false,
+          "depth_edge_and_latency_bound": false,
+          "coherent_depth_edge_and_latency_bound": false,
+          "verified_net_positive": false
+        },
+        {
+          "kind": "mint_sell",
+          "market": "0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b",
+          "slug": "btc-updown-5m-1791132900",
+          "market_start": 1791132900,
+          "top_prices": [
+            0.92,
+            0.16
+          ],
+          "top_depths": [
+            20.44,
+            30.98
+          ],
+          "requested_quantity": 5,
+          "taker_fees_at_top": 0.0728,
+          "quote_edge_after_taker_fees": 0.06544000000000008,
+          "quote_qualifies": true,
+          "individual_books_coherent": false,
+          "reported_touch_matches_reconstruction": false,
+          "source_reported_top_quotes": {
+            "82586593890687754633237333372834647660379958302457586866651506680087789960123": {
+              "bid": 0.16,
+              "ask": 0.26
+            },
+            "105299730752146633808078367996502593583858974321907374549771182370742998260331": {
+              "bid": 0.74,
+              "ask": 0.84
+            }
+          },
+          "top_depth_minimum": 20.44,
+          "walked_legs": [
+            {
+              "value": 4.6000000000000005,
+              "fees": 0.02576,
+              "levels": [
+                {
+                  "price": 0.92,
+                  "quantity": 5,
+                  "fee": 0.02576
+                }
+              ]
+            },
+            {
+              "value": 0.8,
+              "fees": 0.04704,
+              "levels": [
+                {
+                  "price": 0.16,
+                  "quantity": 5,
+                  "fee": 0.04704
+                }
+              ]
+            }
+          ],
+          "walked_net_before_operation_cost": 0.3272000000000004,
+          "walked_depth_and_edge_qualifies": true,
+          "receipt_lag": 0.32308316230773926,
+          "oldest_book_exchange_ts": 1791133167.008,
+          "operation_cost": null,
+          "net_after_all_costs": null,
+          "fee_provenance": "Gamma feeSchedule: 0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b",
+          "cohort": "full",
+          "start": 1791133167.331083,
+          "end": 1791133167.336131,
+          "minimum_top_depth": 12.58,
+          "minimum_quote_edge": 0.023200000000000037,
+          "minimum_walked_net_before_operation_cost": 0.11600000000000019,
+          "maximum_walked_net_before_operation_cost": 0.3272000000000004,
+          "max_receipt_lag_seconds": 0.32314515113830566,
+          "maximum_book_age_seconds": 0.32813119888305664,
+          "all_intervals_depth_and_edge": true,
+          "all_intervals_book_coherent_and_touch_matches": false,
+          "duration_seconds": 0.005048036575317383,
+          "required_duration_seconds": 0.8231451511383057,
+          "survives_recorded_latency": false,
+          "depth_edge_and_latency_bound": false,
+          "coherent_depth_edge_and_latency_bound": false,
+          "verified_net_positive": false
+        }
+      ],
+      "durable_depth_bounds": 0,
+      "verified_net_positive_events": 0,
+      "net_after_all_costs": null
+    },
+    {
+      "cohort": "clean",
+      "totals": {
+        "taker_pair": {
+          "observed_seconds": 0.0,
+          "book_evaluable_seconds": 0.0,
+          "quote_opportunity_seconds": 0.0,
+          "depth_and_edge_seconds": 0.0,
+          "coherent_depth_and_edge_seconds": 0.0,
+          "frames": 0,
+          "events_started": 0
+        },
+        "mint_sell": {
+          "observed_seconds": 0.0,
+          "book_evaluable_seconds": 0.0,
+          "quote_opportunity_seconds": 0.0,
+          "depth_and_edge_seconds": 0.0,
+          "coherent_depth_and_edge_seconds": 0.0,
+          "frames": 0,
+          "events_started": 0
+        }
+      },
+      "per_market_minute": {},
+      "events": [],
+      "durable_depth_bounds": 0,
+      "verified_net_positive_events": 0,
+      "net_after_all_costs": null
+    }
+  ],
+  "session_seconds": 600.0038676261902,
+  "market_context_seconds": 566.575612783432,
+  "unassigned_or_market_rollover_seconds": 33.42825484275818,
+  "markets": [
+    {
+      "slug": "btc-updown-5m-1791132600",
+      "condition_id": "0xad82ed3e22a51ec64e84a2a8496289a237a61e8f74d027601ccd70c7adb583f2",
+      "up": "45079687037850779560408851759323387725803993604961653149530303546871583154652",
+      "down": "94983397311077817923690205100464817100634812477834395036319216274134925045033",
+      "start": 1791132600,
+      "end": 1791132900.0,
+      "tick": 0.01,
+      "minimum": 5.0
+    },
+    {
+      "slug": "btc-updown-5m-1791132900",
+      "condition_id": "0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b",
+      "up": "105299730752146633808078367996502593583858974321907374549771182370742998260331",
+      "down": "82586593890687754633237333372834647660379958302457586866651506680087789960123",
+      "start": 1791132900,
+      "end": 1791133200.0,
+      "tick": 0.01,
+      "minimum": 5.0
+    },
+    {
+      "slug": "btc-updown-5m-1791133200",
+      "condition_id": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "up": "68882887400412228716613787378255190537006842811116707165110096148435286424446",
+      "down": "85193492611111006208650811777887933670751217810097572524783500238779808218149",
+      "start": 1791133200,
+      "end": 1791133500.0,
+      "tick": 0.01,
+      "minimum": 5.0
+    }
+  ],
+  "frames_per_market": {
+    "0xad82ed3e22a51ec64e84a2a8496289a237a61e8f74d027601ccd70c7adb583f2": 43338,
+    "0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b": 176297,
+    "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489": 27849
+  },
+  "fee_observations": [
+    {
+      "market": "0xad82ed3e22a51ec64e84a2a8496289a237a61e8f74d027601ccd70c7adb583f2",
+      "ts": 1791132760.166187,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.07,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      },
+      "feesEnabled": true,
+      "source": "Gamma feeSchedule: 0xad82ed3e22a51ec64e84a2a8496289a237a61e8f74d027601ccd70c7adb583f2"
+    },
+    {
+      "market": "0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b",
+      "ts": 1791132907.049907,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.07,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      },
+      "feesEnabled": true,
+      "source": "Gamma feeSchedule: 0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b"
+    },
+    {
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "ts": 1791133207.401908,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.07,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      },
+      "feesEnabled": true,
+      "source": "Gamma feeSchedule: 0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489"
+    },
+    {
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "ts": 1791133257.776163,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.07,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      },
+      "feesEnabled": true,
+      "source": "Gamma feeSchedule: 0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489"
+    },
+    {
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "ts": 1791133292.861863,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.07,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      },
+      "feesEnabled": true,
+      "source": "Gamma feeSchedule: 0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489"
+    },
+    {
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "ts": 1791133329.4056318,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.07,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      },
+      "feesEnabled": true,
+      "source": "Gamma feeSchedule: 0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489"
+    }
+  ],
+  "missing_fee_observations": {},
+  "operation_cost_status": "UNKNOWN_NO_ZERO_ASSUMPTION",
+  "net_pnl": null,
+  "fills": 0,
+  "orders": 0,
+  "acceptance_protocol_evaluated": false,
+  "old_holdout_opened": false,
+  "decision": "NO-GO",
+  "quality_gate_failures": [
+    "CLEAN_FRACTION_BELOW_FROZEN_MINIMUM",
+    "CLEAN_SECONDS_BELOW_FROZEN_MINIMUM",
+    "CLEAN_MARKET_COUNT_BELOW_FROZEN_MINIMUM",
+    "FULL_SESSION_LATE_FRACTION_TOO_HIGH",
+    "UNSCHEDULED_CLOSURES"
+  ],
+  "cost_gate_failure": "VERIFIED_OPERATION_COST_AND_NET_POSITIVE_OPPORTUNITIES_MISSING",
+  "full_cohort_warning": "All recorded book states including stale states until explicit gaps; descriptive upper bounds only. Clean cohort uses frozen mask. No inferred state across gaps.",
+  "sources": [
+    "https://docs.polymarket.com/trading/fees",
+    "https://docs.polymarket.com/market-data/market-details",
+    "https://docs.polymarket.com/trading/positions/manage"
+  ]
+}

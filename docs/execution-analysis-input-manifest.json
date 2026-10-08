@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "shards": [
+    "events-000001.jsonl.gz",
+    "events-000002.jsonl.gz",
+    "events-000003.jsonl.gz",
+    "events-000004.jsonl.gz",
+    "events-000005.jsonl.gz",
+    "events-000006.jsonl.gz",
+    "events-000007.jsonl.gz",
+    "events-000008.jsonl.gz"
+  ],
+  "sealed": {
+    "events-000001.jsonl.gz": {
+      "bytes": 2292261,
+      "sha256": "8b3e34542b7fb5fa78b50c4b516eb38bf07e7a7baae206074de58f9cd15beb3f"
+    },
+    "events-000002.jsonl.gz": {
+      "bytes": 2309387,
+      "sha256": "b3b6a63b7408bfe3be3cca16d0538b637b47ae249fd08fb5e05ddf38182c256e"
+    },
+    "events-000003.jsonl.gz": {
+      "bytes": 2224909,
+      "sha256": "d1923a80a7528356365defcf58d99fb57eedace916c44248223d7708af695d07"
+    },
+    "events-000004.jsonl.gz": {
+      "bytes": 2262039,
+      "sha256": "fa34693d6371e08268c1179fb67c1802b0ca9dab542d943830ff0b7403610176"
+    },
+    "events-000005.jsonl.gz": {
+      "bytes": 2303574,
+      "sha256": "079ddabba35bb263798a515c320ae650b50276483b7c14f95b6c0481dd4c873b"
+    },
+    "events-000006.jsonl.gz": {
+      "bytes": 2304489,
+      "sha256": "543e4f58de2ae5039a8faa3e119948ab787742ac27f46a5c05f901291c0ff933"
+    },
+    "events-000007.jsonl.gz": {
+      "bytes": 2221060,
+      "sha256": "27872efb21422ba9fce77d5c9caf0bd1e57784594126a6e52ceb4b4e2954096b"
+    },
+    "events-000008.jsonl.gz": {
+      "bytes": 1716443,
+      "sha256": "cbf4adef9eb58702caf566d9bf78609db84d9bd872e28385a221eb3ae5db12c3"
+    }
+  }
+}

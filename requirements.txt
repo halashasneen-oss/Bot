@@ -1,0 +1,4 @@
+httpx[socks]==0.28.1
+websockets==15.0.1
+sortedcontainers==2.4.0
+python-socks[asyncio]==2.7.2

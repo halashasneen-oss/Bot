@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "role": "EXPLORATORY_DESCRIPTIVE_ONLY_AFTER_SUMMARY_SEEN",
+  "threshold_sets": 1,
+  "protected_protocol_sha256": "5f5ca36da6c9da2400aae1cbfd90ac78446d0ac341bc0fa4c8b818823e7a89eb",
+  "old_final_holdout": "DO_NOT_OPEN",
+  "execution_model": "UNCHANGED",
+  "clean_window": {
+    "bin_seconds": 1,
+    "raw_age_max_seconds": 5,
+    "event_guard_before_seconds": 10,
+    "event_guard_after_seconds": 10,
+    "require_initial_snapshot_both_tokens": true,
+    "require_fresh_books_throughout_bin": true,
+    "exclude_bins_with_late_frame": true,
+    "exclude_bins_with_gap": true,
+    "clock_uncertainty_max_seconds": 1
+  },
+  "batch": {
+    "definition": "identical socket_monotonic_ns means same socket receive; consecutive late arrivals <=0.1 seconds form a late-arrival cluster",
+    "max_arrival_gap_seconds": 0.1
+  },
+  "temporal_buckets_seconds": [
+    0,
+    1,
+    5,
+    10,
+    20,
+    30,
+    60,
+    120,
+    300,
+    600
+  ],
+  "event_relative_buckets_seconds": [
+    -600,
+    -60,
+    -30,
+    -10,
+    -5,
+    0,
+    5,
+    10,
+    30,
+    60,
+    600
+  ],
+  "connection_timing": "No actual open/subscription timestamps were recorded. Metadata time is a labelled lower-bound proxy for subscription; first frame gives upper bound. Never present inferred ages as exact.",
+  "initial_snapshot_near_seconds": 1,
+  "trend": {
+    "bin_seconds": 10,
+    "statistic": "median raw receipt minus exchange per bucket; show all buckets with count; do not infer causal cause from slope"
+  },
+  "opportunities": {
+    "edge_per_share": 0.02,
+    "quantity_shares": 5,
+    "minimum_persistence_seconds": 0.5,
+    "receipt_lag_addition": true,
+    "fee_source": "captured per-market Gamma feeSchedule only; unsupported/missing is unknown",
+    "operation_cost": "unknown unless independently documented; never zero; net USD unknown when operation cost unknown"
+  },
+  "longer_recording_GO": {
+    "scope": "PROPOSE_ANOTHER_PAPER_CAPTURE_ONLY_NO_AUTO_START",
+    "minimum_clean_fraction": 0.8,
+    "minimum_clean_seconds": 300,
+    "minimum_markets_with_clean_data": 2,
+    "maximum_raw_late_fraction": 0.01,
+    "maximum_unscheduled_closures": 0,
+    "minimum_durable_opportunities": 2,
+    "minimum_distinct_opportunity_markets": 2,
+    "require_verified_net_positive_operation_cost": true,
+    "missing_prerequisite": "NO-GO; not proof of no edge"
+  },
+  "pause": "SHOW_STEP_1_RESULTS_BEFORE_ANY_CONNECTION_REPAIR; no overlap, no new capture in this checkpoint"
+}

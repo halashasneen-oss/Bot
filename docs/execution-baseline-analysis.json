@@ -1,0 +1,37 @@
+{
+  "counts": {
+    "quote_checks": 174980,
+    "quote_stale_or_missing": 60,
+    "audit_market": 4,
+    "quote_eligible_other_checks": 474,
+    "trade_seen": 1840,
+    "trade_no_order": 1652,
+    "quote_paused": 39,
+    "audit_quote": 6,
+    "quote_existing_orders": 10271,
+    "trade_not_active": 18,
+    "trade_buy_print": 167,
+    "quote_blocked_market": 164136,
+    "trade_above_limit": 2,
+    "trade_queue_ahead": 1
+  },
+  "movement_blocks": [
+    {
+      "slug": "btc-updown-5m-1791072900",
+      "seconds_from_start": 40.97272181510925,
+      "mid_range": 0.030000000000000027
+    },
+    {
+      "slug": "btc-updown-5m-1791073200",
+      "seconds_from_start": 15.755377531051636,
+      "mid_range": 0.06500000000000006
+    },
+    {
+      "slug": "btc-updown-5m-1791073500",
+      "seconds_from_start": 11.593970775604248,
+      "mid_range": 0.034999999999999976
+    }
+  ],
+  "fills": 0,
+  "markets": 4
+}

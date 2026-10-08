@@ -1,0 +1,15 @@
+{
+  "events": 175127,
+  "market_frames": 173654,
+  "input_sha256": "d8cdb475b008b8904d0ad7f532decb39a744e767342faee65fedf80a7077440a",
+  "protocol_sha256": "5f5ca36da6c9da2400aae1cbfd90ac78446d0ac341bc0fa4c8b818823e7a89eb",
+  "rolling_state_sha256": "0bd50ad9746c6a2e073e0c6b57b5030a19815328184ce4581f44b5c49299e976",
+  "result": "EXACT_STATE_EQUAL_AFTER_EVERY_EVENT",
+  "scope": "LOCAL_VERIFICATION_BEFORE_WORKSPACE_DISCONNECTED; unchanged default Engine source remains identical remotely",
+  "fills": 0,
+  "merges": 0,
+  "quote_checks": 174980,
+  "trade_checks": 1841,
+  "queue_multiplier": 1.5,
+  "engine_source_blob": "a8e66693e1fdea3187846a041acd0ebbbc07886a"
+}

@@ -1,0 +1,14 @@
+{"operation": "fsync", "seconds": 1.5919995348667726e-06, "local_wall_ts": 1791117265.939622}
+{"operation": "write_report", "seconds": 0.12009163499988063, "local_wall_ts": 1791117266.0597477}
+{"operation": "fsync", "seconds": 5.437999789137393e-06, "local_wall_ts": 1791117272.0408108}
+{"operation": "fsync", "seconds": 4.1100065573118627e-07, "local_wall_ts": 1791117272.0408525}
+{"operation": "fsync", "seconds": 3.4000004234258085e-07, "local_wall_ts": 1791117272.0409226}
+{"operation": "write_report", "seconds": 0.1201224110000112, "local_wall_ts": 1791117272.16107}
+{"operation": "fsync", "seconds": 4.547000571619719e-06, "local_wall_ts": 1791117272.1613069}
+{"operation": "write_report", "seconds": 0.12011915399943973, "local_wall_ts": 1791117272.2814534}
+{"operation": "fsync", "seconds": 9.183999281958677e-06, "local_wall_ts": 1791117272.281542}
+{"operation": "fsync", "seconds": 5.009997039451264e-07, "local_wall_ts": 1791117272.2816806}
+{"operation": "fsync", "seconds": 5.009997039451264e-07, "local_wall_ts": 1791117272.2817564}
+{"operation": "sha256", "seconds": 6.658000074821757e-05, "local_wall_ts": 1791117272.2818382}
+{"operation": "fsync", "seconds": 8.020006134756841e-07, "local_wall_ts": 1791117272.2820837}
+{"operation": "fsync", "seconds": 6.209993443917483e-07, "local_wall_ts": 1791117272.2821786}

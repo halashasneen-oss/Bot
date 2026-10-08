@@ -1,0 +1,31 @@
+name: Commit triggered daily PAPER attempt
+on:
+  push:
+    branches: [paper-btc-directional-20261004]
+    paths: [config/daily-launch.json]
+permissions:
+  contents: read
+concurrency:
+  group: daily-prospective-single-attempt
+  cancel-in-progress: false
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install --only-binary=:all: -r requirements.txt
+      - run: python -m pairbot.daily_launch
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-prospective-NOT-PROFIT-${{ github.sha }}
+          path: |
+            runs/daily-prospective/
+            runs/daily-history/
+            runs/final-report.json
+          retention-days: 90

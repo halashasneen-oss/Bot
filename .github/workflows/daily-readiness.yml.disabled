@@ -1,0 +1,25 @@
+name: Daily fee and clock evidence
+on:
+  push:
+    branches: [paper-btc-directional-20261004]
+    paths: [.github/workflows/daily-readiness.yml, pairbot/daily_readiness.py]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install --only-binary=:all: -r requirements.txt
+      - run: python -m pairbot.daily_readiness
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-fee-clock-NOT-PERFORMANCE
+          path: runs/daily-readiness/result.json
+          retention-days: 7

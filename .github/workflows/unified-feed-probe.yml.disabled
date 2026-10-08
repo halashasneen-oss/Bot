@@ -1,0 +1,25 @@
+name: Unified public TWAP feed availability
+on:
+  push:
+    branches: [paper-unified-5m-20261005]
+    paths: [pairbot/unified_feed_probe.py, .github/workflows/unified-feed-probe.yml]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install --only-binary=:all: -r requirements.txt
+      - run: python -m pairbot.unified_feed_probe
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: unified-public-feed-probe
+          path: runs/unified-feed-probe/
+          retention-days: 14

@@ -1,0 +1,61 @@
+name: Public data paper session
+on:
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: 'Paper minutes; hosted max 350 incl. margin, self-hosted allows 360'
+        default: '60'
+        required: true
+        type: choice
+        options: ['2', '11', '30', '60', '350', '360']
+      runner:
+        description: '360 minutes requires an already registered self-hosted runner'
+        default: 'ubuntu-latest'
+        required: true
+        type: choice
+        options: ['ubuntu-latest', 'self-hosted']
+permissions:
+  contents: read
+concurrency:
+  group: paper-session
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Validate duration and hosting limit
+        env:
+          MINUTES: ${{ inputs.minutes }}
+          RUNNER: ${{ inputs.runner }}
+        run: |
+          python - <<'PY'
+          import os
+          minutes = int(os.environ['MINUTES'])
+          assert minutes in (2, 11, 30, 60, 350, 360)
+          if minutes == 360 and os.environ['RUNNER'] != 'self-hosted':
+              raise SystemExit('A hosted job is capped at 6h including setup/upload. Full 6h data capture requires an existing self-hosted runner; not launched.')
+          PY
+  paper:
+    needs: check
+    runs-on: ${{ inputs.runner }}
+    timeout-minutes: ${{ inputs.runner == 'self-hosted' && 390 || 360 }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+      - name: Paper session (no wallet)
+        env:
+          PAPER_MINUTES: ${{ inputs.minutes }}
+        run: python -u -m pairbot paper --minutes "$PAPER_MINUTES" --out runs/session
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: paper-session-estimates
+          path: runs/
+          if-no-files-found: ignore
+          retention-days: 3

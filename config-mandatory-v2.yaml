@@ -1,0 +1,7 @@
+entry_time_before_close_sec: 60
+entry_tolerance_sec: 5
+starting_capital_usd: 100
+stake_usd: 5
+max_stale_data_sec: 2
+execution_delay_sec: 2
+live: false

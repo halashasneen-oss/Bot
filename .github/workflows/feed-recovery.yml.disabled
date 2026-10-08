@@ -1,0 +1,57 @@
+name: BTC feed recovery gate then four-hour PAPER
+on:
+  push:
+    branches: [paper-feed-recovery-20261005]
+    paths: [.github/workflows/feed-recovery.yml]
+permissions:
+  contents: read
+concurrency:
+  group: btc-one-frozen-recovery-experiment
+  cancel-in-progress: false
+jobs:
+  verify-and-paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install own pinned dependencies
+        run: |
+          python -m pip install --only-binary=:all: -r requirements-dev.txt
+      - name: Verify all tests
+        run: python -m pytest -q
+      - name: One hour public feed recovery validation without trades
+        run: python -u -m pairbot.reference_preflight
+      - name: Apply frozen technical gate
+        id: gate
+        run: |
+          python - <<'PY'
+          import json,os
+          from pairbot.reference_transport import load_transport_policy,POLICY_SHA
+          from pairbot.reference_preflight import gate_result
+          r=json.load(open('runs/reference-preflight/summary.json'))
+          p=load_transport_policy()
+          check=gate_result(r['live_samples'],r['total_samples'],r['model_ready_windows'],p)
+          passed=r['complete'] and r['elapsed_monotonic_seconds']>=3600 and r['transport_policy_sha256']==POLICY_SHA and r['error'] is None and r['actual_orders']==0 and r['paper_fills']==0 and check['passed'] and r['passed']
+          with open(os.environ['GITHUB_OUTPUT'],'a') as out:
+              out.write('passed='+str(passed).lower()+'\n')
+          print(json.dumps({'launch_one_four_hour_paper_session':passed,'checks':check}))
+          PY
+      - name: Four-hour PAPER only after passing technical gate
+        if: steps.gate.outputs.passed == 'true'
+        run: python -u -m pairbot.unified_paper
+      - name: Preserve preflight and PAPER evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: btc-feed-recovery-${{ github.run_id }}
+          path: |
+            runs/reference-preflight/
+            runs/unified-four-hour/
+            docs/unified/transport-policy.json
+            docs/unified/policy.json
+            docs/unified/RECOVERY_AR.md
+          retention-days: 90
+          if-no-files-found: error

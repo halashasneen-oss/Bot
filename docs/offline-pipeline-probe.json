@@ -1,0 +1,80 @@
+{
+  "before": {
+    "reads_during_deliberately_slow_report": 0,
+    "frames": 2590,
+    "slow_report_calls": 4,
+    "pipeline_telemetry": null,
+    "note": "SYNTHETIC_TEST / offline fixture / deliberately imposed 120 ms report delay; not real-market performance"
+  },
+  "after": {
+    "reads_during_deliberately_slow_report": 53,
+    "frames": 2630,
+    "slow_report_calls": 3,
+    "pipeline_telemetry": {
+      "io_queue_depth": {
+        "n": 2651,
+        "min": 1,
+        "max": 54,
+        "p50": 1,
+        "p99": 27,
+        "total_n": 2651,
+        "window": "latest 4096 observations"
+      },
+      "message_processing_seconds": {
+        "n": 2649,
+        "min": 8.321999303007033e-06,
+        "max": 0.002310038000359782,
+        "p50": 8.193299981940072e-05,
+        "p99": 0.00020634999964386225,
+        "total_n": 2649,
+        "window": "latest 4096 observations"
+      },
+      "fsync": {
+        "n": 4,
+        "min": 3.4000004234258085e-07,
+        "max": 5.437999789137393e-06,
+        "p50": 4.1100065573118627e-07,
+        "p99": 1.5919995348667726e-06,
+        "total_n": 4,
+        "window": "latest 4096 observations"
+      },
+      "receive_queue_depth": {
+        "n": 2630,
+        "min": 1,
+        "max": 1,
+        "p50": 1,
+        "p99": 1,
+        "total_n": 2630,
+        "window": "latest 4096 observations"
+      },
+      "internal_queue_wait_seconds": {
+        "n": 2630,
+        "min": 1.4543533325195312e-05,
+        "max": 0.00201416015625,
+        "p50": 1.9788742065429688e-05,
+        "p99": 9.012222290039062e-05,
+        "total_n": 2630,
+        "window": "latest 4096 observations"
+      },
+      "write_report": {
+        "n": 1,
+        "min": 0.12009163499988063,
+        "max": 0.12009163499988063,
+        "p50": 0.12009163499988063,
+        "p99": 0.12009163499988063,
+        "total_n": 1,
+        "window": "latest 4096 observations"
+      },
+      "loop_lag_seconds": {
+        "n": 12,
+        "min": 0.0003176319996782695,
+        "max": 0.0010579399995549466,
+        "p50": 0.0005639619994326495,
+        "p99": 0.0010523900000407593,
+        "total_n": 12,
+        "window": "latest 4096 observations"
+      }
+    },
+    "note": "SYNTHETIC_TEST / offline fixture / deliberately imposed 120 ms report delay; not real-market performance"
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "exact_code_commit": "c3cd2affc30b3c8324700bffb640d7ca62accbca",
+  "strict_read_journal": "PASS",
+  "journal_records": 169598,
+  "hashes": {
+    "policy.json": "5efae6c98d14469597bec251035e3d4da6cc3378870130291fedf2c3ebf1228d",
+    "transport-policy.json": "738381152c95f9e89e7cfbb139c1252270438dd1834bb64e173dc0ffb58ab8a7",
+    "until-0100-plan.json": "7c218b0f68972b94d3fa1b043d1caeb7314b41032218aa0fc93589a255349915"
+  },
+  "header": {
+    "actual_orders": 0,
+    "bankroll_usd": 50,
+    "execution_plan": {
+      "freeze_commit": "fb9a547b54e882ebd9a06d1c8ce6e7c573f2c9c1",
+      "original_policy_duration_seconds": 14400,
+      "original_technical_gate_passed": false,
+      "sha256": "7c218b0f68972b94d3fa1b043d1caeb7314b41032218aa0fc93589a255349915",
+      "stop_entry_at_amman": "2026-10-06T01:00:00+03:00",
+      "stop_entry_at_utc": "2026-10-05T22:00:00Z",
+      "user_authorized_fixed_deadline_session": true
+    },
+    "freeze_commit": "5ae48e693ce8ede9f66e39d0c565d0659c3565bb",
+    "mode": "INDEPENDENT_EXPLORATORY_PAPER",
+    "other_costs_usd": null,
+    "planned_duration_seconds": 10767.40444612503,
+    "policy_sha256": "5efae6c98d14469597bec251035e3d4da6cc3378870130291fedf2c3ebf1228d",
+    "predeclared_windows": [
+      1791227100,
+      1791227400,
+      1791227700,
+      1791228000,
+      1791228300,
+      1791228600,
+      1791228900,
+      1791229200,
+      1791229500,
+      1791229800,
+      1791230100,
+      1791230400,
+      1791230700,
+      1791231000,
+      1791231300,
+      1791231600,
+      1791231900,
+      1791232200,
+      1791232500,
+      1791232800,
+      1791233100,
+      1791233400,
+      1791233700,
+      1791234000,
+      1791234300,
+      1791234600,
+      1791234900,
+      1791235200,
+      1791235500,
+      1791235800,
+      1791236100,
+      1791236400,
+      1791236700,
+      1791237000,
+      1791237300
+    ],
+    "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "started_at": 1791226832.5955539,
+    "stop_entry_at": 1791237600,
+    "trade_budget_usd": 5,
+    "transport_freeze_commit": "7bdb41720ed71201d308903ba2cf474184a774bd",
+    "transport_policy_sha256": "738381152c95f9e89e7cfbb139c1252270438dd1834bb64e173dc0ffb58ab8a7",
+    "type": "directional_header"
+  },
+  "terminal": {
+    "actual_orders": 0,
+    "finished_at": 1791237600.218764,
+    "previous_sha256": "5aafa8ab9c0bec5d961ba143416222b2ed4bed6a00204ddb07506bc0a783eac7",
+    "type": "complete"
+  },
+  "counts": {
+    "directional_header": 1,
+    "feed_open": 5,
+    "feed_subscription": 5,
+    "feed_message": 169008,
+    "clock": 174,
+    "http": 254,
+    "market_roster": 35,
+    "reference_wait": 29,
+    "paper_intent": 10,
+    "decision": 35,
+    "feed_silent": 4,
+    "feed_gap": 4,
+    "feed_close": 5,
+    "source_match_audit": 22,
+    "paper_fill": 3,
+    "paper_settlement": 3,
+    "complete": 1
+  },
+  "btc_messages_by_topic": {
+    "crypto_prices_twap_sixty": 10562,
+    "crypto_prices_chainlink": 10559
+  },
+  "recovery": [
+    {
+      "generation": 1,
+      "opened_at": 1791226833.1974988,
+      "crypto_prices_chainlink": 1791226834.3898225,
+      "crypto_prices_twap_sixty": 1791226834.2704842
+    },
+    {
+      "generation": 3,
+      "opened_at": 1791227574.2123055,
+      "crypto_prices_chainlink": 1791227575.5016053,
+      "crypto_prices_twap_sixty": 1791227575.4199178
+    },
+    {
+      "generation": 5,
+      "opened_at": 1791229937.552039,
+      "crypto_prices_chainlink": 1791229938.4741623,
+      "crypto_prices_twap_sixty": 1791229938.7421615
+    },
+    {
+      "generation": 7,
+      "opened_at": 1791230538.2241464,
+      "crypto_prices_chainlink": 1791230539.3429406,
+      "crypto_prices_twap_sixty": 1791230539.3029795
+    },
+    {
+      "generation": 9,
+      "opened_at": 1791231157.9984686,
+      "crypto_prices_chainlink": 1791231159.0385408,
+      "crypto_prices_twap_sixty": 1791231159.1932108
+    }
+  ],
+  "errors": [
+    {
+      "at": 1791227568.5116603,
+      "last_advancing_exchange_at": {
+        "crypto_prices_chainlink": 1791227558.0,
+        "crypto_prices_twap_sixty": 1791227557.0
+      },
+      "last_progress_age_seconds": {
+        "crypto_prices_chainlink": 9.139330193999967,
+        "crypto_prices_twap_sixty": 10.295579096999973
+      },
+      "previous_sha256": "a27d96a1c7741fa09051c43e149b0e3bbf02e06296ea0ab1900423086f628ba9",
+      "topics": [
+        "crypto_prices_twap_sixty"
+      ],
+      "type": "feed_silent"
+    },
+    {
+      "at": 1791227568.6547458,
+      "error": "BTC update progression stopped",
+      "error_type": "SilentReference",
+      "generation": 2,
+      "previous_sha256": "ad3d0b96144604730cd90c7e6c4cd7834c0f5fec6d3177f3d8239fde573f46a4",
+      "type": "feed_gap"
+    },
+    {
+      "at": 1791227568.6552298,
+      "code": 1000,
+      "generation": 2,
+      "previous_sha256": "e10dd024a8e29c3ec6f602ea46829c4a84db20e85366a555065eb9762135adbf",
+      "reason": "",
+      "type": "feed_close"
+    },
+    {
+      "at": 1791229931.751567,
+      "last_advancing_exchange_at": {
+        "crypto_prices_chainlink": 1791229920.0,
+        "crypto_prices_twap_sixty": 1791229920.0
+      },
+      "last_progress_age_seconds": {
+        "crypto_prices_chainlink": 10.37601565499972,
+        "crypto_prices_twap_sixty": 10.214604332999897
+      },
+      "previous_sha256": "a164c2c001169ba2db7493a0879eb1ad76cccf654a4c154306532f2dcc6adb87",
+      "topics": [
+        "crypto_prices_chainlink",
+        "crypto_prices_twap_sixty"
+      ],
+      "type": "feed_silent"
+    },
+    {
+      "at": 1791229931.911401,
+      "error": "BTC update progression stopped",
+      "error_type": "SilentReference",
+      "generation": 4,
+      "previous_sha256": "4374cad38ca1d37ac8e6c1652f2c0fa4d924082a45ff8d253555180795742c2e",
+      "type": "feed_gap"
+    },
+    {
+      "at": 1791229931.9117756,
+      "code": 1000,
+      "generation": 4,
+      "previous_sha256": "455af254c26f50f6303dc8edab9a911b08328e97abe4cf7fd5f7522e81b880b3",
+      "reason": "",
+      "type": "feed_close"
+    },
+    {
+      "at": 1791230532.4643784,
+      "last_advancing_exchange_at": {
+        "crypto_prices_chainlink": 1791230521.0,
+        "crypto_prices_twap_sixty": 1791230521.0
+      },
+      "last_progress_age_seconds": {
+        "crypto_prices_chainlink": 10.411691983999845,
+        "crypto_prices_twap_sixty": 10.193515904999913
+      },
+      "previous_sha256": "99a3c603df53e5257a88d7b0d3d3ef231830b759c4c9f065d5b606e2532eca60",
+      "topics": [
+        "crypto_prices_chainlink",
+        "crypto_prices_twap_sixty"
+      ],
+      "type": "feed_silent"
+    },
+    {
+      "at": 1791230532.633927,
+      "error": "BTC update progression stopped",
+      "error_type": "SilentReference",
+      "generation": 6,
+      "previous_sha256": "d782488637a855886e93c17480c4b97670f3f13c160b0dd49f9ea6f076d6ea17",
+      "type": "feed_gap"
+    },
+    {
+      "at": 1791230532.6342764,
+      "code": 1000,
+      "generation": 6,
+      "previous_sha256": "430a21815115812c3a5a5c8b1c0ef5e662fb5fa73ef16cedcda7b45b19b36acf",
+      "reason": "",
+      "type": "feed_close"
+    },
+    {
+      "at": 1791231152.301639,
+      "last_advancing_exchange_at": {
+        "crypto_prices_chainlink": 1791231141.0,
+        "crypto_prices_twap_sixty": 1791231142.0
+      },
+      "last_progress_age_seconds": {
+        "crypto_prices_chainlink": 10.070713205000175,
+        "crypto_prices_twap_sixty": 8.277205962999687
+      },
+      "previous_sha256": "be46c17651c09e25e0ce3fc9c3e52343e204d4d1c067b4b00dd87be0b06ea7c5",
+      "topics": [
+        "crypto_prices_chainlink"
+      ],
+      "type": "feed_silent"
+    },
+    {
+      "at": 1791231152.458025,
+      "error": "BTC update progression stopped",
+      "error_type": "SilentReference",
+      "generation": 8,
+      "previous_sha256": "c61b2010bcfe17494db7933b96408b52d01515b3fc8c239476fe76b4728ccab0",
+      "type": "feed_gap"
+    },
+    {
+      "at": 1791231152.458393,
+      "code": 1000,
+      "generation": 8,
+      "previous_sha256": "0b2890b55dfa3faf5daa7a23053fe7b9d33959749c14d11e5e8386778e291f62",
+      "reason": "",
+      "type": "feed_close"
+    },
+    {
+      "at": 1791237600.2162352,
+      "code": 1000,
+      "generation": 9,
+      "previous_sha256": "d9713e3e3eb26a713ce4992ed59c99ceb86b5e4f7259ba3a3de7c82fbce4d6e9",
+      "reason": "",
+      "type": "feed_close"
+    }
+  ],
+  "source_matches": 22,
+  "source_mismatches": 0,
+  "source_audits": [
+    {
+      "match": true,
+      "official_opening": 85565.94284855193,
+      "previous_sha256": "00753d34e518e878a1d492d3526286e0fda951a1260dfb7dc3f79df3aa573f0d",
+      "recorded_opening": {
+        "generation": 1,
+        "price": 85565.94284855193,
+        "received_at": 1791227101.5675,
+        "timestamp": 1791227100.0
+      },
+      "start": 1791227100,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85676.65501641069,
+      "previous_sha256": "f942384be032dc2fb99e8cdf7cd562225eaa314a5981543a321ec98b07545d04",
+      "recorded_opening": {
+        "generation": 3,
+        "price": 85676.65501641069,
+        "received_at": 1791227701.699595,
+        "timestamp": 1791227700.0
+      },
+      "start": 1791227700,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85723.329600246,
+      "previous_sha256": "53cfed03598eb2b6c0fee6467abe969664e7a1bc09664eebc7d7ffaa2428dc0b",
+      "recorded_opening": {
+        "generation": 3,
+        "price": 85723.329600246,
+        "received_at": 1791228601.4820693,
+        "timestamp": 1791228600.0
+      },
+      "start": 1791228600,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85747.44203047107,
+      "previous_sha256": "e8a516f2ebcbaf0336e8daae57ef0cfb66fd17a224a2faebaafbcce4f6c7c69a",
+      "recorded_opening": {
+        "generation": 3,
+        "price": 85747.44203047107,
+        "received_at": 1791228901.3631406,
+        "timestamp": 1791228900.0
+      },
+      "start": 1791228900,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85677.95569300732,
+      "previous_sha256": "428d95ea95bde85893efdf9b9e14337a3d779fe9f3ee1cfa6399cbac307c2766",
+      "recorded_opening": {
+        "generation": 3,
+        "price": 85677.95569300732,
+        "received_at": 1791229201.6760108,
+        "timestamp": 1791229200.0
+      },
+      "start": 1791229200,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85713.33873836535,
+      "previous_sha256": "8ce00e0699631294a371195052a33e6350d7ea6fcfa8f7f533ac145db71ac12d",
+      "recorded_opening": {
+        "generation": 3,
+        "price": 85713.33873836535,
+        "received_at": 1791229501.691779,
+        "timestamp": 1791229500.0
+      },
+      "start": 1791229500,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85699.04487410454,
+      "previous_sha256": "2ff08572071fe72e8c23d532925d837e966680c3e9dbbfd4efdc44c90b6546a7",
+      "recorded_opening": {
+        "generation": 7,
+        "price": 85699.04487410454,
+        "received_at": 1791230701.19914,
+        "timestamp": 1791230700.0
+      },
+      "start": 1791230700,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85670.6884658111,
+      "previous_sha256": "9d6f57ca120b18be27a88590d7c84ba376e2c9f0e0f53b79bfa3b353b5b0b2f8",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85670.6884658111,
+        "received_at": 1791231301.7427049,
+        "timestamp": 1791231300.0
+      },
+      "start": 1791231300,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85744.23870640722,
+      "previous_sha256": "2501178312cd68c34780eacdfe067da0f82891a4b06f98b6fcd9b20cb4a32a3b",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85744.23870640722,
+        "received_at": 1791231601.1093678,
+        "timestamp": 1791231600.0
+      },
+      "start": 1791231600,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85775.39897087456,
+      "previous_sha256": "79f7d03498fe2fddef4387da171c0ac603588f034f5039b907936a70ac0827da",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85775.39897087456,
+        "received_at": 1791231901.6799684,
+        "timestamp": 1791231900.0
+      },
+      "start": 1791231900,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85798.35029404817,
+      "previous_sha256": "d52333dc12cbc8ea6c9bc9e741550231e22afe4173df87f1c40f9aa07bddec83",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85798.35029404817,
+        "received_at": 1791232801.5059674,
+        "timestamp": 1791232800.0
+      },
+      "start": 1791232800,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85789.26152836428,
+      "previous_sha256": "c1af949dd6271e51a0788c3f0c4078a7591d72f5401cf3f63edd67673d5cca7d",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85789.26152836428,
+        "received_at": 1791233101.9502578,
+        "timestamp": 1791233100.0
+      },
+      "start": 1791233100,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85801.66026455682,
+      "previous_sha256": "bf51e4284f60c229416a33fb473f8c6c6c7844ec27e69409c5cb7c482ed2dc87",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85801.66026455682,
+        "received_at": 1791233401.6200194,
+        "timestamp": 1791233400.0
+      },
+      "start": 1791233400,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85788.13479717646,
+      "previous_sha256": "7d3046f59190a390582098ff4ea399eb54518202ffbf872ed7d0a61bf8c44b93",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85788.13479717646,
+        "received_at": 1791234001.3571694,
+        "timestamp": 1791234000.0
+      },
+      "start": 1791234000,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85712.06062272775,
+      "previous_sha256": "9378773fa0e0737c4fe311e64a0771ca1d72bd68a47c20fc5411a95d7a28efbb",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85712.06062272775,
+        "received_at": 1791234301.766093,
+        "timestamp": 1791234300.0
+      },
+      "start": 1791234300,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85744.87948551822,
+      "previous_sha256": "4fa91bc7a9d09829423e9555ac4900ee2730b1aa34ad650f482ce294811ac4f2",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85744.87948551822,
+        "received_at": 1791234601.5397255,
+        "timestamp": 1791234600.0
+      },
+      "start": 1791234600,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85731.91981607105,
+      "previous_sha256": "41792137963a6d78d3d324f3376882e89f62163f0099ae79eaf8591ad38d8091",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85731.91981607105,
+        "received_at": 1791234901.3328943,
+        "timestamp": 1791234900.0
+      },
+      "start": 1791234900,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85809.47962449772,
+      "previous_sha256": "600e46f74c93b625b0815fe4aa75a48e4a4e3e50a77b80fa230b5e47ada17400",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85809.47962449772,
+        "received_at": 1791235201.3791685,
+        "timestamp": 1791235200.0
+      },
+      "start": 1791235200,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85853.17498218639,
+      "previous_sha256": "c316ab07def05f9ee103ffe509f0ff8ce6bd3cc47c9a52f83de83c018417d669",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85853.17498218639,
+        "received_at": 1791236101.245418,
+        "timestamp": 1791236100.0
+      },
+      "start": 1791236100,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85890.78777112583,
+      "previous_sha256": "94b7c15d32ad9634633fcfdf6746bf9306bfbb836a2b66171510c44ff5a68870",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85890.78777112583,
+        "received_at": 1791236401.5096653,
+        "timestamp": 1791236400.0
+      },
+      "start": 1791236400,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85911.3320523829,
+      "previous_sha256": "a66c808c12fe697443a960e3a042a72e5c13bd2a0f9f156caaed4301871ee23a",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85911.3320523829,
+        "received_at": 1791236701.6881135,
+        "timestamp": 1791236700.0
+      },
+      "start": 1791236700,
+      "type": "source_match_audit"
+    },
+    {
+      "match": true,
+      "official_opening": 85887.81836715157,
+      "previous_sha256": "deec6349807db4fab266f713e177b966cf2bf9af4c1157bb4705e50e1b05f9bf",
+      "recorded_opening": {
+        "generation": 9,
+        "price": 85887.81836715157,
+        "received_at": 1791237001.5941465,
+        "timestamp": 1791237000.0
+      },
+      "start": 1791237000,
+      "type": "source_match_audit"
+    }
+  ],
+  "entry_fees_usd": 0.21436999999999998,
+  "side_counts": {
+    "Down": 1,
+    "Up": 2
+  },
+  "full": {
+    "windows": 35,
+    "abstentions": 32,
+    "ledger": {
+      "starting_cash_usd": 50,
+      "cash_usd": 45.653881750000004,
+      "paper_trades": 3,
+      "settled_trades": 3,
+      "pending_positions": [],
+      "simulated_pnl_after_entry_taker_fees_settled_only": -4.346118249999999,
+      "wins": 2,
+      "losses": 1,
+      "source_verified_settled_trades": 3,
+      "source_verified_simulated_pnl_after_entry_fees": -4.346118249999999,
+      "source_invalid_trade_count": 0,
+      "source_pending_trade_count": 0,
+      "max_drawdown_settled_equity_usd": 4.999997999999998,
+      "total_net_pnl_after_all_costs": null,
+      "other_costs_usd": null,
+      "actual_orders": 0,
+      "actual_fills": 0
+    }
+  },
+  "descriptive": {
+    "windows": 22,
+    "abstentions": 19,
+    "excluded_fraction": 0.37142857142857144,
+    "equivalent_excluded_window_seconds": 3900,
+    "same_trade_set": true,
+    "note": "Classification at decision; seven stale execution rechecks remain inside descriptive clean cohort"
+  },
+  "source_trade_cohorts": {
+    "MATCHED": 3
+  }
+}

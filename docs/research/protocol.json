@@ -1,0 +1,100 @@
+{
+  "GO": "all acceptance rules pass conservative final holdout; optimistic result excluded",
+  "alpha_family": 0.05,
+  "assumed_window_sd_usd": 0.5,
+  "bankroll": 50,
+  "bootstrap": "window resampling, one-sided Bonferroni lower percentile alpha/8; moving-block sensitivity block length 3",
+  "bootstrap_replicates": 10000,
+  "clock_uncertainty_seconds_max": 1,
+  "close_buffer_seconds": 20,
+  "collect_seconds": 7200,
+  "family_comparisons": 8,
+  "fee_policy": "per-market Gamma feesEnabled + feeSchedule; reject missing/unsupported parameters; no rebates",
+  "final_holdout": "reserve before reading outcomes; evaluate once only after prerequisites; exclusive ledger includes input/protocol hashes",
+  "frozen_at": 1791119577.171186,
+  "latency_seconds": 0.5,
+  "lower_ci_above_zero": true,
+  "markout_horizons": [
+    5,
+    20,
+    60
+  ],
+  "max_drawdown_usd": 2.5,
+  "max_fresh_coverage_gap_seconds": 5,
+  "max_inventory_usd": 15,
+  "merge_cost_usd": null,
+  "minimum_completed_pairs": 279,
+  "minimum_model_train_windows": 60,
+  "minimum_model_validation_windows": 30,
+  "minimum_test_windows": 279,
+  "mode": "PAPER_ONLY_RESEARCH",
+  "model_calibration_bins": 10,
+  "model_grid_vol_scale": [
+    1,
+    1.5
+  ],
+  "model_required_validation_brier_gain": 0,
+  "operation_cost_status": "UNKNOWN_NO_AUTHENTICATED_ROUTE; zero-cost observation is upper bound only",
+  "order_size": 5,
+  "positive_net_pnl": true,
+  "power": 0.8,
+  "power_formula": "ceil(((normal_quantile(1-alpha/8)+normal_quantile(power))*sd/effect)^2); independent windows, >= one completed pair/window; planning assumption not empirical power proof",
+  "prior_reference_role": "exploratory_only_already_seen",
+  "queue_multiplier": 1.5,
+  "seed": 20261004,
+  "settlement": "official exact resolved winner only; Chainlink TWAP reference never replaced by Binance spot",
+  "split_cost_usd": null,
+  "split_fractions": [
+    0.5,
+    0.25,
+    0.25
+  ],
+  "split_unit": "chronological complete market window",
+  "stale_seconds": 5,
+  "strategy_grid": [
+    {
+      "edge": 0.02,
+      "id": "S0",
+      "kind": "baseline"
+    },
+    {
+      "edge": 0.02,
+      "id": "S1-e02",
+      "kind": "fair_maker"
+    },
+    {
+      "edge": 0.03,
+      "id": "S1-e03",
+      "kind": "fair_maker"
+    },
+    {
+      "edge": 0.02,
+      "id": "S2-e02",
+      "kind": "dynamic_maker"
+    },
+    {
+      "edge": 0.03,
+      "id": "S2-e03",
+      "kind": "dynamic_maker"
+    },
+    {
+      "edge": 0.02,
+      "id": "S3",
+      "kind": "taker_opportunity"
+    },
+    {
+      "edge": 0.02,
+      "id": "S4-S1",
+      "kind": "filtered_fair_maker"
+    },
+    {
+      "edge": 0.02,
+      "id": "S4-S2",
+      "kind": "filtered_dynamic_maker"
+    }
+  ],
+  "target_window_mean_usd": 0.1,
+  "upper_bound": "observed SELL after anchor, queue 1.0 only; never price-touch, never acceptance",
+  "version": 1,
+  "warmup_seconds": 30
+}

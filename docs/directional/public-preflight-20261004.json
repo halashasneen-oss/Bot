@@ -1,0 +1,28 @@
+{
+  "mode": "bounded-public-get-preflight",
+  "observed_at": 1791144835.0978248,
+  "slug": "btc-updown-5m-1791144600",
+  "policy_sha256": "579fbb066e681bb3272b1fa8ca60a21b0577774e5398234dc06d62afc9521c15",
+  "policy_freeze_commit": "f869678fb0f545ac7ae1bf69ab467e78a92e3312",
+  "decision": "NO_GO",
+  "predictions": 0,
+  "fills": 0,
+  "realized_pnl": null,
+  "reference_admitted": false,
+  "errors": [
+    {
+      "source": "clock",
+      "error": "ConnectError: [Errno -3] Temporary failure in name resolution"
+    },
+    {
+      "source": "Gamma",
+      "error": "ConnectError: [Errno -3] Temporary failure in name resolution"
+    }
+  ],
+  "blockers": [
+    "No audited public underlying reference adapter matching settlement",
+    "Other costs not verified",
+    "Integer /time with nonzero RTT cannot satisfy frozen 0.5s uncertainty"
+  ],
+  "reference_documentation": "https://docs.polymarket.com/market-data/realtime-data"
+}

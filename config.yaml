@@ -1,0 +1,7 @@
+entry_time_before_close_sec: 120
+entry_tolerance_sec: 5
+min_move_usd: 80
+max_entry_price: 0.90
+stake_usd: 5
+max_stale_data_sec: 2
+live: false

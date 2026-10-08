@@ -1,0 +1,52 @@
+name: Joint research replay with independent BTC samples
+on:
+  push:
+    branches: [paper-research-redesign-20261004]
+    paths: [data/research-binance-20261004/manifest.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  joint-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+      - name: Read completed public-data artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 37208627944 --name record-only-research-data-and-results --dir runs/collected
+      - name: Causal merge and gated descriptive replay
+        run: |
+          python -m pairbot.research runs/collected/research-recording --binance-aux-dir data/research-binance-20261004 --out runs/joint-research-analysis
+          python - <<'PY'
+          from pathlib import Path
+          print('__JOINT_RESEARCH_RESULT_JSON__'+Path('runs/joint-research-analysis/report.json').read_text().replace('\n',''))
+          PY
+      - name: Retain public dataset on a separate data branch
+        run: |
+          git checkout -b paper-research-data-20261004
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p data/polymarket-capture-20261004 docs/research
+          cp -a runs/collected/research-recording/. data/polymarket-capture-20261004/
+          cp runs/joint-research-analysis/report.json docs/research/joint-report.json
+          cp runs/joint-research-analysis/report.md docs/research/joint-report.md
+          cp runs/joint-research-analysis/split-reservation.json docs/research/joint-split-reservation.json
+          git add -f data/polymarket-capture-20261004 docs/research/joint-report.json docs/research/joint-report.md docs/research/joint-split-reservation.json
+          git commit -m 'Retain public record-only dataset and gated research results'
+          git push origin HEAD:refs/heads/paper-research-data-20261004
+          echo "__DATA_COMMIT__$(git rev-parse HEAD)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: joint-research-analysis-NO-GO-until-verified
+          path: runs/joint-research-analysis/
+          retention-days: 30

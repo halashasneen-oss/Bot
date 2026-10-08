@@ -1,0 +1,93 @@
+{
+  "mode": "RECORD_ONLY",
+  "fills": 0,
+  "orders": 0,
+  "counts": {
+    "research_header": 1,
+    "tick": 567,
+    "clock": 9,
+    "source_error": 1,
+    "market": 3,
+    "metadata": 6,
+    "frame": 247484,
+    "socket_control": 94,
+    "settlement": 1,
+    "gap": 3
+  },
+  "requested_seconds": 600.0,
+  "markets": 3,
+  "settlements": 1,
+  "issues": {
+    "BINANCE_ACCESS_DENIED": 1,
+    "POLYMARKET_GAP": 3
+  },
+  "telemetry": {
+    "receive_queue_depth": {
+      "n": 4096,
+      "min": 1,
+      "max": 2,
+      "p50": 1,
+      "p99": 1,
+      "total_n": 248169,
+      "window": "latest 4096 observations"
+    },
+    "processing_queue_wait": {
+      "n": 4096,
+      "min": 1.2636184692382812e-05,
+      "max": 0.0026688575744628906,
+      "p50": 3.3855438232421875e-05,
+      "p99": 0.00027871131896972656,
+      "total_n": 248169,
+      "window": "latest 4096 observations"
+    },
+    "io_queue_depth": {
+      "n": 4096,
+      "min": 1,
+      "max": 29,
+      "p50": 1,
+      "p99": 15,
+      "total_n": 248170,
+      "window": "latest 4096 observations"
+    },
+    "message_processing": {
+      "n": 4096,
+      "min": 4.9600002967054024e-06,
+      "max": 0.0009432380002181162,
+      "p50": 1.378599972667871e-05,
+      "p99": 0.00012165099997218931,
+      "total_n": 248169,
+      "window": "latest 4096 observations"
+    },
+    "loop_lag": {
+      "n": 4096,
+      "min": 0,
+      "max": 0.13360224936377563,
+      "p50": 0.0007058082655930775,
+      "p99": 0.002933176259375614,
+      "total_n": 6000,
+      "window": "latest 4096 observations"
+    },
+    "fsync": {
+      "n": 65,
+      "min": 5.649999366141856e-07,
+      "max": 4.431000024851528e-05,
+      "p50": 2.6950001483783126e-06,
+      "p99": 2.872400000342168e-05,
+      "total_n": 65,
+      "window": "latest 4096 observations"
+    },
+    "sha256": {
+      "n": 13,
+      "min": 0.0022747349999008293,
+      "max": 0.012404499000240321,
+      "p50": 0.003625254999860772,
+      "p99": 0.00604109799996877,
+      "total_n": 13,
+      "window": "latest 4096 observations"
+    }
+  },
+  "execution_quality": "INCOMPLETE_DATA",
+  "started_at": 1791132741.1896687,
+  "finished_at": 1791133341.195563,
+  "elapsed_seconds": 600.0058944225311
+}

@@ -1,0 +1,25 @@
+name: Current BTC exploratory PAPER preview
+on:
+  push:
+    branches: [paper-btc-directional-20261004]
+    paths: [pairbot/daily_live_preview.py, .github/workflows/live-preview.yml]
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install --only-binary=:all: -r requirements.txt
+      - run: python -m pairbot.daily_live_preview
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: current-BTC-exploratory-NOT-PROFIT
+          path: runs/live-preview/
+          retention-days: 14

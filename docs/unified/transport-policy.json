@@ -1,0 +1,18 @@
+{
+  "version": "btc-public-transport-v2",
+  "comparison_groups": 1,
+  "scope": "Technical recovery and one preflight gate only; old strategy and acceptance policies unchanged",
+  "btc_progress_timeout_seconds": 10,
+  "receive_check_seconds": 1,
+  "application_ping_seconds": 5,
+  "reconnect_delay_seconds": 5,
+  "preflight_duration_seconds": 3600,
+  "preflight_sampling_seconds": 1,
+  "minimum_both_topics_live_sample_fraction": 0.90,
+  "minimum_model_ready_windows": 2,
+  "reference_decision_attempt": "First valid fresh tick inside existing age180 plus/minus2 seconds including existing clock uncertainty; wait only for STALE_UNDERLYING_REFERENCE, never extend deadline or repair gaps",
+  "gate_effect": "May launch one new four-hour PAPER session only; never financial GO or old protocol GO",
+  "fail_action": "Preserve every event and failed gate, do not launch PAPER or retry selectively",
+  "missing_data": "Invalidate connection generation; no interpolation or historical opening backfill",
+  "source_matching": "Remains conditional, audit under existing PAPER rules"
+}

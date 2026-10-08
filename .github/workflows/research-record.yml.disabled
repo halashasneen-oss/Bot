@@ -1,0 +1,59 @@
+name: Record-only strategy research
+on:
+  push:
+    branches: [paper-research-redesign-20261004]
+    paths: [.github/workflows/research-record.yml]
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: Public record-only hours (0.25 to 2)
+        required: true
+        default: '2'
+permissions:
+  contents: read
+concurrency:
+  group: paper-research-record-only
+  cancel-in-progress: false
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+      - name: Record public data only
+        env:
+          RESEARCH_HOURS: ${{ inputs.hours || '2' }}
+        run: |
+          python - <<'PY'
+          import asyncio, math, os
+          from pairbot.research_capture import record
+          hours=float(os.environ['RESEARCH_HOURS'])
+          if not math.isfinite(hours) or not .25 <= hours <= 2:
+              raise ValueError('hours must be in [0.25,2]')
+          result=asyncio.run(record('runs/research-recording',hours*3600))
+          import json
+          print('__CAPTURE_SUMMARY_JSON__'+json.dumps(result))
+          PY
+      - name: Use latest tested research implementation for offline analysis
+        run: |
+          git fetch --depth=1 origin paper-research-redesign-20261004
+          git checkout --detach FETCH_HEAD
+          python -m pytest -q
+          python -m pairbot.research runs/research-recording --out runs/research-analysis
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          print('__RESEARCH_RESULT_JSON__'+(Path('runs/research-analysis')/'report.json').read_text().replace('\n',''))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: record-only-research-data-and-results
+          path: runs/
+          retention-days: 30

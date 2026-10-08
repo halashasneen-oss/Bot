@@ -1,0 +1,538 @@
+{
+  "mode": "PAPER_ONLY_TRANSPORT_DIAGNOSTIC",
+  "input_sha256": "6b469f34889ff01317cbf04df3a248f2e7a07f696e9b03b27f71e36713b9de2d",
+  "strategy_evaluation": false,
+  "profitability_claim": false,
+  "counts": {
+    "research_header": 1,
+    "tick": 567,
+    "clock": 9,
+    "source_error": 1,
+    "market": 3,
+    "metadata": 6,
+    "frame": 247484,
+    "socket_control": 94,
+    "settlement": 1,
+    "gap": 3,
+    "stop": 1
+  },
+  "controls": {
+    "sent:PING": 49,
+    "received:PONG": 45
+  },
+  "gaps": [
+    {
+      "type": "gap",
+      "ts": 1791133255.7536213,
+      "received_at": 1791133255.7536213,
+      "received_monotonic_ns": 3014652881211,
+      "sequence": 234176,
+      "source": "Polymarket",
+      "reason": "ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)"
+    },
+    {
+      "type": "gap",
+      "ts": 1791133288.2286558,
+      "received_at": 1791133288.2286558,
+      "received_monotonic_ns": 3047127915999,
+      "sequence": 240968,
+      "source": "Polymarket",
+      "reason": "ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)"
+    },
+    {
+      "type": "gap",
+      "ts": 1791133325.294362,
+      "received_at": 1791133325.294362,
+      "received_monotonic_ns": 3084193622273,
+      "sequence": 247328,
+      "source": "Polymarket",
+      "reason": "ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)"
+    }
+  ],
+  "source_errors": [
+    {
+      "type": "source_error",
+      "ts": 1791132747.6300514,
+      "received_at": 1791132747.6300514,
+      "received_monotonic_ns": 2506529311591,
+      "sequence": 9,
+      "source": "Binance",
+      "error": "Public endpoint returned HTTP 451: https://api.binance.com/api/v3/time; no bypass attempted",
+      "access_denied": true
+    }
+  ],
+  "latency": {
+    "book": {
+      "n": 6384,
+      "p50": 0.13,
+      "p99": 9.07,
+      "bin_seconds": 0.01,
+      "by_minute": [
+        {
+          "minute": 1791132720,
+          "n": 196,
+          "mean": 2.802756658622197
+        },
+        {
+          "minute": 1791132780,
+          "n": 1064,
+          "mean": 0.17500284202116773
+        },
+        {
+          "minute": 1791132840,
+          "n": 288,
+          "mean": 0.1378228192528089
+        },
+        {
+          "minute": 1791132900,
+          "n": 488,
+          "mean": 0.15513697168866142
+        },
+        {
+          "minute": 1791132960,
+          "n": 574,
+          "mean": 0.20645549945299635
+        },
+        {
+          "minute": 1791133020,
+          "n": 610,
+          "mean": 0.14029787759311863
+        },
+        {
+          "minute": 1791133080,
+          "n": 674,
+          "mean": 0.15688398471571924
+        },
+        {
+          "minute": 1791133140,
+          "n": 1890,
+          "mean": 0.17303766914145657
+        },
+        {
+          "minute": 1791133200,
+          "n": 250,
+          "mean": 3.68837864112854
+        },
+        {
+          "minute": 1791133260,
+          "n": 314,
+          "mean": 2.128154871570077
+        },
+        {
+          "minute": 1791133320,
+          "n": 36,
+          "mean": 6.5361553695466785
+        }
+      ]
+    },
+    "price_change": {
+      "n": 237921,
+      "p50": 0.14,
+      "p99": 10.96,
+      "bin_seconds": 0.01,
+      "by_minute": [
+        {
+          "minute": 1791132720,
+          "n": 7579,
+          "mean": 2.9520639976547267
+        },
+        {
+          "minute": 1791132780,
+          "n": 26194,
+          "mean": 0.1809247734073902
+        },
+        {
+          "minute": 1791132840,
+          "n": 7243,
+          "mean": 0.13660135029528528
+        },
+        {
+          "minute": 1791132900,
+          "n": 24897,
+          "mean": 0.1517017254050096
+        },
+        {
+          "minute": 1791132960,
+          "n": 34695,
+          "mean": 0.19715467196133454
+        },
+        {
+          "minute": 1791133020,
+          "n": 29409,
+          "mean": 0.16410238593092194
+        },
+        {
+          "minute": 1791133080,
+          "n": 46858,
+          "mean": 0.1563222382854136
+        },
+        {
+          "minute": 1791133140,
+          "n": 34090,
+          "mean": 0.1666763906990828
+        },
+        {
+          "minute": 1791133200,
+          "n": 13575,
+          "mean": 4.076136013772167
+        },
+        {
+          "minute": 1791133260,
+          "n": 11935,
+          "mean": 2.150392702407901
+        },
+        {
+          "minute": 1791133320,
+          "n": 1446,
+          "mean": 4.6782915697717735
+        }
+      ]
+    },
+    "last_trade_price": {
+      "n": 3179,
+      "p50": 0.13,
+      "p99": 9.11,
+      "bin_seconds": 0.01,
+      "by_minute": [
+        {
+          "minute": 1791132720,
+          "n": 99,
+          "mean": 2.8239237106207646
+        },
+        {
+          "minute": 1791132780,
+          "n": 530,
+          "mean": 0.18092463286417834
+        },
+        {
+          "minute": 1791132840,
+          "n": 145,
+          "mean": 0.1442761782942147
+        },
+        {
+          "minute": 1791132900,
+          "n": 242,
+          "mean": 0.1521421217721356
+        },
+        {
+          "minute": 1791132960,
+          "n": 285,
+          "mean": 0.21080403662564462
+        },
+        {
+          "minute": 1791133020,
+          "n": 306,
+          "mean": 0.14508026487687053
+        },
+        {
+          "minute": 1791133080,
+          "n": 337,
+          "mean": 0.15718746185302734
+        },
+        {
+          "minute": 1791133140,
+          "n": 942,
+          "mean": 0.17361795471985123
+        },
+        {
+          "minute": 1791133200,
+          "n": 123,
+          "mean": 3.662534318319181
+        },
+        {
+          "minute": 1791133260,
+          "n": 153,
+          "mean": 2.260406868130553
+        },
+        {
+          "minute": 1791133320,
+          "n": 17,
+          "mean": 6.978336656794829
+        }
+      ]
+    }
+  },
+  "raw_receipt_minus_exchange_over_5s": {
+    "price_change": 6639,
+    "book": 140,
+    "last_trade_price": 69
+  },
+  "missing_exchange_timestamp": {},
+  "heartbeat_interval_seconds": {
+    "n": 44,
+    "min": 10.00011999599974,
+    "max": 10.002095749000091
+  },
+  "reference_observations": [
+    {
+      "condition_id": "0xad82ed3e22a51ec64e84a2a8496289a237a61e8f74d027601ccd70c7adb583f2",
+      "observed_at": 1791132760.166187,
+      "reference": {
+        "opening_price": null,
+        "status": "MISSING_OFFICIAL_REFERENCE",
+        "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+        "config": {
+          "id": "btc-5m-twap-60",
+          "asset": "btc",
+          "duration": "5m",
+          "twapEnabled": true,
+          "twapLookbackSeconds": 60
+        }
+      }
+    },
+    {
+      "condition_id": "0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b",
+      "observed_at": 1791132907.049907,
+      "reference": {
+        "opening_price": null,
+        "status": "MISSING_OFFICIAL_REFERENCE",
+        "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+        "config": {
+          "id": "btc-5m-twap-60",
+          "asset": "btc",
+          "duration": "5m",
+          "twapEnabled": true,
+          "twapLookbackSeconds": 60
+        }
+      }
+    },
+    {
+      "condition_id": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "observed_at": 1791133207.401908,
+      "reference": {
+        "opening_price": null,
+        "status": "MISSING_OFFICIAL_REFERENCE",
+        "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+        "config": {
+          "id": "btc-5m-twap-60",
+          "asset": "btc",
+          "duration": "5m",
+          "twapEnabled": true,
+          "twapLookbackSeconds": 60
+        }
+      }
+    },
+    {
+      "condition_id": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "observed_at": 1791133257.776163,
+      "reference": {
+        "opening_price": null,
+        "status": "MISSING_OFFICIAL_REFERENCE",
+        "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+        "config": {
+          "id": "btc-5m-twap-60",
+          "asset": "btc",
+          "duration": "5m",
+          "twapEnabled": true,
+          "twapLookbackSeconds": 60
+        }
+      }
+    },
+    {
+      "condition_id": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "observed_at": 1791133292.861863,
+      "reference": {
+        "opening_price": null,
+        "status": "MISSING_OFFICIAL_REFERENCE",
+        "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+        "config": {
+          "id": "btc-5m-twap-60",
+          "asset": "btc",
+          "duration": "5m",
+          "twapEnabled": true,
+          "twapLookbackSeconds": 60
+        }
+      }
+    },
+    {
+      "condition_id": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "observed_at": 1791133329.4056318,
+      "reference": {
+        "opening_price": null,
+        "status": "MISSING_OFFICIAL_REFERENCE",
+        "resolution_source": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+        "config": {
+          "id": "btc-5m-twap-60",
+          "asset": "btc",
+          "duration": "5m",
+          "twapEnabled": true,
+          "twapLookbackSeconds": 60
+        }
+      }
+    }
+  ],
+  "clock_observations": [
+    {
+      "type": "clock",
+      "ts": 1791132746.5821211,
+      "received_at": 1791132746.5821211,
+      "received_monotonic_ns": 2505481394056,
+      "sequence": 7,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.1140005588531494,
+      "integer_time_offset_interval": [
+        -0.5821211338043213,
+        5.81012225151062
+      ],
+      "integer_time_midpoint_offset": 2.6140005588531494,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 5.392243385314941,
+      "uncertainty_seconds": 3.1961216926574707,
+      "server_ts": 1791132746.0,
+      "request_sent": 1791132741.1898777
+    },
+    {
+      "type": "clock",
+      "ts": 1791132813.7303033,
+      "received_at": 1791132813.7303033,
+      "received_monotonic_ns": 2572629712936,
+      "sequence": 25705,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.8433237075805664,
+      "integer_time_offset_interval": [
+        -0.7303032875061035,
+        7.416950702667236
+      ],
+      "integer_time_midpoint_offset": 3.3433237075805664,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.14725399017334,
+      "uncertainty_seconds": 4.07362699508667,
+      "server_ts": 1791132813.0,
+      "request_sent": 1791132806.5830493
+    },
+    {
+      "type": "clock",
+      "ts": 1791132880.818054,
+      "received_at": 1791132880.818054,
+      "received_monotonic_ns": 2639717325047,
+      "sequence": 42482,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.7250046730041504,
+      "integer_time_offset_interval": [
+        -0.8180539608001709,
+        7.268063545227051
+      ],
+      "integer_time_midpoint_offset": 3.2250046730041504,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.086117506027222,
+      "uncertainty_seconds": 4.043058753013611,
+      "server_ts": 1791132880.0,
+      "request_sent": 1791132873.7319365
+    },
+    {
+      "type": "clock",
+      "ts": 1791132949.1419582,
+      "received_at": 1791132949.1419582,
+      "received_monotonic_ns": 2708041226632,
+      "sequence": 64699,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 4.019813060760498,
+      "integer_time_offset_interval": [
+        -0.14195823669433594,
+        9.181584358215332
+      ],
+      "integer_time_midpoint_offset": 4.519813060760498,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 8.323542594909668,
+      "uncertainty_seconds": 4.661771297454834,
+      "server_ts": 1791132949.0,
+      "request_sent": 1791132940.8184156
+    },
+    {
+      "type": "clock",
+      "ts": 1791133016.3578613,
+      "received_at": 1791133016.3578613,
+      "received_monotonic_ns": 2775257158097,
+      "sequence": 103479,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 3.249453544616699,
+      "integer_time_offset_interval": [
+        -0.3578612804412842,
+        7.856768608093262
+      ],
+      "integer_time_midpoint_offset": 3.749453544616699,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.214629888534546,
+      "uncertainty_seconds": 4.107314944267273,
+      "server_ts": 1791133016.0,
+      "request_sent": 1791133009.1432314
+    },
+    {
+      "type": "clock",
+      "ts": 1791133083.7787707,
+      "received_at": 1791133083.7787707,
+      "received_monotonic_ns": 2842678039374,
+      "sequence": 137810,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.930634021759033,
+      "integer_time_offset_interval": [
+        -0.7787706851959229,
+        7.640038967132568
+      ],
+      "integer_time_midpoint_offset": 3.430634021759033,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.418809652328491,
+      "uncertainty_seconds": 4.209404826164246,
+      "server_ts": 1791133083.0,
+      "request_sent": 1791133076.359961
+    },
+    {
+      "type": "clock",
+      "ts": 1791133150.8177838,
+      "received_at": 1791133150.8177838,
+      "received_monotonic_ns": 2909717052784,
+      "sequence": 188092,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.701284408569336,
+      "integer_time_offset_interval": [
+        -0.8177838325500488,
+        7.220352411270142
+      ],
+      "integer_time_midpoint_offset": 3.201284408569336,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.03813624382019,
+      "uncertainty_seconds": 4.019068121910095,
+      "server_ts": 1791133150.0,
+      "request_sent": 1791133143.7796476
+    },
+    {
+      "type": "clock",
+      "ts": 1791133216.3135881,
+      "received_at": 1791133216.3135881,
+      "received_monotonic_ns": 2975212856232,
+      "sequence": 221345,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.434236764907837,
+      "integer_time_offset_interval": [
+        -0.31358814239501953,
+        6.182061672210693
+      ],
+      "integer_time_midpoint_offset": 2.934236764907837,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 5.495649814605713,
+      "uncertainty_seconds": 3.2478249073028564,
+      "server_ts": 1791133216.0,
+      "request_sent": 1791133210.8179383
+    },
+    {
+      "type": "clock",
+      "ts": 1791133283.6901202,
+      "received_at": 1791133283.6901202,
+      "received_monotonic_ns": 3042589390470,
+      "sequence": 240252,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.997631788253784,
+      "integer_time_offset_interval": [
+        -0.6901202201843262,
+        7.6853837966918945
+      ],
+      "integer_time_midpoint_offset": 3.497631788253784,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.375504016876221,
+      "uncertainty_seconds": 4.18775200843811,
+      "server_ts": 1791133283.0,
+      "request_sent": 1791133276.3146162
+    }
+  ],
+  "interpretation": "Heartbeat compliance alone does not prove transport quality; no clock correction or stale-veto change."
+}

@@ -1,0 +1,1817 @@
+{
+  "mode": "INDEPENDENT_EXPLORATORY_PAPER",
+  "policy_sha256": "5efae6c98d14469597bec251035e3d4da6cc3378870130291fedf2c3ebf1228d",
+  "freeze_commit": "5ae48e693ce8ede9f66e39d0c565d0659c3565bb",
+  "started_at": 1791226832.5955539,
+  "updated_at": 1791237600.2166584,
+  "elapsed_seconds": 10767.621104717255,
+  "planned_duration_seconds": 10767.40444612503,
+  "elapsed_monotonic_seconds": 10767.621104898999,
+  "execution_plan": {
+    "sha256": "7c218b0f68972b94d3fa1b043d1caeb7314b41032218aa0fc93589a255349915",
+    "freeze_commit": "fb9a547b54e882ebd9a06d1c8ce6e7c573f2c9c1",
+    "original_policy_duration_seconds": 14400,
+    "original_technical_gate_passed": false,
+    "user_authorized_fixed_deadline_session": true,
+    "stop_entry_at_utc": "2026-10-05T22:00:00Z",
+    "stop_entry_at_amman": "2026-10-06T01:00:00+03:00"
+  },
+  "stop_entry_at": 1791237600,
+  "complete": true,
+  "predeclared_market_count": 35,
+  "decisions": [
+    {
+      "type": "decision",
+      "start": 1791227100,
+      "created_at": 1791227280.0821278,
+      "choice": "ABSTAIN",
+      "p_up": 0.34060226312603104,
+      "reason": "STALE_UNDERLYING_REFERENCE",
+      "opening": {
+        "timestamp": 1791227100.0,
+        "price": 85565.94284855193,
+        "received_at": 1791227101.5675,
+        "generation": 1
+      },
+      "latest": {
+        "timestamp": 1791227279.0,
+        "price": 85556.56135646415,
+        "received_at": 1791227280.698376,
+        "generation": 1
+      },
+      "intervals": 118,
+      "sigma_price_per_sqrt_second": 2.53733510513424,
+      "features_at": 1791227280.7467384,
+      "data_admitted": true,
+      "informational_edge": 0.031188887337957497,
+      "requested_side": "Up",
+      "limit": 0.295
+    },
+    {
+      "type": "decision",
+      "start": 1791227400,
+      "created_at": 1791227580.0069618,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "REFERENCE_CONNECTION_GAP_OR_REVISION"
+    },
+    {
+      "type": "decision",
+      "start": 1791227700,
+      "created_at": 1791227880.0153449,
+      "choice": "ABSTAIN",
+      "p_up": 0.4365860380365648,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791227700.0,
+        "price": 85676.65501641069,
+        "received_at": 1791227701.699595,
+        "generation": 3
+      },
+      "latest": {
+        "timestamp": 1791227879.0,
+        "price": 85673.44283788626,
+        "received_at": 1791227880.9067721,
+        "generation": 3
+      },
+      "intervals": 118,
+      "sigma_price_per_sqrt_second": 2.2358415889667707,
+      "features_at": 1791227880.9265862,
+      "data_admitted": true,
+      "informational_edge": 0.014785629705116102,
+      "requested_side": "Up",
+      "limit": 0.405
+    },
+    {
+      "type": "decision",
+      "start": 1791228000,
+      "created_at": 1791228180.0951135,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "MISSING_CAUSAL_EXACT_TWAP_OPENING"
+    },
+    {
+      "type": "decision",
+      "start": 1791228300,
+      "created_at": 1791228480.0569227,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "STALE_UNDERLYING_REFERENCE"
+    },
+    {
+      "type": "decision",
+      "start": 1791228600,
+      "created_at": 1791228780.0505126,
+      "choice": "ABSTAIN",
+      "p_up": 0.8136237609347494,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791228600.0,
+        "price": 85723.329600246,
+        "received_at": 1791228601.4820693,
+        "generation": 3
+      },
+      "latest": {
+        "timestamp": 1791228779.0,
+        "price": 85744.2983596421,
+        "received_at": 1791228780.9460032,
+        "generation": 3
+      },
+      "intervals": 118,
+      "sigma_price_per_sqrt_second": 2.6139182020090614,
+      "features_at": 1791228780.9657989,
+      "data_admitted": true,
+      "informational_edge": 0.0014991730118362233,
+      "requested_side": "Down",
+      "limit": 0.17500000000000002
+    },
+    {
+      "type": "decision",
+      "start": 1791228900,
+      "created_at": 1791229080.0274825,
+      "choice": "ABSTAIN",
+      "p_up": 5.094713539932627e-11,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791228900.0,
+        "price": 85747.44203047107,
+        "received_at": 1791228901.3631406,
+        "generation": 3
+      },
+      "latest": {
+        "timestamp": 1791229079.0,
+        "price": 85669.69575907318,
+        "received_at": 1791229080.9096906,
+        "generation": 3
+      },
+      "intervals": 116,
+      "sigma_price_per_sqrt_second": 1.3363741764381658,
+      "features_at": 1791229080.9378169,
+      "data_admitted": true,
+      "informational_edge": 0.00430651345163136,
+      "requested_side": "Down",
+      "limit": 0.995
+    },
+    {
+      "type": "decision",
+      "start": 1791229200,
+      "created_at": 1791229380.0919268,
+      "choice": "ABSTAIN",
+      "p_up": 0.9995071373618751,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791229200.0,
+        "price": 85677.95569300732,
+        "received_at": 1791229201.6760108,
+        "generation": 3
+      },
+      "latest": {
+        "timestamp": 1791229379.0,
+        "price": 85732.10043290268,
+        "received_at": 1791229380.2710109,
+        "generation": 3
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 1.8260601310659694,
+      "features_at": 1791229380.2959595,
+      "data_admitted": true,
+      "informational_edge": 0.022469743406480783,
+      "requested_side": "Up",
+      "limit": 0.975
+    },
+    {
+      "type": "decision",
+      "start": 1791229500,
+      "created_at": 1791229680.0758054,
+      "choice": "ABSTAIN",
+      "p_up": 3.1723781688808295e-06,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791229500.0,
+        "price": 85713.33873836535,
+        "received_at": 1791229501.691779,
+        "generation": 3
+      },
+      "latest": {
+        "timestamp": 1791229679.0,
+        "price": 85663.98297195295,
+        "received_at": 1791229680.3518152,
+        "generation": 3
+      },
+      "intervals": 116,
+      "sigma_price_per_sqrt_second": 1.2147298569675604,
+      "features_at": 1791229680.3817997,
+      "data_admitted": true,
+      "informational_edge": 0.022959433666436827,
+      "requested_side": "Down",
+      "limit": 0.975
+    },
+    {
+      "type": "decision",
+      "start": 1791229800,
+      "created_at": 1791229980.0285268,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "MISSING_CAUSAL_EXACT_TWAP_OPENING"
+    },
+    {
+      "type": "decision",
+      "start": 1791230100,
+      "created_at": 1791230280.0839896,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "STALE_UNDERLYING_REFERENCE"
+    },
+    {
+      "type": "decision",
+      "start": 1791230400,
+      "created_at": 1791230580.0891004,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "REFERENCE_CONNECTION_GAP_OR_REVISION"
+    },
+    {
+      "type": "decision",
+      "start": 1791230700,
+      "created_at": 1791230880.0914385,
+      "choice": "Down",
+      "p_up": 0.01102225584021449,
+      "reason": "CONDITIONAL_PAPER_TAKER_FILL",
+      "opening": {
+        "timestamp": 1791230700.0,
+        "price": 85699.04487410454,
+        "received_at": 1791230701.19914,
+        "generation": 7
+      },
+      "latest": {
+        "timestamp": 1791230879.0,
+        "price": 85663.81500805181,
+        "received_at": 1791230880.408006,
+        "generation": 7
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 1.7096564743198,
+      "features_at": 1791230880.4447372,
+      "data_admitted": true,
+      "informational_edge": 0.0682434116985371,
+      "requested_side": "Down",
+      "limit": 0.915,
+      "execution": {
+        "shares": 5.460095,
+        "principal_usd": 4.96868645,
+        "entry_fee_usd": 0.03131,
+        "cost_usd": 4.99999645,
+        "levels": [
+          {
+            "price": 0.91,
+            "shares": 5.460095,
+            "fee_usd": 0.03131
+          }
+        ],
+        "assumption": "CONDITIONAL_DISPLAYED_TAKER_DEPTH_NOT_ACTUAL_EXECUTION"
+      }
+    },
+    {
+      "type": "decision",
+      "start": 1791231000,
+      "created_at": 1791231180.0214152,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "REFERENCE_CONNECTION_GAP_OR_REVISION"
+    },
+    {
+      "type": "decision",
+      "start": 1791231300,
+      "created_at": 1791231480.071324,
+      "choice": "ABSTAIN",
+      "p_up": 0.9999999974019833,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791231300.0,
+        "price": 85670.6884658111,
+        "received_at": 1791231301.7427049,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791231479.0,
+        "price": 85743.96436366762,
+        "received_at": 1791231480.886257,
+        "generation": 9
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 1.3939544753444146,
+      "features_at": 1791231480.932994,
+      "data_admitted": true,
+      "informational_edge": 0.004306510904561804,
+      "requested_side": "Up",
+      "limit": 0.995
+    },
+    {
+      "type": "decision",
+      "start": 1791231600,
+      "created_at": 1791231780.0629258,
+      "choice": "Up",
+      "p_up": 0.9999934173748839,
+      "reason": "CONDITIONAL_PAPER_TAKER_FILL",
+      "opening": {
+        "timestamp": 1791231600.0,
+        "price": 85744.23870640722,
+        "received_at": 1791231601.1093678,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791231779.0,
+        "price": 85792.84124921936,
+        "received_at": 1791231780.404746,
+        "generation": 9
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 1.2393529496812883,
+      "features_at": 1791231780.4424562,
+      "data_admitted": true,
+      "informational_edge": 0.03230366155157239,
+      "requested_side": "Up",
+      "limit": 0.965,
+      "execution": {
+        "shares": 5.19378,
+        "principal_usd": 4.9860288,
+        "entry_fee_usd": 0.01397,
+        "cost_usd": 4.999998799999999,
+        "levels": [
+          {
+            "price": 0.96,
+            "shares": 5.19378,
+            "fee_usd": 0.01397
+          }
+        ],
+        "assumption": "CONDITIONAL_DISPLAYED_TAKER_DEPTH_NOT_ACTUAL_EXECUTION"
+      }
+    },
+    {
+      "type": "decision",
+      "start": 1791231900,
+      "created_at": 1791232080.013654,
+      "choice": "ABSTAIN",
+      "p_up": 0.0879143802413308,
+      "reason": "STALE_UNDERLYING_REFERENCE",
+      "opening": {
+        "timestamp": 1791231900.0,
+        "price": 85775.39897087456,
+        "received_at": 1791231901.6799684,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791232079.0,
+        "price": 85758.64847487448,
+        "received_at": 1791232080.210801,
+        "generation": 9
+      },
+      "intervals": 118,
+      "sigma_price_per_sqrt_second": 1.3748628215271297,
+      "features_at": 1791232080.2169247,
+      "data_admitted": true,
+      "informational_edge": 0.07675294654066933,
+      "requested_side": "Down",
+      "limit": 0.825
+    },
+    {
+      "type": "decision",
+      "start": 1791232200,
+      "created_at": 1791232380.0412385,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "MISSING_CAUSAL_EXACT_TWAP_OPENING"
+    },
+    {
+      "type": "decision",
+      "start": 1791232500,
+      "created_at": 1791232680.013896,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "MISSING_CAUSAL_EXACT_TWAP_OPENING"
+    },
+    {
+      "type": "decision",
+      "start": 1791232800,
+      "created_at": 1791232980.0332835,
+      "choice": "Up",
+      "p_up": 0.9210220303020309,
+      "reason": "CONDITIONAL_PAPER_TAKER_FILL",
+      "opening": {
+        "timestamp": 1791232800.0,
+        "price": 85798.35029404817,
+        "received_at": 1791232801.5059674,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791232979.0,
+        "price": 85806.79280993089,
+        "received_at": 1791232980.7516277,
+        "generation": 9
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 0.6643560968506804,
+      "features_at": 1791232980.7952936,
+      "data_admitted": true,
+      "informational_edge": 0.3189689965731817,
+      "requested_side": "Up",
+      "limit": 0.585,
+      "execution": {
+        "shares": 9.661816,
+        "principal_usd": 4.830908,
+        "entry_fee_usd": 0.16909,
+        "cost_usd": 4.999998,
+        "levels": [
+          {
+            "price": 0.5,
+            "shares": 9.661816,
+            "fee_usd": 0.16909
+          }
+        ],
+        "assumption": "CONDITIONAL_DISPLAYED_TAKER_DEPTH_NOT_ACTUAL_EXECUTION"
+      }
+    },
+    {
+      "type": "decision",
+      "start": 1791233100,
+      "created_at": 1791233280.0597959,
+      "choice": "ABSTAIN",
+      "p_up": 0.9996702949800411,
+      "reason": "STALE_UNDERLYING_REFERENCE",
+      "opening": {
+        "timestamp": 1791233100.0,
+        "price": 85789.26152836428,
+        "received_at": 1791233101.9502578,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791233279.0,
+        "price": 85817.56660292084,
+        "received_at": 1791233280.617105,
+        "generation": 9
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 0.9233940879706226,
+      "features_at": 1791233280.618164,
+      "data_admitted": true,
+      "informational_edge": 0.06011151617202604,
+      "requested_side": "Up",
+      "limit": 0.935
+    },
+    {
+      "type": "decision",
+      "start": 1791233400,
+      "created_at": 1791233580.03791,
+      "choice": "ABSTAIN",
+      "p_up": 0.4171251253283725,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791233400.0,
+        "price": 85801.66026455682,
+        "received_at": 1791233401.6200194,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791233579.0,
+        "price": 85798.29223438867,
+        "received_at": 1791233580.9383576,
+        "generation": 9
+      },
+      "intervals": 118,
+      "sigma_price_per_sqrt_second": 1.7883827374801837,
+      "features_at": 1791233580.9498265,
+      "data_admitted": true,
+      "informational_edge": -0.02492693020566544,
+      "requested_side": "Up",
+      "limit": 0.425
+    },
+    {
+      "type": "decision",
+      "start": 1791233700,
+      "created_at": 1791233880.0209742,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "MISSING_CAUSAL_EXACT_TWAP_OPENING"
+    },
+    {
+      "type": "decision",
+      "start": 1791234000,
+      "created_at": 1791234180.0770526,
+      "choice": "ABSTAIN",
+      "p_up": 0.0009862084015099803,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791234000.0,
+        "price": 85788.13479717646,
+        "received_at": 1791234001.3571694,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791234179.0,
+        "price": 85718.54611620241,
+        "received_at": 1791234180.090622,
+        "generation": 9
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 2.4987685676970584,
+      "features_at": 1791234180.1283467,
+      "data_admitted": true,
+      "informational_edge": 0.01263986784694016,
+      "requested_side": "Down",
+      "limit": 0.985
+    },
+    {
+      "type": "decision",
+      "start": 1791234300,
+      "created_at": 1791234480.0342526,
+      "choice": "ABSTAIN",
+      "p_up": 0.9760544474770068,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791234300.0,
+        "price": 85712.06062272775,
+        "received_at": 1791234301.766093,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791234479.0,
+        "price": 85745.61350114369,
+        "received_at": 1791234480.51733,
+        "generation": 9
+      },
+      "intervals": 118,
+      "sigma_price_per_sqrt_second": 1.884463740855908,
+      "features_at": 1791234480.5388198,
+      "data_admitted": true,
+      "informational_edge": 0.027104960881945587,
+      "requested_side": "Up",
+      "limit": 0.945
+    },
+    {
+      "type": "decision",
+      "start": 1791234600,
+      "created_at": 1791234780.0849924,
+      "choice": "ABSTAIN",
+      "p_up": 0.014712692968368635,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791234600.0,
+        "price": 85744.87948551822,
+        "received_at": 1791234601.5397255,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791234779.0,
+        "price": 85710.37372095192,
+        "received_at": 1791234780.6800656,
+        "generation": 9
+      },
+      "intervals": 118,
+      "sigma_price_per_sqrt_second": 1.7605285888580948,
+      "features_at": 1791234780.6915839,
+      "data_admitted": true,
+      "informational_edge": 0.008249913076237018,
+      "requested_side": "Down",
+      "limit": 0.975
+    },
+    {
+      "type": "decision",
+      "start": 1791234900,
+      "created_at": 1791235080.0453749,
+      "choice": "ABSTAIN",
+      "p_up": 0.9999999998705742,
+      "reason": "STALE_UNDERLYING_REFERENCE",
+      "opening": {
+        "timestamp": 1791234900.0,
+        "price": 85731.91981607105,
+        "received_at": 1791234901.3328943,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791235079.0,
+        "price": 85772.42928302905,
+        "received_at": 1791235080.5973675,
+        "generation": 9
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 0.7120103379219564,
+      "features_at": 1791235080.6010466,
+      "data_admitted": true,
+      "informational_edge": 0.03231024404726269,
+      "requested_side": "Up",
+      "limit": 0.965
+    },
+    {
+      "type": "decision",
+      "start": 1791235200,
+      "created_at": 1791235380.084906,
+      "choice": "ABSTAIN",
+      "p_up": 0.44668002988064326,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791235200.0,
+        "price": 85809.47962449772,
+        "received_at": 1791235201.3791685,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791235379.0,
+        "price": 85809.11919830376,
+        "received_at": 1791235380.592156,
+        "generation": 9
+      },
+      "intervals": 118,
+      "sigma_price_per_sqrt_second": 0.2987409931532286,
+      "features_at": 1791235380.5928972,
+      "data_admitted": true,
+      "informational_edge": -0.009068340806562599,
+      "requested_side": "Down",
+      "limit": 0.545
+    },
+    {
+      "type": "decision",
+      "start": 1791235500,
+      "created_at": 1791235680.0069757,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "REFERENCE_HISTORY_GAP"
+    },
+    {
+      "type": "decision",
+      "start": 1791235800,
+      "created_at": 1791235980.0267766,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "MISSING_CAUSAL_EXACT_TWAP_OPENING"
+    },
+    {
+      "type": "decision",
+      "start": 1791236100,
+      "created_at": 1791236280.0945866,
+      "choice": "ABSTAIN",
+      "p_up": 0.9793982039397584,
+      "reason": "STALE_UNDERLYING_REFERENCE",
+      "opening": {
+        "timestamp": 1791236100.0,
+        "price": 85853.17498218639,
+        "received_at": 1791236101.245418,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791236279.0,
+        "price": 85892.17132245009,
+        "received_at": 1791236280.1456344,
+        "generation": 9
+      },
+      "intervals": 118,
+      "sigma_price_per_sqrt_second": 2.122448597706955,
+      "features_at": 1791236280.1463223,
+      "data_admitted": true,
+      "informational_edge": 0.030448717344697233,
+      "requested_side": "Up",
+      "limit": 0.945
+    },
+    {
+      "type": "decision",
+      "start": 1791236400,
+      "created_at": 1791236580.0704894,
+      "choice": "ABSTAIN",
+      "p_up": 0.5485475768272704,
+      "reason": "NO_SUFFICIENT_EDGE",
+      "opening": {
+        "timestamp": 1791236400.0,
+        "price": 85890.78777112583,
+        "received_at": 1791236401.5096653,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791236579.0,
+        "price": 85891.78108884011,
+        "received_at": 1791236580.5554152,
+        "generation": 9
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 0.9047155138668705,
+      "features_at": 1791236580.5759823,
+      "data_admitted": true,
+      "informational_edge": -0.010795920511652343,
+      "requested_side": "Down",
+      "limit": 0.445
+    },
+    {
+      "type": "decision",
+      "start": 1791236700,
+      "created_at": 1791236880.086637,
+      "choice": "ABSTAIN",
+      "p_up": 0.16753574151293027,
+      "reason": "STALE_UNDERLYING_REFERENCE",
+      "opening": {
+        "timestamp": 1791236700.0,
+        "price": 85911.3320523829,
+        "received_at": 1791236701.6881135,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791236879.0,
+        "price": 85875.40419691901,
+        "received_at": 1791236880.5463023,
+        "generation": 9
+      },
+      "intervals": 116,
+      "sigma_price_per_sqrt_second": 4.141281163433154,
+      "features_at": 1791236880.5931082,
+      "data_admitted": true,
+      "informational_edge": 0.0668026635370386,
+      "requested_side": "Up",
+      "limit": 0.095
+    },
+    {
+      "type": "decision",
+      "start": 1791237000,
+      "created_at": 1791237180.0482864,
+      "choice": "ABSTAIN",
+      "p_up": 1.0,
+      "reason": "STALE_UNDERLYING_REFERENCE",
+      "opening": {
+        "timestamp": 1791237000.0,
+        "price": 85887.81836715157,
+        "received_at": 1791237001.5941465,
+        "generation": 9
+      },
+      "latest": {
+        "timestamp": 1791237179.0,
+        "price": 85943.60564127921,
+        "received_at": 1791237180.8342197,
+        "generation": 9
+      },
+      "intervals": 117,
+      "sigma_price_per_sqrt_second": 0.542407340045676,
+      "features_at": 1791237180.8583832,
+      "data_admitted": true,
+      "informational_edge": 0.03231024417668849,
+      "requested_side": "Up",
+      "limit": 0.965
+    },
+    {
+      "type": "decision",
+      "start": 1791237300,
+      "created_at": 1791237480.111053,
+      "choice": "ABSTAIN",
+      "p_up": null,
+      "reason": "STALE_UNDERLYING_REFERENCE"
+    }
+  ],
+  "reason_counts": {
+    "STALE_UNDERLYING_REFERENCE": 10,
+    "REFERENCE_CONNECTION_GAP_OR_REVISION": 3,
+    "NO_SUFFICIENT_EDGE": 12,
+    "MISSING_CAUSAL_EXACT_TWAP_OPENING": 6,
+    "REFERENCE_HISTORY_GAP": 1
+  },
+  "ledger": {
+    "starting_cash_usd": 50,
+    "cash_usd": 45.653881750000004,
+    "paper_trades": 3,
+    "settled_trades": 3,
+    "pending_positions": [],
+    "simulated_pnl_after_entry_taker_fees_settled_only": -4.346118249999999,
+    "wins": 2,
+    "losses": 1,
+    "source_verified_settled_trades": 3,
+    "source_verified_simulated_pnl_after_entry_fees": -4.346118249999999,
+    "source_invalid_trade_count": 0,
+    "source_pending_trade_count": 0,
+    "max_drawdown_settled_equity_usd": 4.999997999999998,
+    "total_net_pnl_after_all_costs": null,
+    "other_costs_usd": null,
+    "actual_orders": 0,
+    "actual_fills": 0
+  },
+  "all_trades": [
+    {
+      "condition_id": "0xdff42f36d4fd673d9046adcae2524c721218c030ca7f3cfc5d438740f416d1ae",
+      "side": "Down",
+      "market": {
+        "start": 1791230700,
+        "end": 1791231000,
+        "slug": "btc-updown-5m-1791230700",
+        "raw": {
+          "id": "5300657",
+          "question": "Bitcoin Up or Down - October 5, 4:05PM-4:10PM ET",
+          "conditionId": "0xdff42f36d4fd673d9046adcae2524c721218c030ca7f3cfc5d438740f416d1ae",
+          "slug": "btc-updown-5m-1791230700",
+          "resolutionSource": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+          "endDate": "2026-10-05T20:10:00Z",
+          "liquidity": "11713.0703",
+          "startDate": "2026-10-04T20:13:15.183867Z",
+          "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "description": "This market will resolve to \"Up\" if the time-weighted average price (TWAP) of Bitcoin, generated by Chainlink, of the time range specified in the title is greater than or equal to the price at the beginning of that range. Otherwise, it will resolve to \"Down\".\nThe resolution source for this market is information from Chainlink, specifically the BTC/USD TWAP data stream available at https://data.chain.link/streams/btc-usd-twap-60s-streams.\nPlease note that this market is about the price according to the TWAP Chainlink data stream for the asset pair BTC/USD, not according to any other sources or spot markets.",
+          "outcomes": "[\"Up\", \"Down\"]",
+          "outcomePrices": "[\"0.485\", \"0.515\"]",
+          "volume": "434.62607899999995",
+          "active": true,
+          "closed": false,
+          "marketMakerAddress": "",
+          "createdAt": "2026-10-04T20:12:06.482409Z",
+          "updatedAt": "2026-10-05T20:00:17.463263Z",
+          "new": false,
+          "featured": false,
+          "archived": false,
+          "restricted": true,
+          "groupItemThreshold": "0",
+          "questionID": "0xaaa996c202b5702582557a602221fbe1b3f439070001c6422905968ffa657fae",
+          "enableOrderBook": true,
+          "orderPriceMinTickSize": 0.01,
+          "orderMinSize": 5,
+          "volumeNum": 434.62607899999995,
+          "liquidityNum": 11713.0703,
+          "endDateIso": "2026-10-05",
+          "startDateIso": "2026-10-04",
+          "hasReviewedDates": true,
+          "volume24hr": 434.626079,
+          "volume1wk": 434.626079,
+          "volume1mo": 434.626079,
+          "volume1yr": 434.626079,
+          "clobTokenIds": "[\"95852467844306141702744924270847661148022633334583869772892556481340698132093\", \"49856945766233996899502722280726396435361515838034651614462127800969870976982\"]",
+          "comboStatus": "disabled",
+          "volume24hrClob": 434.626079,
+          "volume1wkClob": 434.626079,
+          "volume1moClob": 434.626079,
+          "volume1yrClob": 434.626079,
+          "volumeClob": 434.62607899999995,
+          "liquidityClob": 11713.0703,
+          "makerBaseFee": 1000,
+          "takerBaseFee": 1000,
+          "acceptingOrders": true,
+          "negRisk": false,
+          "ready": false,
+          "funded": false,
+          "acceptingOrdersTimestamp": "2026-10-04T20:12:16Z",
+          "cyom": false,
+          "competitive": 0.9997750506136119,
+          "approved": true,
+          "rewardsMinSize": 50,
+          "rewardsMaxSpread": 4.5,
+          "spread": 0.01,
+          "lastTradePrice": 0.49,
+          "bestBid": 0.48,
+          "bestAsk": 0.49,
+          "automaticallyActive": true,
+          "clearBookOnStart": false,
+          "showGmpSeries": false,
+          "showGmpOutcome": false,
+          "manualActivation": false,
+          "negRiskOther": false,
+          "umaResolutionStatuses": "[]",
+          "pendingDeployment": false,
+          "deploying": false,
+          "rfqEnabled": false,
+          "eventStartTime": "2026-10-05T20:05:00Z",
+          "holdingRewardsEnabled": false,
+          "feesEnabled": true,
+          "makerRebatesFeeShareBps": 10000,
+          "feeType": "crypto_fees_v2",
+          "feeSchedule": {
+            "exponent": 1,
+            "rate": 0.07,
+            "takerOnly": true,
+            "rebateRate": 0.2
+          },
+          "cryptoMarketConfigId": "btc-5m-twap-60",
+          "cryptoMarketConfig": {
+            "id": "btc-5m-twap-60",
+            "asset": "btc",
+            "duration": "5m",
+            "twapEnabled": true,
+            "twapLookbackSeconds": 60
+          },
+          "version": "v1",
+          "_paper_tokens": {
+            "Up": "95852467844306141702744924270847661148022633334583869772892556481340698132093",
+            "Down": "49856945766233996899502722280726396435361515838034651614462127800969870976982"
+          },
+          "_paper_rate": 0.07
+        }
+      },
+      "opened_at": 1791230882.7338023,
+      "shares": 5.460095,
+      "principal_usd": 4.96868645,
+      "entry_fee_usd": 0.03131,
+      "cost_usd": 4.99999645,
+      "levels": [
+        {
+          "price": 0.91,
+          "shares": 5.460095,
+          "fee_usd": 0.03131
+        }
+      ],
+      "assumption": "CONDITIONAL_DISPLAYED_TAKER_DEPTH_NOT_ACTUAL_EXECUTION",
+      "settled": true,
+      "fully_net_pnl_after_other_costs": null,
+      "source_match_status": "MATCHED",
+      "winner": "Down",
+      "settled_at": 1791231162.7355335,
+      "payout_usd": 5.460095,
+      "simulated_pnl_after_entry_taker_fee": 0.46009854999999966
+    },
+    {
+      "condition_id": "0x81b371de1e01aa6d7b417ded979af0c43e545043f6316b1ebc7c2e51cfa12774",
+      "side": "Up",
+      "market": {
+        "start": 1791231600,
+        "end": 1791231900,
+        "slug": "btc-updown-5m-1791231600",
+        "raw": {
+          "id": "5300988",
+          "question": "Bitcoin Up or Down - October 5, 4:20PM-4:25PM ET",
+          "conditionId": "0x81b371de1e01aa6d7b417ded979af0c43e545043f6316b1ebc7c2e51cfa12774",
+          "slug": "btc-updown-5m-1791231600",
+          "resolutionSource": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+          "endDate": "2026-10-05T20:25:00Z",
+          "liquidity": "15725.5187",
+          "startDate": "2026-10-04T20:28:25.515642Z",
+          "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "description": "This market will resolve to \"Up\" if the time-weighted average price (TWAP) of Bitcoin, generated by Chainlink, of the time range specified in the title is greater than or equal to the price at the beginning of that range. Otherwise, it will resolve to \"Down\".\nThe resolution source for this market is information from Chainlink, specifically the BTC/USD TWAP data stream available at https://data.chain.link/streams/btc-usd-twap-60s-streams.\nPlease note that this market is about the price according to the TWAP Chainlink data stream for the asset pair BTC/USD, not according to any other sources or spot markets.",
+          "outcomes": "[\"Up\", \"Down\"]",
+          "outcomePrices": "[\"0.505\", \"0.495\"]",
+          "active": true,
+          "closed": false,
+          "marketMakerAddress": "",
+          "createdAt": "2026-10-04T20:27:03.860514Z",
+          "updatedAt": "2026-10-05T20:16:12.770662Z",
+          "new": false,
+          "featured": false,
+          "archived": false,
+          "restricted": true,
+          "groupItemThreshold": "0",
+          "questionID": "0x730a8ecb9dff77974cf33760c25944e92643203444919f2d4d570a713daaed6b",
+          "enableOrderBook": true,
+          "orderPriceMinTickSize": 0.01,
+          "orderMinSize": 5,
+          "liquidityNum": 15725.5187,
+          "endDateIso": "2026-10-05",
+          "startDateIso": "2026-10-04",
+          "hasReviewedDates": true,
+          "clobTokenIds": "[\"8010631823646990895689846660601139731311671948774902736594457325635548175430\", \"47687500529933702216190712415641445554369501830624706581529506273164487453624\"]",
+          "comboStatus": "disabled",
+          "liquidityClob": 15725.5187,
+          "makerBaseFee": 1000,
+          "takerBaseFee": 1000,
+          "acceptingOrders": true,
+          "negRisk": false,
+          "ready": false,
+          "funded": false,
+          "acceptingOrdersTimestamp": "2026-10-04T20:27:11Z",
+          "cyom": false,
+          "competitive": 0.9999750006249843,
+          "approved": true,
+          "rewardsMinSize": 50,
+          "rewardsMaxSpread": 4.5,
+          "spread": 0.01,
+          "lastTradePrice": 0.51,
+          "bestBid": 0.5,
+          "bestAsk": 0.51,
+          "automaticallyActive": true,
+          "clearBookOnStart": false,
+          "showGmpSeries": false,
+          "showGmpOutcome": false,
+          "manualActivation": false,
+          "negRiskOther": false,
+          "umaResolutionStatuses": "[]",
+          "pendingDeployment": false,
+          "deploying": false,
+          "rfqEnabled": false,
+          "eventStartTime": "2026-10-05T20:20:00Z",
+          "holdingRewardsEnabled": false,
+          "feesEnabled": true,
+          "makerRebatesFeeShareBps": 10000,
+          "feeType": "crypto_fees_v2",
+          "feeSchedule": {
+            "exponent": 1,
+            "rate": 0.07,
+            "takerOnly": true,
+            "rebateRate": 0.2
+          },
+          "cryptoMarketConfigId": "btc-5m-twap-60",
+          "cryptoMarketConfig": {
+            "id": "btc-5m-twap-60",
+            "asset": "btc",
+            "duration": "5m",
+            "twapEnabled": true,
+            "twapLookbackSeconds": 60
+          },
+          "version": "v1",
+          "_paper_tokens": {
+            "Up": "8010631823646990895689846660601139731311671948774902736594457325635548175430",
+            "Down": "47687500529933702216190712415641445554369501830624706581529506273164487453624"
+          },
+          "_paper_rate": 0.07
+        }
+      },
+      "opened_at": 1791231782.7871342,
+      "shares": 5.19378,
+      "principal_usd": 4.9860288,
+      "entry_fee_usd": 0.01397,
+      "cost_usd": 4.999998799999999,
+      "levels": [
+        {
+          "price": 0.96,
+          "shares": 5.19378,
+          "fee_usd": 0.01397
+        }
+      ],
+      "assumption": "CONDITIONAL_DISPLAYED_TAKER_DEPTH_NOT_ACTUAL_EXECUTION",
+      "settled": true,
+      "fully_net_pnl_after_other_costs": null,
+      "source_match_status": "MATCHED",
+      "winner": "Up",
+      "settled_at": 1791231974.9612708,
+      "payout_usd": 5.19378,
+      "simulated_pnl_after_entry_taker_fee": 0.19378120000000099
+    },
+    {
+      "condition_id": "0xb253ecfe7d75f40a64316f273b16182669184801d2c7daed9ae9af793d150ac1",
+      "side": "Up",
+      "market": {
+        "start": 1791232800,
+        "end": 1791233100,
+        "slug": "btc-updown-5m-1791232800",
+        "raw": {
+          "id": "5303616",
+          "question": "Bitcoin Up or Down - October 5, 4:40PM-4:45PM ET",
+          "conditionId": "0xb253ecfe7d75f40a64316f273b16182669184801d2c7daed9ae9af793d150ac1",
+          "slug": "btc-updown-5m-1791232800",
+          "resolutionSource": "https://data.chain.link/streams/btc-usd-twap-60s-streams",
+          "endDate": "2026-10-05T20:45:00Z",
+          "liquidity": "15278.5604",
+          "startDate": "2026-10-04T20:50:56.571464Z",
+          "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/BTC+fullsize.png",
+          "description": "This market will resolve to \"Up\" if the time-weighted average price (TWAP) of Bitcoin, generated by Chainlink, of the time range specified in the title is greater than or equal to the price at the beginning of that range. Otherwise, it will resolve to \"Down\".\nThe resolution source for this market is information from Chainlink, specifically the BTC/USD TWAP data stream available at https://data.chain.link/streams/btc-usd-twap-60s-streams.\nPlease note that this market is about the price according to the TWAP Chainlink data stream for the asset pair BTC/USD, not according to any other sources or spot markets.",
+          "outcomes": "[\"Up\", \"Down\"]",
+          "outcomePrices": "[\"0.485\", \"0.515\"]",
+          "volume": "84.705882",
+          "active": true,
+          "closed": false,
+          "marketMakerAddress": "",
+          "createdAt": "2026-10-04T20:49:18.161064Z",
+          "updatedAt": "2026-10-05T20:36:18.412756Z",
+          "new": false,
+          "featured": false,
+          "archived": false,
+          "restricted": true,
+          "groupItemThreshold": "0",
+          "questionID": "0xc0aff72f90b179d9ed7fedcbbdcb70183c27f24a00d91ab24e4e5a7ed732afb2",
+          "enableOrderBook": true,
+          "orderPriceMinTickSize": 0.01,
+          "orderMinSize": 5,
+          "volumeNum": 84.705882,
+          "liquidityNum": 15278.5604,
+          "endDateIso": "2026-10-05",
+          "startDateIso": "2026-10-04",
+          "hasReviewedDates": true,
+          "volume24hr": 4.705882,
+          "volume1wk": 4.705882,
+          "volume1mo": 4.705882,
+          "volume1yr": 4.705882,
+          "clobTokenIds": "[\"9278163041908261237020890210667717027499239620104420937512173748696322924636\", \"48553258286873128853828741578087041195421438120345651775476552903309077454068\"]",
+          "comboStatus": "disabled",
+          "volume24hrClob": 4.705882,
+          "volume1wkClob": 4.705882,
+          "volume1moClob": 4.705882,
+          "volume1yrClob": 4.705882,
+          "volumeClob": 84.705882,
+          "liquidityClob": 15278.5604,
+          "makerBaseFee": 1000,
+          "takerBaseFee": 1000,
+          "acceptingOrders": true,
+          "negRisk": false,
+          "ready": false,
+          "funded": false,
+          "acceptingOrdersTimestamp": "2026-10-04T20:49:26Z",
+          "cyom": false,
+          "competitive": 0.9997750506136119,
+          "approved": true,
+          "rewardsMinSize": 50,
+          "rewardsMaxSpread": 4.5,
+          "spread": 0.01,
+          "oneDayPriceChange": -0.02,
+          "oneHourPriceChange": -0.02,
+          "lastTradePrice": 0.49,
+          "bestBid": 0.48,
+          "bestAsk": 0.49,
+          "automaticallyActive": true,
+          "clearBookOnStart": false,
+          "showGmpSeries": false,
+          "showGmpOutcome": false,
+          "manualActivation": false,
+          "negRiskOther": false,
+          "umaResolutionStatuses": "[]",
+          "pendingDeployment": false,
+          "deploying": false,
+          "rfqEnabled": false,
+          "eventStartTime": "2026-10-05T20:40:00Z",
+          "holdingRewardsEnabled": false,
+          "feesEnabled": true,
+          "makerRebatesFeeShareBps": 10000,
+          "feeType": "crypto_fees_v2",
+          "feeSchedule": {
+            "exponent": 1,
+            "rate": 0.07,
+            "takerOnly": true,
+            "rebateRate": 0.2
+          },
+          "cryptoMarketConfigId": "btc-5m-twap-60",
+          "cryptoMarketConfig": {
+            "id": "btc-5m-twap-60",
+            "asset": "btc",
+            "duration": "5m",
+            "twapEnabled": true,
+            "twapLookbackSeconds": 60
+          },
+          "version": "v1",
+          "_paper_tokens": {
+            "Up": "9278163041908261237020890210667717027499239620104420937512173748696322924636",
+            "Down": "48553258286873128853828741578087041195421438120345651775476552903309077454068"
+          },
+          "_paper_rate": 0.07
+        }
+      },
+      "opened_at": 1791232983.4891546,
+      "shares": 9.661816,
+      "principal_usd": 4.830908,
+      "entry_fee_usd": 0.16909,
+      "cost_usd": 4.999998,
+      "levels": [
+        {
+          "price": 0.5,
+          "shares": 9.661816,
+          "fee_usd": 0.16909
+        }
+      ],
+      "assumption": "CONDITIONAL_DISPLAYED_TAKER_DEPTH_NOT_ACTUAL_EXECUTION",
+      "settled": true,
+      "fully_net_pnl_after_other_costs": null,
+      "source_match_status": "MATCHED",
+      "winner": "Down",
+      "settled_at": 1791233178.1861064,
+      "payout_usd": 0.0,
+      "simulated_pnl_after_entry_taker_fee": -4.999998
+    }
+  ],
+  "source_mismatch": false,
+  "audited_opening_count": 22,
+  "full_decision_count": 35,
+  "descriptive_model_decision_count": 22,
+  "profitability_proven": false,
+  "financial_go": false,
+  "old_protocol_effect": "NONE",
+  "error": null,
+  "descriptive_clean_sampled_windows": {
+    "count": 22,
+    "full_count": 35,
+    "excluded_window_fraction": 0.37142857142857144,
+    "scope": "Whole scheduled 300-second windows classified only at fixed decision; not continuous clean seconds or protocol admission",
+    "equivalent_excluded_window_seconds": 3900,
+    "decisions": [
+      {
+        "type": "decision",
+        "start": 1791227100,
+        "created_at": 1791227280.0821278,
+        "choice": "ABSTAIN",
+        "p_up": 0.34060226312603104,
+        "reason": "STALE_UNDERLYING_REFERENCE",
+        "opening": {
+          "timestamp": 1791227100.0,
+          "price": 85565.94284855193,
+          "received_at": 1791227101.5675,
+          "generation": 1
+        },
+        "latest": {
+          "timestamp": 1791227279.0,
+          "price": 85556.56135646415,
+          "received_at": 1791227280.698376,
+          "generation": 1
+        },
+        "intervals": 118,
+        "sigma_price_per_sqrt_second": 2.53733510513424,
+        "features_at": 1791227280.7467384,
+        "data_admitted": true,
+        "informational_edge": 0.031188887337957497,
+        "requested_side": "Up",
+        "limit": 0.295
+      },
+      {
+        "type": "decision",
+        "start": 1791227700,
+        "created_at": 1791227880.0153449,
+        "choice": "ABSTAIN",
+        "p_up": 0.4365860380365648,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791227700.0,
+          "price": 85676.65501641069,
+          "received_at": 1791227701.699595,
+          "generation": 3
+        },
+        "latest": {
+          "timestamp": 1791227879.0,
+          "price": 85673.44283788626,
+          "received_at": 1791227880.9067721,
+          "generation": 3
+        },
+        "intervals": 118,
+        "sigma_price_per_sqrt_second": 2.2358415889667707,
+        "features_at": 1791227880.9265862,
+        "data_admitted": true,
+        "informational_edge": 0.014785629705116102,
+        "requested_side": "Up",
+        "limit": 0.405
+      },
+      {
+        "type": "decision",
+        "start": 1791228600,
+        "created_at": 1791228780.0505126,
+        "choice": "ABSTAIN",
+        "p_up": 0.8136237609347494,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791228600.0,
+          "price": 85723.329600246,
+          "received_at": 1791228601.4820693,
+          "generation": 3
+        },
+        "latest": {
+          "timestamp": 1791228779.0,
+          "price": 85744.2983596421,
+          "received_at": 1791228780.9460032,
+          "generation": 3
+        },
+        "intervals": 118,
+        "sigma_price_per_sqrt_second": 2.6139182020090614,
+        "features_at": 1791228780.9657989,
+        "data_admitted": true,
+        "informational_edge": 0.0014991730118362233,
+        "requested_side": "Down",
+        "limit": 0.17500000000000002
+      },
+      {
+        "type": "decision",
+        "start": 1791228900,
+        "created_at": 1791229080.0274825,
+        "choice": "ABSTAIN",
+        "p_up": 5.094713539932627e-11,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791228900.0,
+          "price": 85747.44203047107,
+          "received_at": 1791228901.3631406,
+          "generation": 3
+        },
+        "latest": {
+          "timestamp": 1791229079.0,
+          "price": 85669.69575907318,
+          "received_at": 1791229080.9096906,
+          "generation": 3
+        },
+        "intervals": 116,
+        "sigma_price_per_sqrt_second": 1.3363741764381658,
+        "features_at": 1791229080.9378169,
+        "data_admitted": true,
+        "informational_edge": 0.00430651345163136,
+        "requested_side": "Down",
+        "limit": 0.995
+      },
+      {
+        "type": "decision",
+        "start": 1791229200,
+        "created_at": 1791229380.0919268,
+        "choice": "ABSTAIN",
+        "p_up": 0.9995071373618751,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791229200.0,
+          "price": 85677.95569300732,
+          "received_at": 1791229201.6760108,
+          "generation": 3
+        },
+        "latest": {
+          "timestamp": 1791229379.0,
+          "price": 85732.10043290268,
+          "received_at": 1791229380.2710109,
+          "generation": 3
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 1.8260601310659694,
+        "features_at": 1791229380.2959595,
+        "data_admitted": true,
+        "informational_edge": 0.022469743406480783,
+        "requested_side": "Up",
+        "limit": 0.975
+      },
+      {
+        "type": "decision",
+        "start": 1791229500,
+        "created_at": 1791229680.0758054,
+        "choice": "ABSTAIN",
+        "p_up": 3.1723781688808295e-06,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791229500.0,
+          "price": 85713.33873836535,
+          "received_at": 1791229501.691779,
+          "generation": 3
+        },
+        "latest": {
+          "timestamp": 1791229679.0,
+          "price": 85663.98297195295,
+          "received_at": 1791229680.3518152,
+          "generation": 3
+        },
+        "intervals": 116,
+        "sigma_price_per_sqrt_second": 1.2147298569675604,
+        "features_at": 1791229680.3817997,
+        "data_admitted": true,
+        "informational_edge": 0.022959433666436827,
+        "requested_side": "Down",
+        "limit": 0.975
+      },
+      {
+        "type": "decision",
+        "start": 1791230700,
+        "created_at": 1791230880.0914385,
+        "choice": "Down",
+        "p_up": 0.01102225584021449,
+        "reason": "CONDITIONAL_PAPER_TAKER_FILL",
+        "opening": {
+          "timestamp": 1791230700.0,
+          "price": 85699.04487410454,
+          "received_at": 1791230701.19914,
+          "generation": 7
+        },
+        "latest": {
+          "timestamp": 1791230879.0,
+          "price": 85663.81500805181,
+          "received_at": 1791230880.408006,
+          "generation": 7
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 1.7096564743198,
+        "features_at": 1791230880.4447372,
+        "data_admitted": true,
+        "informational_edge": 0.0682434116985371,
+        "requested_side": "Down",
+        "limit": 0.915,
+        "execution": {
+          "shares": 5.460095,
+          "principal_usd": 4.96868645,
+          "entry_fee_usd": 0.03131,
+          "cost_usd": 4.99999645,
+          "levels": [
+            {
+              "price": 0.91,
+              "shares": 5.460095,
+              "fee_usd": 0.03131
+            }
+          ],
+          "assumption": "CONDITIONAL_DISPLAYED_TAKER_DEPTH_NOT_ACTUAL_EXECUTION"
+        }
+      },
+      {
+        "type": "decision",
+        "start": 1791231300,
+        "created_at": 1791231480.071324,
+        "choice": "ABSTAIN",
+        "p_up": 0.9999999974019833,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791231300.0,
+          "price": 85670.6884658111,
+          "received_at": 1791231301.7427049,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791231479.0,
+          "price": 85743.96436366762,
+          "received_at": 1791231480.886257,
+          "generation": 9
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 1.3939544753444146,
+        "features_at": 1791231480.932994,
+        "data_admitted": true,
+        "informational_edge": 0.004306510904561804,
+        "requested_side": "Up",
+        "limit": 0.995
+      },
+      {
+        "type": "decision",
+        "start": 1791231600,
+        "created_at": 1791231780.0629258,
+        "choice": "Up",
+        "p_up": 0.9999934173748839,
+        "reason": "CONDITIONAL_PAPER_TAKER_FILL",
+        "opening": {
+          "timestamp": 1791231600.0,
+          "price": 85744.23870640722,
+          "received_at": 1791231601.1093678,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791231779.0,
+          "price": 85792.84124921936,
+          "received_at": 1791231780.404746,
+          "generation": 9
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 1.2393529496812883,
+        "features_at": 1791231780.4424562,
+        "data_admitted": true,
+        "informational_edge": 0.03230366155157239,
+        "requested_side": "Up",
+        "limit": 0.965,
+        "execution": {
+          "shares": 5.19378,
+          "principal_usd": 4.9860288,
+          "entry_fee_usd": 0.01397,
+          "cost_usd": 4.999998799999999,
+          "levels": [
+            {
+              "price": 0.96,
+              "shares": 5.19378,
+              "fee_usd": 0.01397
+            }
+          ],
+          "assumption": "CONDITIONAL_DISPLAYED_TAKER_DEPTH_NOT_ACTUAL_EXECUTION"
+        }
+      },
+      {
+        "type": "decision",
+        "start": 1791231900,
+        "created_at": 1791232080.013654,
+        "choice": "ABSTAIN",
+        "p_up": 0.0879143802413308,
+        "reason": "STALE_UNDERLYING_REFERENCE",
+        "opening": {
+          "timestamp": 1791231900.0,
+          "price": 85775.39897087456,
+          "received_at": 1791231901.6799684,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791232079.0,
+          "price": 85758.64847487448,
+          "received_at": 1791232080.210801,
+          "generation": 9
+        },
+        "intervals": 118,
+        "sigma_price_per_sqrt_second": 1.3748628215271297,
+        "features_at": 1791232080.2169247,
+        "data_admitted": true,
+        "informational_edge": 0.07675294654066933,
+        "requested_side": "Down",
+        "limit": 0.825
+      },
+      {
+        "type": "decision",
+        "start": 1791232800,
+        "created_at": 1791232980.0332835,
+        "choice": "Up",
+        "p_up": 0.9210220303020309,
+        "reason": "CONDITIONAL_PAPER_TAKER_FILL",
+        "opening": {
+          "timestamp": 1791232800.0,
+          "price": 85798.35029404817,
+          "received_at": 1791232801.5059674,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791232979.0,
+          "price": 85806.79280993089,
+          "received_at": 1791232980.7516277,
+          "generation": 9
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 0.6643560968506804,
+        "features_at": 1791232980.7952936,
+        "data_admitted": true,
+        "informational_edge": 0.3189689965731817,
+        "requested_side": "Up",
+        "limit": 0.585,
+        "execution": {
+          "shares": 9.661816,
+          "principal_usd": 4.830908,
+          "entry_fee_usd": 0.16909,
+          "cost_usd": 4.999998,
+          "levels": [
+            {
+              "price": 0.5,
+              "shares": 9.661816,
+              "fee_usd": 0.16909
+            }
+          ],
+          "assumption": "CONDITIONAL_DISPLAYED_TAKER_DEPTH_NOT_ACTUAL_EXECUTION"
+        }
+      },
+      {
+        "type": "decision",
+        "start": 1791233100,
+        "created_at": 1791233280.0597959,
+        "choice": "ABSTAIN",
+        "p_up": 0.9996702949800411,
+        "reason": "STALE_UNDERLYING_REFERENCE",
+        "opening": {
+          "timestamp": 1791233100.0,
+          "price": 85789.26152836428,
+          "received_at": 1791233101.9502578,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791233279.0,
+          "price": 85817.56660292084,
+          "received_at": 1791233280.617105,
+          "generation": 9
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 0.9233940879706226,
+        "features_at": 1791233280.618164,
+        "data_admitted": true,
+        "informational_edge": 0.06011151617202604,
+        "requested_side": "Up",
+        "limit": 0.935
+      },
+      {
+        "type": "decision",
+        "start": 1791233400,
+        "created_at": 1791233580.03791,
+        "choice": "ABSTAIN",
+        "p_up": 0.4171251253283725,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791233400.0,
+          "price": 85801.66026455682,
+          "received_at": 1791233401.6200194,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791233579.0,
+          "price": 85798.29223438867,
+          "received_at": 1791233580.9383576,
+          "generation": 9
+        },
+        "intervals": 118,
+        "sigma_price_per_sqrt_second": 1.7883827374801837,
+        "features_at": 1791233580.9498265,
+        "data_admitted": true,
+        "informational_edge": -0.02492693020566544,
+        "requested_side": "Up",
+        "limit": 0.425
+      },
+      {
+        "type": "decision",
+        "start": 1791234000,
+        "created_at": 1791234180.0770526,
+        "choice": "ABSTAIN",
+        "p_up": 0.0009862084015099803,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791234000.0,
+          "price": 85788.13479717646,
+          "received_at": 1791234001.3571694,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791234179.0,
+          "price": 85718.54611620241,
+          "received_at": 1791234180.090622,
+          "generation": 9
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 2.4987685676970584,
+        "features_at": 1791234180.1283467,
+        "data_admitted": true,
+        "informational_edge": 0.01263986784694016,
+        "requested_side": "Down",
+        "limit": 0.985
+      },
+      {
+        "type": "decision",
+        "start": 1791234300,
+        "created_at": 1791234480.0342526,
+        "choice": "ABSTAIN",
+        "p_up": 0.9760544474770068,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791234300.0,
+          "price": 85712.06062272775,
+          "received_at": 1791234301.766093,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791234479.0,
+          "price": 85745.61350114369,
+          "received_at": 1791234480.51733,
+          "generation": 9
+        },
+        "intervals": 118,
+        "sigma_price_per_sqrt_second": 1.884463740855908,
+        "features_at": 1791234480.5388198,
+        "data_admitted": true,
+        "informational_edge": 0.027104960881945587,
+        "requested_side": "Up",
+        "limit": 0.945
+      },
+      {
+        "type": "decision",
+        "start": 1791234600,
+        "created_at": 1791234780.0849924,
+        "choice": "ABSTAIN",
+        "p_up": 0.014712692968368635,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791234600.0,
+          "price": 85744.87948551822,
+          "received_at": 1791234601.5397255,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791234779.0,
+          "price": 85710.37372095192,
+          "received_at": 1791234780.6800656,
+          "generation": 9
+        },
+        "intervals": 118,
+        "sigma_price_per_sqrt_second": 1.7605285888580948,
+        "features_at": 1791234780.6915839,
+        "data_admitted": true,
+        "informational_edge": 0.008249913076237018,
+        "requested_side": "Down",
+        "limit": 0.975
+      },
+      {
+        "type": "decision",
+        "start": 1791234900,
+        "created_at": 1791235080.0453749,
+        "choice": "ABSTAIN",
+        "p_up": 0.9999999998705742,
+        "reason": "STALE_UNDERLYING_REFERENCE",
+        "opening": {
+          "timestamp": 1791234900.0,
+          "price": 85731.91981607105,
+          "received_at": 1791234901.3328943,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791235079.0,
+          "price": 85772.42928302905,
+          "received_at": 1791235080.5973675,
+          "generation": 9
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 0.7120103379219564,
+        "features_at": 1791235080.6010466,
+        "data_admitted": true,
+        "informational_edge": 0.03231024404726269,
+        "requested_side": "Up",
+        "limit": 0.965
+      },
+      {
+        "type": "decision",
+        "start": 1791235200,
+        "created_at": 1791235380.084906,
+        "choice": "ABSTAIN",
+        "p_up": 0.44668002988064326,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791235200.0,
+          "price": 85809.47962449772,
+          "received_at": 1791235201.3791685,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791235379.0,
+          "price": 85809.11919830376,
+          "received_at": 1791235380.592156,
+          "generation": 9
+        },
+        "intervals": 118,
+        "sigma_price_per_sqrt_second": 0.2987409931532286,
+        "features_at": 1791235380.5928972,
+        "data_admitted": true,
+        "informational_edge": -0.009068340806562599,
+        "requested_side": "Down",
+        "limit": 0.545
+      },
+      {
+        "type": "decision",
+        "start": 1791236100,
+        "created_at": 1791236280.0945866,
+        "choice": "ABSTAIN",
+        "p_up": 0.9793982039397584,
+        "reason": "STALE_UNDERLYING_REFERENCE",
+        "opening": {
+          "timestamp": 1791236100.0,
+          "price": 85853.17498218639,
+          "received_at": 1791236101.245418,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791236279.0,
+          "price": 85892.17132245009,
+          "received_at": 1791236280.1456344,
+          "generation": 9
+        },
+        "intervals": 118,
+        "sigma_price_per_sqrt_second": 2.122448597706955,
+        "features_at": 1791236280.1463223,
+        "data_admitted": true,
+        "informational_edge": 0.030448717344697233,
+        "requested_side": "Up",
+        "limit": 0.945
+      },
+      {
+        "type": "decision",
+        "start": 1791236400,
+        "created_at": 1791236580.0704894,
+        "choice": "ABSTAIN",
+        "p_up": 0.5485475768272704,
+        "reason": "NO_SUFFICIENT_EDGE",
+        "opening": {
+          "timestamp": 1791236400.0,
+          "price": 85890.78777112583,
+          "received_at": 1791236401.5096653,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791236579.0,
+          "price": 85891.78108884011,
+          "received_at": 1791236580.5554152,
+          "generation": 9
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 0.9047155138668705,
+        "features_at": 1791236580.5759823,
+        "data_admitted": true,
+        "informational_edge": -0.010795920511652343,
+        "requested_side": "Down",
+        "limit": 0.445
+      },
+      {
+        "type": "decision",
+        "start": 1791236700,
+        "created_at": 1791236880.086637,
+        "choice": "ABSTAIN",
+        "p_up": 0.16753574151293027,
+        "reason": "STALE_UNDERLYING_REFERENCE",
+        "opening": {
+          "timestamp": 1791236700.0,
+          "price": 85911.3320523829,
+          "received_at": 1791236701.6881135,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791236879.0,
+          "price": 85875.40419691901,
+          "received_at": 1791236880.5463023,
+          "generation": 9
+        },
+        "intervals": 116,
+        "sigma_price_per_sqrt_second": 4.141281163433154,
+        "features_at": 1791236880.5931082,
+        "data_admitted": true,
+        "informational_edge": 0.0668026635370386,
+        "requested_side": "Up",
+        "limit": 0.095
+      },
+      {
+        "type": "decision",
+        "start": 1791237000,
+        "created_at": 1791237180.0482864,
+        "choice": "ABSTAIN",
+        "p_up": 1.0,
+        "reason": "STALE_UNDERLYING_REFERENCE",
+        "opening": {
+          "timestamp": 1791237000.0,
+          "price": 85887.81836715157,
+          "received_at": 1791237001.5941465,
+          "generation": 9
+        },
+        "latest": {
+          "timestamp": 1791237179.0,
+          "price": 85943.60564127921,
+          "received_at": 1791237180.8342197,
+          "generation": 9
+        },
+        "intervals": 117,
+        "sigma_price_per_sqrt_second": 0.542407340045676,
+        "features_at": 1791237180.8583832,
+        "data_admitted": true,
+        "informational_edge": 0.03231024417668849,
+        "requested_side": "Up",
+        "limit": 0.965
+      }
+    ]
+  }
+}

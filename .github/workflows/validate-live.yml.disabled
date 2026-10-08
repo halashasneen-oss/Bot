@@ -1,0 +1,44 @@
+name: Multi-market live validation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: live-validation
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+      - name: Public paper capture across market boundaries
+        run: python -u -m pairbot paper --minutes 11 --out runs/validation
+      - name: Verify duration, rotation, snapshots and parser recovery
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from pairbot.__main__ import load_engine
+          d = json.loads(Path('runs/validation/summary.json').read_text())
+          assert d['run']['requested_duration_completed'], d
+          assert d['run']['run_status'] == 'COMPLETED', d
+          assert d['markets_selected'] >= 3, d
+          assert d['book_events'] >= 6, d
+          assert d['rejected_frames'] == 0, d
+          assert load_engine('runs/validation').report() == d, 'Replay differs'
+          print('Multiple markets and deterministic replay verified. Not profitability evidence.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: multi-market-live-validation
+          path: runs/validation/
+          if-no-files-found: ignore
+          retention-days: 3

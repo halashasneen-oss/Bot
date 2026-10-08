@@ -1,0 +1,17 @@
+{
+  "version": "btc-one-hour-paper-20261005-v1",
+  "comparison_groups": 1,
+  "mode": "PAPER_ONLY_EXPLORATORY",
+  "duration_seconds": 3600,
+  "maximum_resolution_drain_seconds": 600,
+  "bankroll_usd": 50,
+  "trade_budget_usd_including_entry_fee": 5,
+  "strategy_policy_sha256": "5efae6c98d14469597bec251035e3d4da6cc3378870130291fedf2c3ebf1228d",
+  "transport_policy_sha256": "738381152c95f9e89e7cfbb139c1252270438dd1834bb64e173dc0ffb58ab8a7",
+  "duration_override": "User explicitly requested one hour instead of four; frozen strategy file is unchanged. Actual planned duration and this execution plan are recorded in journal and summary.",
+  "comparison": "New implementation after recovery run37267133456 failed terminal sealing; preserve old failures; fix cancellation order only, no threshold or fill model retuning.",
+  "technical_gate": "Prior 3600-second preflight numeric checks passed but strict journal seal failed; it is NOT a passed original gate. This new user-authorized one-hour exploratory PAPER experiment runs directly after tests, with every original per-trade guard. No claim of original technical or financial GO.",
+  "restart_policy": "One launch only; preserve failure and abstentions; no selective retry.",
+  "other_costs_usd": null,
+  "total_net_pnl_after_all_costs": null
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "btc-directional-v1",
+  "model": "zero-drift-arithmetic-brownian-v1",
+  "mode": "prediction-record-only",
+  "decision_age_seconds": 180,
+  "decision_tolerance_seconds": 2,
+  "volatility_lookback_seconds": 120,
+  "minimum_price_intervals": 60,
+  "maximum_price_gap_seconds": 2,
+  "maximum_data_age_seconds": 2,
+  "maximum_clock_uncertainty_seconds": 0.5,
+  "maximum_clock_probe_age_seconds": 90,
+  "minimum_edge_per_share": 0.03,
+  "slippage_buffer_per_share": 0.005,
+  "quantity_shares": 5,
+  "maximum_hypothetical_loss_usd": 5,
+  "minimum_resolved_markets": 200,
+  "minimum_selected_markets": 50,
+  "minimum_clean_decision_fraction": 0.9,
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 20261004,
+  "bootstrap_lower_quantile": 0.025,
+  "decision_scope": "GO means longer PAPER measurement only; never trading or the old protocol",
+  "sources": [
+    "https://docs.polymarket.com/trading/fees",
+    "https://docs.polymarket.com/market-data/realtime-data"
+  ]
+}

@@ -1,0 +1,39 @@
+name: BTC one-hour live PAPER exploratory
+on:
+  push:
+    branches: [paper-one-hour-20261005]
+    paths: [.github/workflows/one-hour-paper.yml]
+permissions:
+  contents: read
+concurrency:
+  group: btc-one-hour-20261005-single-experiment
+  cancel-in-progress: false
+jobs:
+  verify-and-paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 85
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install own pinned dependencies
+        run: |
+          python -m pip install --only-binary=:all: -r requirements-dev.txt
+      - name: Verify all tests including actual runner shutdown
+        run: python -m pytest -q
+      - name: One-hour public market PAPER no real trades
+        run: python -u -m pairbot.one_hour_paper
+      - name: Preserve evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: btc-one-hour-paper-${{ github.run_id }}
+          path: |
+            runs/unified-one-hour/
+            docs/unified/one-hour-plan.json
+            docs/unified/policy.json
+            docs/unified/transport-policy.json
+            docs/unified/ONE_HOUR_AR.md
+          retention-days: 90
+          if-no-files-found: error

@@ -1,0 +1,32 @@
+{
+  "artifact": {
+    "id": 11316982785,
+    "node_id": "MDg6QXJ0aWZhY3QxMTMxNjk4Mjc4NQ==",
+    "name": "BTC-five-minute-live-NOT-PROFIT",
+    "size_in_bytes": 62062,
+    "url": "https://api.github.com/repos/khaledhasneen1993/polymarket-pair-bot/actions/artifacts/11316982785",
+    "archive_download_url": "https://api.github.com/repos/khaledhasneen1993/polymarket-pair-bot/actions/artifacts/11316982785/zip",
+    "expired": false,
+    "digest": "sha256:607688dc914bfc1e3a96ba82bff5c7ef0cd3ac0f4cee2a7687af653ed169773c",
+    "created_at": "2026-10-04T22:51:00Z",
+    "updated_at": "2026-10-04T22:51:00Z",
+    "expires_at": "2026-10-18T22:51:00Z",
+    "workflow_run": {
+      "id": 37240888065,
+      "repository_id": 1403640872,
+      "head_repository_id": 1403640872,
+      "head_branch": "paper-btc-directional-20261004",
+      "head_sha": "34e76944f0f7aa766c18874a62cb6539d2180988"
+    }
+  },
+  "original_zip_sha256": "607688dc914bfc1e3a96ba82bff5c7ef0cd3ac0f4cee2a7687af653ed169773c",
+  "journal_sha256": "60de050a0aaa9e33e7e910a005765d8ab08bdb0ac185cefbe83fdbe4e1aa39b6",
+  "run_id": 37240888065,
+  "head_sha": "34e76944f0f7aa766c18874a62cb6539d2180988",
+  "mode": "EXPLORATORY_FIVE_MINUTE_LIVE",
+  "official_winner": "Down",
+  "bot_choice": "ABSTAIN",
+  "fills": 0,
+  "realized_pnl": null,
+  "tests_passed": 297
+}

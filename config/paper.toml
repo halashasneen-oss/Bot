@@ -1,0 +1,22 @@
+# USD/shares/seconds. These are research defaults, NOT validated profitable settings.
+bankroll = 50.0
+order_size = 5.0
+max_inventory_usd = 15.0
+loss_stop_usd = 2.5
+min_pair_edge = 0.02
+maker_fee_bps = 0.0
+merge_cost_usd = 0.0
+merge_delay_seconds = 3.0
+order_latency_seconds = 0.5
+cancel_latency_seconds = 0.5
+quote_lifetime_seconds = 10.0
+max_unpaired_seconds = 20.0
+stale_seconds = 5.0
+stop_before_close_seconds = 20.0
+kill_move = 0.03
+kill_window_seconds = 60.0
+movement_cooldown_seconds = 15.0
+movement_stability_seconds = 5.0
+kill_spread = 0.10
+queue_multiplier = 1.5
+duration_minutes = 60.0

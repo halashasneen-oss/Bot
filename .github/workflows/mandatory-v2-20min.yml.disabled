@@ -1,0 +1,33 @@
+name: Mandatory v2 PAPER 20 minute run
+on:
+  push:
+    branches: [paper-mandatory-v2-20261006]
+    paths: [.github/workflows/mandatory-v2-20min.yml]
+  # rerun-after-full-hardening-20261006
+permissions:
+  contents: read
+concurrency:
+  group: mandatory-v2-paper-20min-20261006
+  cancel-in-progress: false
+jobs:
+  paper-20min:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned dependencies
+        run: |
+          python -m pip install --only-binary=:all: -r requirements-dev.txt
+      - name: Run Mandatory v2 PAPER for exactly 20 minutes
+        run: PYTHONPATH=. python -u scripts/run_mandatory_v2_20min.py
+      - name: Preserve complete evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mandatory-v2-20min-${{ github.run_id }}
+          path: runs/mandatory-v2-20min/
+          retention-days: 30
+          if-no-files-found: error

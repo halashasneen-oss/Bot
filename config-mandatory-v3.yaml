@@ -1,0 +1,11 @@
+candidate_entry_times_before_close_sec: [150, 120, 90, 60, 45]
+entry_tolerance_sec: 5
+starting_capital_usd: 100
+stake_usd: 5
+max_stale_data_sec: 2
+execution_delay_sec: 2
+min_core_strength: 0.20
+price_cap_floor: 0.57
+price_cap_ceiling: 0.78
+max_adverse_slippage: 0.04
+live: false

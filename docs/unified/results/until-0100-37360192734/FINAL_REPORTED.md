@@ -1,0 +1,1 @@
+Final result delivered: independent $50->$45.65388175; 3 matched-source settled simulated trades (Up2/Down1), wins2/loss1, fees$0.21437, PnL after entry fees-$4.34611825, no actual orders/fills, no financial GO. Full169598record hashchain verified, original ZIP bytes preserved as ordered parts due connector16MiB request limit. No new experiment or retuning.

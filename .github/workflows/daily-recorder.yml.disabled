@@ -1,0 +1,31 @@
+name: Manual daily forecast record only
+on:
+  workflow_dispatch:
+    inputs:
+      day:
+        description: 'Frozen cohort settlement day YYYY-MM-DD, execute at 06:00 New York only'
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install --only-binary=:all: -r requirements.txt
+      - name: Record prospective daily forecast or explicit missed day
+        env:
+          RECORD_DAY: ${{ inputs.day }}
+        run: python -m pairbot.daily_recorder --day "$RECORD_DAY" --output runs/daily-prospective
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-prospective-NOT-PROFIT-${{ inputs.day }}
+          path: runs/daily-prospective/
+          retention-days: 90

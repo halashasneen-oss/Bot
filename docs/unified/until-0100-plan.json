@@ -1,0 +1,19 @@
+{
+  "version": "btc-paper-until-20261006-0100-amman-v1",
+  "comparison_groups": 1,
+  "mode": "PAPER_ONLY_EXPLORATORY",
+  "stop_entry_at_utc": "2026-10-05T22:00:00Z",
+  "stop_entry_at_amman": "2026-10-06T01:00:00+03:00",
+  "stop_entry_at_epoch": 1791237600,
+  "maximum_resolution_drain_seconds": 600,
+  "bankroll_usd": 50,
+  "trade_budget_usd_including_entry_fee": 5,
+  "strategy_policy_sha256": "5efae6c98d14469597bec251035e3d4da6cc3378870130291fedf2c3ebf1228d",
+  "transport_policy_sha256": "738381152c95f9e89e7cfbb139c1252270438dd1834bb64e173dc0ffb58ab8a7",
+  "duration_override": "User clarified 1 AM tomorrow Oct6 Asia/Amman, NOT 1 PM; fixed deadline instead of original 14400 seconds. No original strategy threshold or fill changes.",
+  "comparison": "One new user-authorized run after complete one-hour run37349874212; preserve previous result $50->$51.39060892 with one winning conditional simulated trade. New independent virtual $50 session; no claims of profitability or outside-sample edge.",
+  "technical_gate": "Direct user-authorized exploratory PAPER; prior run37267133456 failed strict terminal seal and is not a passed original gate. All original per-trade guards remain.",
+  "restart_policy": "One launch only; preserve failures/abstentions; no selected rerun or retuning after outcomes.",
+  "other_costs_usd": null,
+  "total_net_pnl_after_all_costs": null
+}

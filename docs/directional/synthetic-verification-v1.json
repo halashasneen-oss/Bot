@@ -1,0 +1,47 @@
+{
+  "synthetic": true,
+  "full": {
+    "decisions": 3,
+    "resolved_scored_markets": 2,
+    "selected_resolved_markets": 2,
+    "brier": 1.2854595187832623e-16,
+    "market_brier": 0.2516,
+    "brier_improvement_lower95": 0.21159999999999982,
+    "hypothetical_payoff_bound_mean_per_share": 0.426674,
+    "hypothetical_payoff_bound_lower95_per_share": 0.426674,
+    "realized_pnl": null,
+    "fills": 0
+  },
+  "clean": {
+    "decisions": 2,
+    "resolved_scored_markets": 2,
+    "selected_resolved_markets": 2,
+    "brier": 1.2854595187832623e-16,
+    "market_brier": 0.2516,
+    "brier_improvement_lower95": 0.21159999999999982,
+    "hypothetical_payoff_bound_mean_per_share": 0.426674,
+    "hypothetical_payoff_bound_lower95_per_share": 0.426674,
+    "realized_pnl": null,
+    "fills": 0
+  },
+  "excluded_decision_fraction": 0.33333333333333337,
+  "excluded_time_fraction": null,
+  "exclusion_unit": "one scheduled decision per market; time coverage not measured",
+  "block_reasons": {
+    "'opening'": 1
+  },
+  "checks": {
+    "real_data": false,
+    "clean_fraction": false,
+    "resolved_sample": false,
+    "selected_sample": false,
+    "calibration_advantage": true,
+    "positive_payoff_bound": true
+  },
+  "decision": "NO_GO",
+  "policy_sha256": "579fbb066e681bb3272b1fa8ca60a21b0577774e5398234dc06d62afc9521c15",
+  "policy_freeze_commit": "f869678fb0f545ac7ae1bf69ab467e78a92e3312",
+  "old_protocol_result": "NOT_EVALUATED",
+  "profitability_proven": false,
+  "predeclared_market_count": 3
+}

@@ -1,0 +1,25 @@
+name: Bounded daily BTC public capture
+on:
+  push:
+    branches: [paper-btc-directional-20261004]
+    paths: [.github/workflows/daily-capture.yml, pairbot/daily_capture.py]
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install --only-binary=:all: -r requirements.txt
+      - run: python -m pairbot.daily_capture
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-BTC-record-only-NOT-PROFIT
+          path: runs/daily-capture/
+          retention-days: 7

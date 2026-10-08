@@ -1,0 +1,9 @@
+{
+  "capture_runtime_source_sha256": "330002f3e4e571b6d50b69191f00b59796ceeb13991f24d24cede05d2a04e566",
+  "recorder_commit": "3a0eb5ba21444e0083131388bb1a8c59d7b89241",
+  "engine_git_blob": "a8e66693e1fdea3187846a041acd0ebbbc07886a",
+  "test_count": 133,
+  "prior_final_holdout": "UNTOUCHED",
+  "capture_purpose": "TRANSPORT_DIAGNOSTIC_ONLY",
+  "decision": "DO_NOT_START_LONG_VALIDATION"
+}

@@ -1,0 +1,1192 @@
+{
+  "scope": "EXPLORATORY_STEP_1_ONLY",
+  "freeze_commit": "3e19920f6043fea1af2ab0f834e704bfd8a9206f",
+  "policy_sha256": "52c54270486ec75ac7fcfa30952aa370a5d44415498b18d146cb158f0fdc99e6",
+  "input_sha256": "6b469f34889ff01317cbf04df3a248f2e7a07f696e9b03b27f71e36713b9de2d",
+  "threshold_sets_tried": 1,
+  "start": 1791132741.1896706,
+  "end": 1791133341.1935382,
+  "connections": [
+    {
+      "id": 0,
+      "market": "0xad82ed3e22a51ec64e84a2a8496289a237a61e8f74d027601ccd70c7adb583f2",
+      "metadata": 1791132760.166187,
+      "first_frame": 1791132768.3319418,
+      "first_books": {
+        "45079687037850779560408851759323387725803993604961653149530303546871583154652": 1791132768.3319418,
+        "94983397311077817923690205100464817100634812477834395036319216274134925045033": 1791132768.3319418
+      },
+      "snapshot_complete": 1791132768.3319418,
+      "close": null
+    },
+    {
+      "id": 1,
+      "market": "0x0b291a0442e2d563a9006ede54d028e590c38ce59f7db1c6d6cadb403fbf6a9b",
+      "metadata": 1791132907.049907,
+      "first_frame": 1791132914.6115792,
+      "first_books": {
+        "105299730752146633808078367996502593583858974321907374549771182370742998260331": 1791132914.6115792,
+        "82586593890687754633237333372834647660379958302457586866651506680087789960123": 1791132914.6115792
+      },
+      "snapshot_complete": 1791132914.6115792,
+      "close": null
+    },
+    {
+      "id": 2,
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "metadata": 1791133207.401908,
+      "first_frame": 1791133215.1396897,
+      "first_books": {
+        "68882887400412228716613787378255190537006842811116707165110096148435286424446": 1791133215.1396897,
+        "85193492611111006208650811777887933670751217810097572524783500238779808218149": 1791133215.1396897
+      },
+      "snapshot_complete": 1791133215.1396897,
+      "close": 1791133255.7536213
+    },
+    {
+      "id": 3,
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "metadata": 1791133257.776163,
+      "first_frame": 1791133265.2275589,
+      "first_books": {
+        "68882887400412228716613787378255190537006842811116707165110096148435286424446": 1791133265.2275589,
+        "85193492611111006208650811777887933670751217810097572524783500238779808218149": 1791133265.2275589
+      },
+      "snapshot_complete": 1791133265.2275589,
+      "close": 1791133288.2286558
+    },
+    {
+      "id": 4,
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "metadata": 1791133292.861863,
+      "first_frame": 1791133300.4067478,
+      "first_books": {
+        "85193492611111006208650811777887933670751217810097572524783500238779808218149": 1791133300.4067478,
+        "68882887400412228716613787378255190537006842811116707165110096148435286424446": 1791133300.4067478
+      },
+      "snapshot_complete": 1791133300.4067478,
+      "close": 1791133325.294362
+    },
+    {
+      "id": 5,
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "metadata": 1791133329.4056318,
+      "first_frame": 1791133336.744542,
+      "first_books": {
+        "85193492611111006208650811777887933670751217810097572524783500238779808218149": 1791133336.744542,
+        "68882887400412228716613787378255190537006842811116707165110096148435286424446": 1791133336.744542
+      },
+      "snapshot_complete": 1791133336.744542,
+      "close": null
+    }
+  ],
+  "gaps": [
+    {
+      "ts": 1791133255.7536213,
+      "reason": "ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)",
+      "source": "Polymarket",
+      "connection": 2,
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "market_start": 1791133200,
+      "market_end": 1791133500.0,
+      "close_minus_market_end": -244.24637866020203,
+      "connection_age_bounds": [
+        40.61393165588379,
+        48.35171341896057
+      ],
+      "next_subscription_proxy_delay": 2.0225417613983154,
+      "next_first_frame_delay": 9.473937511444092,
+      "next_market_subscription_delay": null,
+      "last_60_seconds_age_medians": [
+        {
+          "seconds_before_close": [
+            -60,
+            -50
+          ],
+          "n": 0,
+          "median_age": null
+        },
+        {
+          "seconds_before_close": [
+            -50,
+            -40
+          ],
+          "n": 285,
+          "median_age": 0.24762558937072754
+        },
+        {
+          "seconds_before_close": [
+            -40,
+            -30
+          ],
+          "n": 5529,
+          "median_age": 0.14998483657836914
+        },
+        {
+          "seconds_before_close": [
+            -30,
+            -20
+          ],
+          "n": 3859,
+          "median_age": 0.5476036071777344
+        },
+        {
+          "seconds_before_close": [
+            -20,
+            -10
+          ],
+          "n": 1992,
+          "median_age": 9.227618217468262
+        },
+        {
+          "seconds_before_close": [
+            -10,
+            0
+          ],
+          "n": 2283,
+          "median_age": 15.957145690917969
+        }
+      ]
+    },
+    {
+      "ts": 1791133288.2286558,
+      "reason": "ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)",
+      "source": "Polymarket",
+      "connection": 3,
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "market_start": 1791133200,
+      "market_end": 1791133500.0,
+      "close_minus_market_end": -211.7713441848755,
+      "connection_age_bounds": [
+        23.001096963882446,
+        30.452492713928223
+      ],
+      "next_subscription_proxy_delay": 4.633207082748413,
+      "next_first_frame_delay": 12.178092002868652,
+      "next_market_subscription_delay": null,
+      "last_60_seconds_age_medians": [
+        {
+          "seconds_before_close": [
+            -60,
+            -50
+          ],
+          "n": 0,
+          "median_age": null
+        },
+        {
+          "seconds_before_close": [
+            -50,
+            -40
+          ],
+          "n": 0,
+          "median_age": null
+        },
+        {
+          "seconds_before_close": [
+            -40,
+            -30
+          ],
+          "n": 0,
+          "median_age": null
+        },
+        {
+          "seconds_before_close": [
+            -30,
+            -20
+          ],
+          "n": 838,
+          "median_age": 0.12384986877441406
+        },
+        {
+          "seconds_before_close": [
+            -20,
+            -10
+          ],
+          "n": 3763,
+          "median_age": 0.24608874320983887
+        },
+        {
+          "seconds_before_close": [
+            -10,
+            0
+          ],
+          "n": 2154,
+          "median_age": 7.057229042053223
+        }
+      ]
+    },
+    {
+      "ts": 1791133325.294362,
+      "reason": "ConnectionClosedOK: received 1000 (OK); then sent 1000 (OK)",
+      "source": "Polymarket",
+      "connection": 4,
+      "market": "0x729178a791a05ec7ecb4c59b44cb215658562a23fe97ffd70e91368773124489",
+      "market_start": 1791133200,
+      "market_end": 1791133500.0,
+      "close_minus_market_end": -174.70563793182373,
+      "connection_age_bounds": [
+        24.887614250183105,
+        32.432499170303345
+      ],
+      "next_subscription_proxy_delay": 4.11126971244812,
+      "next_first_frame_delay": 11.450179815292358,
+      "next_market_subscription_delay": null,
+      "last_60_seconds_age_medians": [
+        {
+          "seconds_before_close": [
+            -60,
+            -50
+          ],
+          "n": 0,
+          "median_age": null
+        },
+        {
+          "seconds_before_close": [
+            -50,
+            -40
+          ],
+          "n": 0,
+          "median_age": null
+        },
+        {
+          "seconds_before_close": [
+            -40,
+            -30
+          ],
+          "n": 0,
+          "median_age": null
+        },
+        {
+          "seconds_before_close": [
+            -30,
+            -20
+          ],
+          "n": 1376,
+          "median_age": 0.116355299949646
+        },
+        {
+          "seconds_before_close": [
+            -20,
+            -10
+          ],
+          "n": 3448,
+          "median_age": 0.36224544048309326
+        },
+        {
+          "seconds_before_close": [
+            -10,
+            0
+          ],
+          "n": 1497,
+          "median_age": 6.471278190612793
+        }
+      ]
+    }
+  ],
+  "late_total": 6848,
+  "late_by_kind": {
+    "price_change": 6639,
+    "book": 140,
+    "last_trade_price": 69
+  },
+  "late_fraction_full": 0.027670475667113833,
+  "late_outside_event_guards": 1759,
+  "late_histograms": {
+    "connection_metadata_proxy_age": {
+      "[20,30)": 2590,
+      "[30,60)": 4258
+    },
+    "connection_first_frame_age": {
+      "[20,30)": 2564,
+      "[30,60)": 2423,
+      "[10,20)": 1861
+    },
+    "market_age": {
+      "[30,60)": 4042,
+      "[60,120)": 2132,
+      "[120,300)": 674
+    }
+  },
+  "nearest_event_histograms": {
+    "closure": {
+      "[-30,-10)": 1759,
+      "[-10,-5)": 2247,
+      "[-5,0)": 2842
+    },
+    "subscription_proxy": {
+      "[-30,-10)": 3305,
+      "[-10,-5)": 2635,
+      "[-5,0)": 908
+    }
+  },
+  "late_temporal_histograms_by_kind": {
+    "connection_metadata_proxy_age": {
+      "[20,30)": {
+        "price_change": 2500,
+        "book": 60,
+        "last_trade_price": 30
+      },
+      "[30,60)": {
+        "price_change": 4139,
+        "book": 80,
+        "last_trade_price": 39
+      }
+    },
+    "connection_first_frame_age": {
+      "[20,30)": {
+        "price_change": 2459,
+        "book": 70,
+        "last_trade_price": 35
+      },
+      "[30,60)": {
+        "price_change": 2373,
+        "book": 34,
+        "last_trade_price": 16
+      },
+      "[10,20)": {
+        "price_change": 1807,
+        "book": 36,
+        "last_trade_price": 18
+      }
+    },
+    "market_age": {
+      "[30,60)": {
+        "price_change": 3938,
+        "book": 70,
+        "last_trade_price": 34
+      },
+      "[60,120)": {
+        "price_change": 2066,
+        "book": 44,
+        "last_trade_price": 22
+      },
+      "[120,300)": {
+        "book": 26,
+        "price_change": 635,
+        "last_trade_price": 13
+      }
+    },
+    "nearest_closure": {
+      "[-30,-10)": {
+        "price_change": 1701,
+        "book": 40,
+        "last_trade_price": 18
+      },
+      "[-10,-5)": {
+        "price_change": 2189,
+        "last_trade_price": 19,
+        "book": 39
+      },
+      "[-5,0)": {
+        "book": 61,
+        "price_change": 2749,
+        "last_trade_price": 32
+      }
+    },
+    "nearest_subscription_proxy": {
+      "[-30,-10)": {
+        "price_change": 3216,
+        "book": 60,
+        "last_trade_price": 29
+      },
+      "[-10,-5)": {
+        "price_change": 2536,
+        "book": 66,
+        "last_trade_price": 33
+      },
+      "[-5,0)": {
+        "price_change": 887,
+        "book": 14,
+        "last_trade_price": 7
+      }
+    }
+  },
+  "late_near_initial_snapshot": {
+    "other": 6848
+  },
+  "late_per_market_minute": {
+    "btc-updown-5m-1791133200": {
+      "minute_0:price_change": 3938,
+      "minute_0:book": 70,
+      "minute_0:last_trade_price": 34,
+      "minute_1:price_change": 2066,
+      "minute_1:book": 44,
+      "minute_1:last_trade_price": 22,
+      "minute_2:book": 26,
+      "minute_2:price_change": 635,
+      "minute_2:last_trade_price": 13
+    }
+  },
+  "late_batches_same_socket_receive": {
+    "n": 6848,
+    "largest": 1,
+    "multi_message_batches": 0
+  },
+  "late_arrival_clusters": [
+    {
+      "n": 93,
+      "start": 1791133236.9891126,
+      "end": 1791133237.291254,
+      "receive_span": 0.3021414279937744,
+      "exchange_span": 0.06800007820129395,
+      "median_age": 5.18845796585083,
+      "max_age": 5.282003164291382,
+      "types": {
+        "price_change": 93
+      }
+    },
+    {
+      "n": 47,
+      "start": 1791133237.5401201,
+      "end": 1791133237.6769438,
+      "receive_span": 0.1368236541748047,
+      "exchange_span": 0.03600001335144043,
+      "median_age": 5.547281980514526,
+      "max_age": 5.608248710632324,
+      "types": {
+        "price_change": 47
+      }
+    },
+    {
+      "n": 125,
+      "start": 1791133237.8574939,
+      "end": 1791133238.7155943,
+      "receive_span": 0.858100414276123,
+      "exchange_span": 0.12400007247924805,
+      "median_age": 6.118242025375366,
+      "max_age": 6.519657373428345,
+      "types": {
+        "price_change": 125
+      }
+    },
+    {
+      "n": 119,
+      "start": 1791133238.839696,
+      "end": 1791133239.4345734,
+      "receive_span": 0.5948774814605713,
+      "exchange_span": 0.12899994850158691,
+      "median_age": 6.880217552185059,
+      "max_age": 7.11027979850769,
+      "types": {
+        "price_change": 116,
+        "book": 2,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 853,
+      "start": 1791133239.6602392,
+      "end": 1791133243.6574976,
+      "receive_span": 3.997258424758911,
+      "exchange_span": 0.8259999752044678,
+      "median_age": 9.4671049118042,
+      "max_age": 10.545139074325562,
+      "types": {
+        "price_change": 817,
+        "book": 24,
+        "last_trade_price": 12
+      }
+    },
+    {
+      "n": 161,
+      "start": 1791133243.7907293,
+      "end": 1791133244.3842785,
+      "receive_span": 0.5935492515563965,
+      "exchange_span": 0.6789999008178711,
+      "median_age": 10.602688550949097,
+      "max_age": 10.714133739471436,
+      "types": {
+        "price_change": 149,
+        "book": 8,
+        "last_trade_price": 4
+      }
+    },
+    {
+      "n": 361,
+      "start": 1791133244.4850903,
+      "end": 1791133245.6972797,
+      "receive_span": 1.2121894359588623,
+      "exchange_span": 0.4869999885559082,
+      "median_age": 10.942712783813477,
+      "max_age": 11.376121759414673,
+      "types": {
+        "price_change": 354,
+        "book": 6,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 96,
+      "start": 1791133245.8040156,
+      "end": 1791133246.0186183,
+      "receive_span": 0.21460270881652832,
+      "exchange_span": 0.059999942779541016,
+      "median_age": 11.501808881759644,
+      "max_age": 11.636258363723755,
+      "types": {
+        "price_change": 95,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 68,
+      "start": 1791133246.2079182,
+      "end": 1791133246.313767,
+      "receive_span": 0.10584878921508789,
+      "exchange_span": 0.03800010681152344,
+      "median_age": 11.858583092689514,
+      "max_age": 11.890709638595581,
+      "types": {
+        "price_change": 67,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 41,
+      "start": 1791133246.4477568,
+      "end": 1791133246.5812879,
+      "receive_span": 0.1335310935974121,
+      "exchange_span": 0.02499985694885254,
+      "median_age": 12.029003620147705,
+      "max_age": 12.133202075958252,
+      "types": {
+        "price_change": 41
+      }
+    },
+    {
+      "n": 204,
+      "start": 1791133246.7537348,
+      "end": 1791133247.745291,
+      "receive_span": 0.9915561676025391,
+      "exchange_span": 0.17299985885620117,
+      "median_age": 12.680466055870056,
+      "max_age": 13.124130725860596,
+      "types": {
+        "price_change": 204
+      }
+    },
+    {
+      "n": 144,
+      "start": 1791133247.8550134,
+      "end": 1791133248.697484,
+      "receive_span": 0.842470645904541,
+      "exchange_span": 0.31800007820129395,
+      "median_age": 13.360699653625488,
+      "max_age": 13.746022462844849,
+      "types": {
+        "price_change": 135,
+        "book": 6,
+        "last_trade_price": 3
+      }
+    },
+    {
+      "n": 660,
+      "start": 1791133248.8779883,
+      "end": 1791133251.8901575,
+      "receive_span": 3.012169122695923,
+      "exchange_span": 0.8329999446868896,
+      "median_age": 15.30930209159851,
+      "max_age": 16.118128776550293,
+      "types": {
+        "price_change": 642,
+        "book": 12,
+        "last_trade_price": 6
+      }
+    },
+    {
+      "n": 584,
+      "start": 1791133252.077175,
+      "end": 1791133254.034026,
+      "receive_span": 1.9568510055541992,
+      "exchange_span": 1.3629999160766602,
+      "median_age": 16.694923162460327,
+      "max_age": 16.903602838516235,
+      "types": {
+        "price_change": 575,
+        "book": 6,
+        "last_trade_price": 3
+      }
+    },
+    {
+      "n": 251,
+      "start": 1791133254.208169,
+      "end": 1791133254.8061624,
+      "receive_span": 0.5979933738708496,
+      "exchange_span": 0.43000006675720215,
+      "median_age": 17.13133144378662,
+      "max_age": 17.25126004219055,
+      "types": {
+        "price_change": 248,
+        "book": 2,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 235,
+      "start": 1791133255.0180697,
+      "end": 1791133255.7531843,
+      "receive_span": 0.735114574432373,
+      "exchange_span": 0.23199987411499023,
+      "median_age": 17.63560676574707,
+      "max_age": 17.940966844558716,
+      "types": {
+        "price_change": 230,
+        "book": 4,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 279,
+      "start": 1791133279.5599084,
+      "end": 1791133280.476984,
+      "receive_span": 0.9170756340026855,
+      "exchange_span": 0.19099998474121094,
+      "median_age": 5.390290975570679,
+      "max_age": 5.774984121322632,
+      "types": {
+        "price_change": 266,
+        "book": 9,
+        "last_trade_price": 4
+      }
+    },
+    {
+      "n": 301,
+      "start": 1791133280.6281433,
+      "end": 1791133281.6173382,
+      "receive_span": 0.9891948699951172,
+      "exchange_span": 0.2820000648498535,
+      "median_age": 6.199360132217407,
+      "max_age": 6.636934518814087,
+      "types": {
+        "book": 3,
+        "price_change": 296,
+        "last_trade_price": 2
+      }
+    },
+    {
+      "n": 741,
+      "start": 1791133281.7787683,
+      "end": 1791133284.5522215,
+      "receive_span": 2.7734532356262207,
+      "exchange_span": 0.8819999694824219,
+      "median_age": 7.782731771469116,
+      "max_age": 8.697712659835815,
+      "types": {
+        "price_change": 718,
+        "book": 16,
+        "last_trade_price": 7
+      }
+    },
+    {
+      "n": 262,
+      "start": 1791133284.7218654,
+      "end": 1791133285.5910325,
+      "receive_span": 0.8691670894622803,
+      "exchange_span": 0.3210000991821289,
+      "median_age": 9.170989990234375,
+      "max_age": 9.474167108535767,
+      "types": {
+        "book": 6,
+        "last_trade_price": 4,
+        "price_change": 252
+      }
+    },
+    {
+      "n": 57,
+      "start": 1791133285.8001173,
+      "end": 1791133285.8474035,
+      "receive_span": 0.047286272048950195,
+      "exchange_span": 0.11100006103515625,
+      "median_age": 9.60250449180603,
+      "max_age": 9.654341459274292,
+      "types": {
+        "price_change": 51,
+        "book": 4,
+        "last_trade_price": 2
+      }
+    },
+    {
+      "n": 27,
+      "start": 1791133285.9490528,
+      "end": 1791133285.998206,
+      "receive_span": 0.04915308952331543,
+      "exchange_span": 0.03099989891052246,
+      "median_age": 9.67293381690979,
+      "max_age": 9.687175035476685,
+      "types": {
+        "price_change": 27
+      }
+    },
+    {
+      "n": 121,
+      "start": 1791133286.2447164,
+      "end": 1791133286.7496705,
+      "receive_span": 0.5049540996551514,
+      "exchange_span": 0.16299986839294434,
+      "median_age": 9.989707469940186,
+      "max_age": 10.26252293586731,
+      "types": {
+        "price_change": 118,
+        "book": 2,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 34,
+      "start": 1791133317.5799801,
+      "end": 1791133317.6693234,
+      "receive_span": 0.08934330940246582,
+      "exchange_span": 0.09300017356872559,
+      "median_age": 5.043158650398254,
+      "max_age": 5.083141088485718,
+      "types": {
+        "price_change": 34
+      }
+    },
+    {
+      "n": 135,
+      "start": 1791133317.8981786,
+      "end": 1791133318.496502,
+      "receive_span": 0.5983233451843262,
+      "exchange_span": 0.09500002861022949,
+      "median_age": 5.5003509521484375,
+      "max_age": 5.772681474685669,
+      "types": {
+        "price_change": 132,
+        "book": 2,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 62,
+      "start": 1791133318.7234678,
+      "end": 1791133318.9219253,
+      "receive_span": 0.1984574794769287,
+      "exchange_span": 0.03800010681152344,
+      "median_age": 5.999971032142639,
+      "max_age": 6.157742500305176,
+      "types": {
+        "price_change": 62
+      }
+    },
+    {
+      "n": 41,
+      "start": 1791133319.1217136,
+      "end": 1791133319.261244,
+      "receive_span": 0.13953042030334473,
+      "exchange_span": 0.03399991989135742,
+      "median_age": 6.390967845916748,
+      "max_age": 6.474106073379517,
+      "types": {
+        "price_change": 41
+      }
+    },
+    {
+      "n": 73,
+      "start": 1791133319.3653643,
+      "end": 1791133320.0174582,
+      "receive_span": 0.6520938873291016,
+      "exchange_span": 0.23399996757507324,
+      "median_age": 6.817723989486694,
+      "max_age": 6.982458114624023,
+      "types": {
+        "price_change": 69,
+        "book": 3,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 72,
+      "start": 1791133320.1838675,
+      "end": 1791133320.5673616,
+      "receive_span": 0.38349413871765137,
+      "exchange_span": 0.21199989318847656,
+      "median_age": 7.218758463859558,
+      "max_age": 7.346995115280151,
+      "types": {
+        "book": 2,
+        "price_change": 69,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 292,
+      "start": 1791133320.7361157,
+      "end": 1791133322.7372973,
+      "receive_span": 2.0011816024780273,
+      "exchange_span": 1.1319999694824219,
+      "median_age": 7.995510101318359,
+      "max_age": 8.362006425857544,
+      "types": {
+        "book": 13,
+        "price_change": 272,
+        "last_trade_price": 7
+      }
+    },
+    {
+      "n": 98,
+      "start": 1791133322.8678546,
+      "end": 1791133323.3040397,
+      "receive_span": 0.4361851215362549,
+      "exchange_span": 0.4659998416900635,
+      "median_age": 8.485011219978333,
+      "max_age": 8.550991773605347,
+      "types": {
+        "price_change": 95,
+        "book": 2,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 123,
+      "start": 1791133323.411111,
+      "end": 1791133323.9933739,
+      "receive_span": 0.5822627544403076,
+      "exchange_span": 0.4070000648498535,
+      "median_age": 8.604702949523926,
+      "max_age": 8.75466513633728,
+      "types": {
+        "book": 2,
+        "price_change": 120,
+        "last_trade_price": 1
+      }
+    },
+    {
+      "n": 88,
+      "start": 1791133324.1306598,
+      "end": 1791133324.688327,
+      "receive_span": 0.5576672554016113,
+      "exchange_span": 0.25,
+      "median_age": 9.032792925834656,
+      "max_age": 9.196587562561035,
+      "types": {
+        "price_change": 79,
+        "book": 6,
+        "last_trade_price": 3
+      }
+    }
+  ],
+  "quality": {
+    "full_seconds": 600.0038676261902,
+    "clean_seconds": 0,
+    "clean_fraction": 0.0,
+    "excluded_fraction": 1.0,
+    "bin_counts_by_reason_overlapping": {
+      "clock_bound_unverified": 601,
+      "book_not_initialized_or_not_fresh": 121,
+      "subscription_proxy_guard": 168,
+      "initial_snapshots_incomplete": 53,
+      "book_age_over_limit": 7,
+      "late_frame": 36,
+      "gap_event_guard": 63
+    },
+    "clean_bins": []
+  },
+  "cohorts": [
+    {
+      "cohort": "full",
+      "frames": 247484,
+      "late": 6848,
+      "types": {
+        "book": 6384,
+        "price_change": 237921,
+        "last_trade_price": 3179
+      },
+      "per_market_minute": {
+        "btc-updown-5m-1791132600:minute_2": {
+          "frames": 7874,
+          "late": 0,
+          "types": {
+            "book": 196,
+            "price_change": 7579,
+            "last_trade_price": 99
+          }
+        },
+        "btc-updown-5m-1791132600:minute_3": {
+          "frames": 27788,
+          "late": 0,
+          "types": {
+            "price_change": 26194,
+            "book": 1064,
+            "last_trade_price": 530
+          }
+        },
+        "btc-updown-5m-1791132600:minute_4": {
+          "frames": 7676,
+          "late": 0,
+          "types": {
+            "price_change": 7243,
+            "book": 288,
+            "last_trade_price": 145
+          }
+        },
+        "btc-updown-5m-1791132900:minute_0": {
+          "frames": 25627,
+          "late": 0,
+          "types": {
+            "book": 488,
+            "price_change": 24897,
+            "last_trade_price": 242
+          }
+        },
+        "btc-updown-5m-1791132900:minute_1": {
+          "frames": 35554,
+          "late": 0,
+          "types": {
+            "price_change": 34695,
+            "last_trade_price": 285,
+            "book": 574
+          }
+        },
+        "btc-updown-5m-1791132900:minute_2": {
+          "frames": 30325,
+          "late": 0,
+          "types": {
+            "price_change": 29409,
+            "book": 610,
+            "last_trade_price": 306
+          }
+        },
+        "btc-updown-5m-1791132900:minute_3": {
+          "frames": 47869,
+          "late": 0,
+          "types": {
+            "price_change": 46858,
+            "book": 674,
+            "last_trade_price": 337
+          }
+        },
+        "btc-updown-5m-1791132900:minute_4": {
+          "frames": 36922,
+          "late": 0,
+          "types": {
+            "price_change": 34090,
+            "book": 1890,
+            "last_trade_price": 942
+          }
+        },
+        "btc-updown-5m-1791133200:minute_0": {
+          "frames": 13948,
+          "late": 4042,
+          "types": {
+            "book": 250,
+            "price_change": 13575,
+            "last_trade_price": 123
+          }
+        },
+        "btc-updown-5m-1791133200:minute_1": {
+          "frames": 12402,
+          "late": 2132,
+          "types": {
+            "book": 314,
+            "last_trade_price": 153,
+            "price_change": 11935
+          }
+        },
+        "btc-updown-5m-1791133200:minute_2": {
+          "frames": 1499,
+          "late": 674,
+          "types": {
+            "book": 36,
+            "price_change": 1446,
+            "last_trade_price": 17
+          }
+        }
+      },
+      "median_age": 0.13655519485473633
+    },
+    {
+      "cohort": "clean",
+      "frames": 0,
+      "late": 0,
+      "types": {},
+      "per_market_minute": {},
+      "median_age": null
+    }
+  ],
+  "missing_timestamps": 0,
+  "longer_recording_decision": "NO-GO",
+  "numeric_gate_failures": [
+    "CLEAN_FRACTION_BELOW_FROZEN_MINIMUM",
+    "CLEAN_SECONDS_BELOW_FROZEN_MINIMUM",
+    "CLEAN_MARKET_COUNT_BELOW_FROZEN_MINIMUM",
+    "FULL_SESSION_LATE_FRACTION_TOO_HIGH",
+    "UNSCHEDULED_CLOSURES"
+  ],
+  "opportunity_and_cost_gate": "NOT_EVALUATED_AT_STEP_1",
+  "clock_samples": [
+    {
+      "type": "clock",
+      "ts": 1791132746.5821211,
+      "received_at": 1791132746.5821211,
+      "received_monotonic_ns": 2505481394056,
+      "sequence": 7,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.1140005588531494,
+      "integer_time_offset_interval": [
+        -0.5821211338043213,
+        5.81012225151062
+      ],
+      "integer_time_midpoint_offset": 2.6140005588531494,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 5.392243385314941,
+      "uncertainty_seconds": 3.1961216926574707,
+      "server_ts": 1791132746.0,
+      "request_sent": 1791132741.1898777
+    },
+    {
+      "type": "clock",
+      "ts": 1791132813.7303033,
+      "received_at": 1791132813.7303033,
+      "received_monotonic_ns": 2572629712936,
+      "sequence": 25705,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.8433237075805664,
+      "integer_time_offset_interval": [
+        -0.7303032875061035,
+        7.416950702667236
+      ],
+      "integer_time_midpoint_offset": 3.3433237075805664,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.14725399017334,
+      "uncertainty_seconds": 4.07362699508667,
+      "server_ts": 1791132813.0,
+      "request_sent": 1791132806.5830493
+    },
+    {
+      "type": "clock",
+      "ts": 1791132880.818054,
+      "received_at": 1791132880.818054,
+      "received_monotonic_ns": 2639717325047,
+      "sequence": 42482,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.7250046730041504,
+      "integer_time_offset_interval": [
+        -0.8180539608001709,
+        7.268063545227051
+      ],
+      "integer_time_midpoint_offset": 3.2250046730041504,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.086117506027222,
+      "uncertainty_seconds": 4.043058753013611,
+      "server_ts": 1791132880.0,
+      "request_sent": 1791132873.7319365
+    },
+    {
+      "type": "clock",
+      "ts": 1791132949.1419582,
+      "received_at": 1791132949.1419582,
+      "received_monotonic_ns": 2708041226632,
+      "sequence": 64699,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 4.019813060760498,
+      "integer_time_offset_interval": [
+        -0.14195823669433594,
+        9.181584358215332
+      ],
+      "integer_time_midpoint_offset": 4.519813060760498,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 8.323542594909668,
+      "uncertainty_seconds": 4.661771297454834,
+      "server_ts": 1791132949.0,
+      "request_sent": 1791132940.8184156
+    },
+    {
+      "type": "clock",
+      "ts": 1791133016.3578613,
+      "received_at": 1791133016.3578613,
+      "received_monotonic_ns": 2775257158097,
+      "sequence": 103479,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 3.249453544616699,
+      "integer_time_offset_interval": [
+        -0.3578612804412842,
+        7.856768608093262
+      ],
+      "integer_time_midpoint_offset": 3.749453544616699,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.214629888534546,
+      "uncertainty_seconds": 4.107314944267273,
+      "server_ts": 1791133016.0,
+      "request_sent": 1791133009.1432314
+    },
+    {
+      "type": "clock",
+      "ts": 1791133083.7787707,
+      "received_at": 1791133083.7787707,
+      "received_monotonic_ns": 2842678039374,
+      "sequence": 137810,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.930634021759033,
+      "integer_time_offset_interval": [
+        -0.7787706851959229,
+        7.640038967132568
+      ],
+      "integer_time_midpoint_offset": 3.430634021759033,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.418809652328491,
+      "uncertainty_seconds": 4.209404826164246,
+      "server_ts": 1791133083.0,
+      "request_sent": 1791133076.359961
+    },
+    {
+      "type": "clock",
+      "ts": 1791133150.8177838,
+      "received_at": 1791133150.8177838,
+      "received_monotonic_ns": 2909717052784,
+      "sequence": 188092,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.701284408569336,
+      "integer_time_offset_interval": [
+        -0.8177838325500488,
+        7.220352411270142
+      ],
+      "integer_time_midpoint_offset": 3.201284408569336,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.03813624382019,
+      "uncertainty_seconds": 4.019068121910095,
+      "server_ts": 1791133150.0,
+      "request_sent": 1791133143.7796476
+    },
+    {
+      "type": "clock",
+      "ts": 1791133216.3135881,
+      "received_at": 1791133216.3135881,
+      "received_monotonic_ns": 2975212856232,
+      "sequence": 221345,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.434236764907837,
+      "integer_time_offset_interval": [
+        -0.31358814239501953,
+        6.182061672210693
+      ],
+      "integer_time_midpoint_offset": 2.934236764907837,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 5.495649814605713,
+      "uncertainty_seconds": 3.2478249073028564,
+      "server_ts": 1791133216.0,
+      "request_sent": 1791133210.8179383
+    },
+    {
+      "type": "clock",
+      "ts": 1791133283.6901202,
+      "received_at": 1791133283.6901202,
+      "received_monotonic_ns": 3042589390470,
+      "sequence": 240252,
+      "source": "https://clob.polymarket.com/time",
+      "offset_server_minus_local": 2.997631788253784,
+      "integer_time_offset_interval": [
+        -0.6901202201843262,
+        7.6853837966918945
+      ],
+      "integer_time_midpoint_offset": 3.497631788253784,
+      "offset_point_convention": "raw integer time minus request midpoint",
+      "rtt_seconds": 7.375504016876221,
+      "uncertainty_seconds": 4.18775200843811,
+      "server_ts": 1791133283.0,
+      "request_sent": 1791133276.3146162
+    }
+  ],
+  "repairs_applied": false,
+  "old_holdout_opened": false
+}

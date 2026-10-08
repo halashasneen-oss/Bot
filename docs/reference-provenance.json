@@ -1,0 +1,8 @@
+{
+  "library_file_id": "libfile_7e5dd3c0783c819195584ff1f918ef6f",
+  "source": "capture prefix before resumed_after_downtime",
+  "frames": 173654,
+  "entries": 175127,
+  "canonical_jsonl_sha256": "d8cdb475b008b8904d0ad7f532decb39a744e767342faee65fedf80a7077440a",
+  "note": "Source archive sealed hashes verified. Original compressed 8-shard representation unavailable. Recovered preserved prefix, no events edited or synthesized."
+}

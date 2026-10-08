@@ -1,0 +1,4107 @@
+{
+  "frames": 173654,
+  "default_invariant_against_original": true,
+  "default_replay_deterministic": true,
+  "io_before_after": "Cannot recover historical fsync/loop/queue timing. Offline replay does not establish live I/O improvement.",
+  "complementary_fills": "Unavailable pending server-match proof; no inferred fills or above-limit queue depletion",
+  "results": {
+    "default": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "up_mid_warmup_30": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 239.06089901924133,
+      "cooldown_seconds": 400.2555296421051,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 40151,
+          "movement_cooldown": 129261,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814,
+          "market_blocked": 959
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1199,
+          "not_active": 58,
+          "buy_print": 563,
+          "before_queue_or_stale": 1,
+          "above_limit": 14,
+          "queue_ahead": 4,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 17,
+          "orders_created": 34,
+          "orders_activated": 30,
+          "quote_expired": 12,
+          "order_retained": 6,
+          "movement_pauses": 6,
+          "post_only_rejected": 2,
+          "movement_resumes": 4,
+          "fills": 1,
+          "residual_timeouts": 1
+        }
+      },
+      "fills": 1,
+      "merges": 0,
+      "pnl_marked": 0.25,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.10000000000000142,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [
+        {
+          "ts": 1791073519.8633847,
+          "type": "fill",
+          "token": "89871954395559552266639074095777683120050460508925099010156197028452847217613",
+          "price": 0.32,
+          "size": 5.0,
+          "fee": 0.0,
+          "exchange_ts": 1791073519.728,
+          "print_price": 0.31,
+          "print_size": 195.0,
+          "queue_before": 159.015,
+          "queue_anchor": 1791073517.3303652,
+          "active_at": 1791073517.3252888,
+          "reason": "observed_sell_print_exceeds_queue"
+        }
+      ],
+      "peak_unpaired_cost_at_risk": 1.6,
+      "one_sided_inventory_seconds": 21.130657196044922,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072948.830389,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.45,
+              "shares": 5.0,
+              "best_bid": 0.46,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.52,
+              "shares": 5.0,
+              "best_bid": 0.53,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072967.4544818,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072977.9854453,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073216.2466338,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.7000000000000001,
+              "shares": 5.0,
+              "best_bid": 0.71,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.27,
+              "shares": 5.0,
+              "best_bid": 0.28,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073216.7784238,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.7000000000000001,
+              "shares": 5.0,
+              "best_bid": 0.71,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.27,
+              "shares": 5.0,
+              "best_bid": 0.28,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073217.8184628,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073516.8252888,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.32,
+              "shares": 5.0,
+              "best_bid": 0.33,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.65,
+              "shares": 5.0,
+              "best_bid": 0.66,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 1.6,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "combined_mid_warmup_0": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "combined_mid_warmup_30": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 239.06089901924133,
+      "cooldown_seconds": 400.2555296421051,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 40151,
+          "movement_cooldown": 129261,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814,
+          "market_blocked": 959
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1199,
+          "not_active": 58,
+          "buy_print": 563,
+          "before_queue_or_stale": 1,
+          "above_limit": 14,
+          "queue_ahead": 4,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 17,
+          "orders_created": 34,
+          "orders_activated": 30,
+          "quote_expired": 12,
+          "order_retained": 6,
+          "movement_pauses": 6,
+          "post_only_rejected": 2,
+          "movement_resumes": 4,
+          "fills": 1,
+          "residual_timeouts": 1
+        }
+      },
+      "fills": 1,
+      "merges": 0,
+      "pnl_marked": 0.25,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.10000000000000142,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [
+        {
+          "ts": 1791073519.8633847,
+          "type": "fill",
+          "token": "89871954395559552266639074095777683120050460508925099010156197028452847217613",
+          "price": 0.32,
+          "size": 5.0,
+          "fee": 0.0,
+          "exchange_ts": 1791073519.728,
+          "print_price": 0.31,
+          "print_size": 195.0,
+          "queue_before": 159.015,
+          "queue_anchor": 1791073517.3303652,
+          "active_at": 1791073517.3252888,
+          "reason": "observed_sell_print_exceeds_queue"
+        }
+      ],
+      "peak_unpaired_cost_at_risk": 1.6,
+      "one_sided_inventory_seconds": 21.130657196044922,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072948.830389,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.45,
+              "shares": 5.0,
+              "best_bid": 0.46,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.52,
+              "shares": 5.0,
+              "best_bid": 0.53,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072967.4544818,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072977.9854453,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073216.2466338,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.7000000000000001,
+              "shares": 5.0,
+              "best_bid": 0.71,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.27,
+              "shares": 5.0,
+              "best_bid": 0.28,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073216.7784238,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.7000000000000001,
+              "shares": 5.0,
+              "best_bid": 0.71,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.27,
+              "shares": 5.0,
+              "best_bid": 0.28,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073217.8184628,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073516.8252888,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.32,
+              "shares": 5.0,
+              "best_bid": 0.33,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.65,
+              "shares": 5.0,
+              "best_bid": 0.66,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 1.6,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "combined_bid_warmup_0": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 109.17145824432373,
+      "cooldown_seconds": 412.76454997062683,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 2382,
+          "paused": 39,
+          "existing_orders": 13817,
+          "movement_cooldown": 151655,
+          "no_pair_price": 1791,
+          "spread_guard": 2,
+          "missing_depth": 5223
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1659,
+          "not_active": 26,
+          "buy_print": 149,
+          "queue_ahead": 1,
+          "before_queue_or_stale": 1,
+          "above_limit": 4,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 11,
+          "orders_created": 22,
+          "orders_activated": 22,
+          "movement_pauses": 7,
+          "movement_resumes": 6,
+          "quote_expired": 4
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072939.7510948,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072967.4544818,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072977.9854453,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073090.5182838,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073119.586602,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073410.150679,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "combined_bid_warmup_30": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 198.86907720565796,
+      "cooldown_seconds": 358.2005023956299,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 2382,
+          "paused": 39,
+          "existing_orders": 34315,
+          "movement_cooldown": 130193,
+          "no_pair_price": 1791,
+          "spread_guard": 2,
+          "missing_depth": 5223,
+          "market_blocked": 959
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1256,
+          "not_active": 57,
+          "buy_print": 514,
+          "queue_ahead": 4,
+          "before_queue_or_stale": 1,
+          "above_limit": 7,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 16,
+          "orders_created": 32,
+          "orders_activated": 28,
+          "quote_expired": 10,
+          "order_retained": 5,
+          "movement_pauses": 6,
+          "post_only_rejected": 2,
+          "movement_resumes": 5,
+          "fills": 1,
+          "residual_timeouts": 1
+        }
+      },
+      "fills": 1,
+      "merges": 0,
+      "pnl_marked": 0.25,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.10000000000000142,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [
+        {
+          "ts": 1791073519.8633847,
+          "type": "fill",
+          "token": "89871954395559552266639074095777683120050460508925099010156197028452847217613",
+          "price": 0.32,
+          "size": 5.0,
+          "fee": 0.0,
+          "exchange_ts": 1791073519.728,
+          "print_price": 0.31,
+          "print_size": 195.0,
+          "queue_before": 159.015,
+          "queue_anchor": 1791073517.3303652,
+          "active_at": 1791073517.3252888,
+          "reason": "observed_sell_print_exceeds_queue"
+        }
+      ],
+      "peak_unpaired_cost_at_risk": 1.6,
+      "one_sided_inventory_seconds": 21.130657196044922,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072948.830389,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.45,
+              "shares": 5.0,
+              "best_bid": 0.46,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.52,
+              "shares": 5.0,
+              "best_bid": 0.53,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072967.4544818,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072977.9854453,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073090.5182838,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073119.586602,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073216.2466338,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.7000000000000001,
+              "shares": 5.0,
+              "best_bid": 0.71,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.27,
+              "shares": 5.0,
+              "best_bid": 0.28,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073216.7784238,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.7000000000000001,
+              "shares": 5.0,
+              "best_bid": 0.71,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.27,
+              "shares": 5.0,
+              "best_bid": 0.28,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073217.8184628,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073410.150679,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073516.8252888,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.32,
+              "shares": 5.0,
+              "best_bid": 0.33,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.65,
+              "shares": 5.0,
+              "best_bid": 0.66,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 1.6,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "queue_1.0_volume_0.5": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "queue_1.0_volume_1.0": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "queue_1.0_volume_1.5": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "queue_1.5_volume_0.5": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "queue_1.5_volume_1.5": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "queue_2.0_volume_0.5": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "queue_2.0_volume_1.0": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    },
+    "queue_2.0_volume_1.5": {
+      "observed_market_seconds": 641.0024561882019,
+      "live_order_seconds_sum": 161.70999717712402,
+      "cooldown_seconds": 451.2872335910797,
+      "fresh_bid_seconds": 478.11414980888367,
+      "edge_002_seconds": 9.259719371795654,
+      "edge_002_fraction_of_fresh_time": 0.019367172829955016,
+      "execution_diagnostics": {
+        "quote_checks": 174980,
+        "quote_blocks": {
+          "no_market": 8,
+          "stale_or_missing_book": 52,
+          "close_buffer_or_not_started": 1334,
+          "paused": 39,
+          "existing_orders": 20760,
+          "movement_cooldown": 149616,
+          "no_pair_price": 344,
+          "spread_guard": 1,
+          "missing_depth": 2814
+        },
+        "trade_checks": 1841,
+        "trade_blocks": {
+          "no_order": 1495,
+          "not_active": 28,
+          "buy_print": 302,
+          "before_queue_or_stale": 1,
+          "above_limit": 12,
+          "queue_ahead": 2,
+          "stale_print": 1
+        },
+        "counts": {
+          "quote_cycles": 12,
+          "orders_created": 24,
+          "orders_activated": 23,
+          "quote_expired": 8,
+          "order_retained": 2,
+          "movement_pauses": 6,
+          "movement_resumes": 4,
+          "post_only_rejected": 1
+        }
+      },
+      "fills": 0,
+      "merges": 0,
+      "pnl_marked": 0.0,
+      "pnl_realized": 0.0,
+      "max_drawdown": 0.0,
+      "execution_quality": "INCOMPLETE_DATA",
+      "fill_evidence": [],
+      "peak_unpaired_cost_at_risk": 0.0,
+      "one_sided_inventory_seconds": 0.0,
+      "quote_plan_evidence": [
+        {
+          "ts": 1791072917.7382584,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072928.2824738,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.46,
+              "shares": 5.0,
+              "best_bid": 0.47,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.51,
+              "shares": 5.0,
+              "best_bid": 0.52,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072969.0659618,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.49,
+              "shares": 5.0,
+              "best_bid": 0.5,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.48,
+              "shares": 5.0,
+              "best_bid": 0.49,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791072979.582385,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.5,
+              "shares": 5.0,
+              "best_bid": 0.51,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.47000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.48,
+              "distance_below_best_bid": 0.009999999999999953
+            }
+          }
+        },
+        {
+          "ts": 1791073087.6922255,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073119.2498329,
+          "type": "quote",
+          "orders": {
+            "12648740991051610788721443183623583869808039001411491745196305455610696038472": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "68992884812133056036203343625446136689876236230674403235795491005698855211570": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073211.0101798,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.78,
+              "shares": 5.0,
+              "best_bid": 0.79,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.19,
+              "shares": 5.0,
+              "best_bid": 0.2,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073212.882504,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.79,
+              "shares": 5.0,
+              "best_bid": 0.8,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.18,
+              "shares": 5.0,
+              "best_bid": 0.19,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        },
+        {
+          "ts": 1791073409.0973423,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9400000000000001,
+              "shares": 5.0,
+              "best_bid": 0.95,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.03,
+              "shares": 5.0,
+              "best_bid": 0.04,
+              "distance_below_best_bid": 0.010000000000000002
+            }
+          }
+        },
+        {
+          "ts": 1791073416.3904047,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.9500000000000001,
+              "shares": 5.0,
+              "best_bid": 0.96,
+              "distance_below_best_bid": 0.009999999999999898
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.02,
+              "shares": 5.0,
+              "best_bid": 0.03,
+              "distance_below_best_bid": 0.009999999999999998
+            }
+          }
+        },
+        {
+          "ts": 1791073426.9414103,
+          "type": "quote",
+          "orders": {
+            "84366274738054455949921398538443691921698174834870269240210038267890643356473": {
+              "price": 0.96,
+              "shares": 5.0,
+              "best_bid": 0.97,
+              "distance_below_best_bid": 0.010000000000000009
+            },
+            "111874259561774162778363620257677717831106447946372371974307205172822476910670": {
+              "price": 0.01,
+              "shares": 5.0,
+              "best_bid": 0.02,
+              "distance_below_best_bid": 0.01
+            }
+          }
+        },
+        {
+          "ts": 1791073506.2941475,
+          "type": "quote",
+          "orders": {
+            "89871954395559552266639074095777683120050460508925099010156197028452847217613": {
+              "price": 0.35000000000000003,
+              "shares": 5.0,
+              "best_bid": 0.36,
+              "distance_below_best_bid": 0.009999999999999953
+            },
+            "87522441361983405293877902441700755187037572158501204200686770938310574179642": {
+              "price": 0.62,
+              "shares": 5.0,
+              "best_bid": 0.63,
+              "distance_below_best_bid": 0.010000000000000009
+            }
+          }
+        }
+      ],
+      "worst_case_remaining_unpaired_cost": 0.0,
+      "loss_stop_usd": 2.5,
+      "quote_limits_below_top": "Current _quote_plan retained; each quote records edge-limited prices"
+    }
+  },
+  "reference_sha256": "d8cdb475b008b8904d0ad7f532decb39a744e767342faee65fedf80a7077440a"
+}

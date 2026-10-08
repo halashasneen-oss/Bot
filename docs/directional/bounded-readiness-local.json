@@ -1,0 +1,86 @@
+{
+  "observed_at": 1791145591.5583427,
+  "policy_sha256": "579fbb066e681bb3272b1fa8ca60a21b0577774e5398234dc06d62afc9521c15",
+  "policy_freeze_commit": "f869678fb0f545ac7ae1bf69ab467e78a92e3312",
+  "mode": "bounded-public-readiness",
+  "source_admission": false,
+  "clock_admission": false,
+  "decision": "NO_GO",
+  "predictions": 0,
+  "fills": 0,
+  "realized_pnl": null,
+  "ntp": {
+    "source": "time.cloudflare.com",
+    "samples": [
+      {
+        "index": 0,
+        "ok": false,
+        "error": "gaierror: [Errno -3] Temporary failure in name resolution"
+      },
+      {
+        "index": 1,
+        "ok": false,
+        "error": "gaierror: [Errno -3] Temporary failure in name resolution"
+      }
+    ],
+    "worst_uncertainty_seconds": null,
+    "all_samples_within_frozen_bound": false,
+    "intervals_consistent": false,
+    "production_admitted": false,
+    "sample_selection": "both predeclared samples; no best-sample selection",
+    "clock_result": "NOT_PROVEN"
+  },
+  "public_metadata": {
+    "mode": "bounded-public-get-preflight",
+    "observed_at": 1791145593.601354,
+    "slug": "btc-updown-5m-1791145500",
+    "policy_sha256": "579fbb066e681bb3272b1fa8ca60a21b0577774e5398234dc06d62afc9521c15",
+    "policy_freeze_commit": "f869678fb0f545ac7ae1bf69ab467e78a92e3312",
+    "decision": "NO_GO",
+    "predictions": 0,
+    "fills": 0,
+    "realized_pnl": null,
+    "reference_admitted": false,
+    "errors": [
+      {
+        "source": "clock",
+        "error": "ConnectError: [Errno -3] Temporary failure in name resolution"
+      },
+      {
+        "source": "Gamma",
+        "error": "ConnectError: [Errno -3] Temporary failure in name resolution"
+      }
+    ],
+    "blockers": [
+      "No audited public underlying reference adapter matching settlement",
+      "Other costs not verified",
+      "Integer /time with nonzero RTT cannot satisfy frozen 0.5s uncertainty"
+    ],
+    "reference_documentation": "https://docs.polymarket.com/market-data/realtime-data"
+  },
+  "chainlink_catalog": {
+    "ok": false,
+    "url": "https://api.dataengine.chain.link/api/v1/discovery",
+    "error": "ConnectError: [Errno -3] Temporary failure in name resolution"
+  },
+  "reference_research": {
+    "polymarket_stream": {
+      "status": "AUTHENTICATION_REQUIRED",
+      "source": "https://docs.polymarket.com/market-data/realtime-data"
+    },
+    "chainlink_reports": {
+      "status": "AUTHENTICATION_REQUIRED",
+      "source": "https://docs.chain.link/data-streams/reference/data-streams-api/authentication"
+    },
+    "chainlink_discovery": {
+      "status": "PUBLIC_METADATA_ONLY",
+      "source": "https://docs.chain.link/data-streams/reference/data-streams-api/discovery-endpoint"
+    },
+    "public_chainlink_page": {
+      "status": "NOT_PROVEN_CAUSAL_OR_MATCHED",
+      "source": "https://data.chain.link/streams/btc-usd-cexprice-streams"
+    },
+    "opening_fields": "Metadata observation alone is not a matched live underlying reference",
+    "onchain_feed": "Different feed and update process; not admitted as a Data Streams substitute"
+  }
+}

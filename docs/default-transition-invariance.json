@@ -1,0 +1,7 @@
+{
+  "events_checked": 175127,
+  "result": "PASS",
+  "state": "cash, orders incl queue/anchor/cancellation, positions, pending merges, stop flags, movement state identical after every event",
+  "original_engine": "main 2bb40f4",
+  "reference_sha256": "d8cdb475b008b8904d0ad7f532decb39a744e767342faee65fedf80a7077440a"
+}
