@@ -1,0 +1,49 @@
+name: Five-loss reconnect PAPER validation
+on:
+  push:
+    branches: [recovery-t225]
+    paths:
+      - '.github/workflows/five-loss-reconnect-validation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Verify five-loss streak, reset on win, and reconnect
+        run: |
+          python - <<'PY'
+          from pairbot.mandatory_v3 import load_config, Account, RecoveringFeedFailures
+          c=load_config('config-experiment-four-checkpoints-cap070-five-loss-paper.yaml')
+          assert c['candidate_entry_times_before_close_sec']==[75,60,45,30]
+          assert c['experimental_max_entry_price']==0.70 and c['live'] is False
+          a=Account(0,50,5,5)
+          for i in range(4):
+              a.position={'quote':{'shares':5},'side':'Up','cost':5,'row':{}}
+              a.settle('Down', 0)
+              assert a.loss_streak==i+1
+              assert a.entry_block(0) is None
+          a.position={'quote':{'shares':5},'side':'Up','cost':5,'row':{}}
+          a.settle('Down',0)
+          assert a.loss_streak==5 and a.entry_block(0)=='five_consecutive_losses'
+          b=Account(0,50,5,5)
+          b.position={'quote':{'shares':5},'side':'Up','cost':5,'row':{}}
+          b.settle('Down',0)
+          b.position={'quote':{'shares':10},'side':'Up','cost':5,'row':{}}
+          b.settle('Up',0)
+          assert b.loss_streak==0
+          f=RecoveringFeedFailures()
+          for _ in range(4): f.fail('websocket')
+          assert not f.halted
+          f.fail('api');f.fail('api');f.fail('api')
+          assert f.halted
+          PY
+      - name: Run existing tests
+        run: python -m pytest -q
